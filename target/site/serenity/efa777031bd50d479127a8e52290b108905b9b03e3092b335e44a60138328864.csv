@@ -1,0 +1,7 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"As a IMDb user","Registration in IMDb website","SUCCESS","2018-01-21T17:30:53.196+05:30","0.0","79.62"
+"As a IMDb user","Registration to IMDb website","SUCCESS","2018-01-21T17:21:52.136+05:30","0.0","68.8"
+"#Enter feature name here","Test Scenario","SUCCESS","2018-01-21T12:30:44.304+05:30","0.0","36.19"
+"#Enter feature name here","Test Scenario","SUCCESS","2018-01-21T00:44:54.943+05:30","0.0","14.08"
+"As a IMDb user","Validate director name displayed on program details page","SUCCESS","2018-01-21T17:29:54.443+05:30","0.0","57.73"
+"As a IMDb user","Validate search functionality on IMDB homepage","SUCCESS","2018-01-21T17:23:44.972+05:30","0.0","367.83"

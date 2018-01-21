@@ -1,0 +1,61 @@
+<acceptance-test-run title="Test Scenario" name="Test Scenario" description="" steps="5" successful="5" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="36192" timestamp="2018-01-21T12:30:44.304+05:30">
+  <user-story id="#enter-feature-name-here" name="#Enter feature name here" path="search.feature"/>
+  <tags>
+    <tag name="#Enter feature name here" type="feature"/>
+  </tags>
+  <test-group name="Given I am on IMDB home page" result="SUCCESS">
+    <screenshots>
+      <screenshot image="2328546cacdd1dcda0087da27b895e3a_NONE.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="23913">
+      <screenshots>
+        <screenshot image="2328546cacdd1dcda0087da27b895e3a_NONE.png"/>
+      </screenshots>
+      <description>Is on the home page</description>
+    </test-step>
+  </test-group>
+  <test-group name="When I select TV Episodes in quick search dropdown" result="SUCCESS">
+    <screenshots>
+      <screenshot image="926d616f907c7db786a7d8861c7aaeb5_NONE.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="1210">
+      <screenshots>
+        <screenshot image="397086c3fd18c5983f7c723b462a6f93_NONE.png"/>
+      </screenshots>
+      <description>Select quick search option</description>
+    </test-step>
+  </test-group>
+  <test-group name="And I enter Walking Dead in search text box" result="SUCCESS">
+    <screenshots>
+      <screenshot image="498e9654196e4d9c8e7b2e463369d627_NONE.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="860">
+      <screenshots>
+        <screenshot image="def879374a6800818e23a9525fc055e1_NONE.png"/>
+      </screenshots>
+      <description>Enter searchkeyword: &lt;span class=&apos;step-parameter&apos;&gt;Walking Dead&lt;/span&gt;</description>
+    </test-step>
+  </test-group>
+  <test-group name="And I click search button" result="SUCCESS">
+    <screenshots>
+      <screenshot image="baadccaee8fa3573dc2bfd8ec4b1027b_NONE.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="6182">
+      <screenshots>
+        <screenshot image="baadccaee8fa3573dc2bfd8ec4b1027b_NONE.png"/>
+      </screenshots>
+      <description>Click search button</description>
+    </test-step>
+  </test-group>
+  <test-group name="Then I should see Walking Dead (2014) (TV Episode) in the search results" result="SUCCESS">
+    <screenshots>
+      <screenshot image="baadccaee8fa3573dc2bfd8ec4b1027b_NONE.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="901">
+      <screenshots>
+        <screenshot image="baadccaee8fa3573dc2bfd8ec4b1027b_NONE.png"/>
+      </screenshots>
+      <description>Verify result displayed: &lt;span class=&apos;step-parameter&apos;&gt;Walking Dead (2014) (TV Episode)&lt;/span&gt;</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

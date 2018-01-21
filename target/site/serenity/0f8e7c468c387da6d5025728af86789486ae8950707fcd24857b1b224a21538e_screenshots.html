@@ -1,0 +1,303 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+    <link rel="shortcut icon" href="favicon.ico">
+
+<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+<!--[if IE 7]>
+<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">
+<![endif]--><!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><!-- Bootstrap -->
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script><link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-bdd-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">Demo Project using Serenity and Cucumber</span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <a
+                    href="991d1087a0033864e01244c56f8ccef677e56024e97568ed84f57fdc43e74571.html">As A Imdb User</a>
+                > <a
+                    href="0f8e7c468c387da6d5025728af86789486ae8950707fcd24857b1b224a21538e.html">Validate search functionality on IMDB homepage </a>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 21-01-2018 17:32</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+    <!--
+    <div id="contentbody">
+        <div class="titlebar">
+        <div class="story-title">
+            <table width="1005">
+                <td width="50"><img class="story-outcome-icon" src="images/success.png" width="25" height="25"/> </td>
+                <td width="%"><span class="test-case-title"><span
+                        class="success-color">Validate search functionality on IMDB homepage<span class="related-issue-title"></span></span></span>
+                </td>
+                <td width="100"><span class="test-case-duration"><span class="greentext">367.83s</span></span>
+                </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <a class="tagLink" href="94c7d847badb44279b14a23687bab20958ae4594b7e8af5800653fca668ea1fb.html">As A Im Db User (feature)</a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    </div>
+-->
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fa fa-comments-o"></i>
+                                    <span class="story-header-title">As A Imdb User</span>
+                                    <span class="badge tag-badge">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                I want to search for a TV program<br>So that i can see that in the search results
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top">
+                            <p class="tag">
+                                <span class="badge tag-badge">
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" href="e0d81891234b1a068ad4894b31cffd7995421b33beadeadbffc911ad6a21c5a1.html">As A Im Db User
+                                    (feature)</a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><img class="story-outcome-icon"
+                                                            src="images/success.png"/></span>
+                            <span class="test-case-title">
+                                <span class="success-color">Validate search functionality on IMDB homepage
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+    <div class="story-title">
+        <h3>Scenario:</h3>
+
+        <div class="scenario">Given I am on IMDB home page<br>When I select TV Episodes in quick search dropdown<br>And I enter Walking Dead in search text box<br>And I click search button<br>Then I should see Walking Dead (2014) (TV Episode) in the search results</div>
+
+    </div>
+
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="2328546cacdd1dcda0087da27b895e3a_NONE.png" alt=""
+                     title="Is on the home page" width="2400"/>
+                <img src="d44ca18a35c944e8afff6c55c731133d_NONE.png" alt=""
+                     title="Select quick search option" width="2400"/>
+                <img src="81a1de01c2df2d04e282a3a6acf3ae72_NONE.png" alt=""
+                     title="Enter searchkeyword: &lt;span class='step-parameter'&gt;Walking Dead&lt;/span&gt;" width="2400"/>
+                <img src="baadccaee8fa3573dc2bfd8ec4b1027b_NONE.png" alt=""
+                     title="Click search button" width="2400"/>
+                <img src="baadccaee8fa3573dc2bfd8ec4b1027b_NONE.png" alt=""
+                     title="Verify result displayed: &lt;span class='step-parameter'&gt;Walking Dead (2014) (TV Episode)&lt;/span&gt;" width="2400"/>
+                <img src="2328546cacdd1dcda0087da27b895e3a_NONE.png" alt=""
+                     title="Is on the home page" width="2400"/>
+                <img src="d44ca18a35c944e8afff6c55c731133d_NONE.png" alt=""
+                     title="Select quick search option" width="2400"/>
+                <img src="45e1f53aa41220ad296968b4f8e656e3_NONE.png" alt=""
+                     title="Enter searchkeyword: &lt;span class='step-parameter'&gt;Rick and Morty&lt;/span&gt;" width="2400"/>
+                <img src="c419396f68b29fc37ddb1f17acc3bb39_NONE.png" alt=""
+                     title="Click search button" width="2400"/>
+                <img src="c419396f68b29fc37ddb1f17acc3bb39_NONE.png" alt=""
+                     title="Verify result displayed: &lt;span class='step-parameter'&gt;Rick and Morty! PPG 2016! (2014) (TV Episode)&lt;/span&gt;" width="2400"/>
+                <img src="2328546cacdd1dcda0087da27b895e3a_NONE.png" alt=""
+                     title="Is on the home page" width="2400"/>
+                <img src="d44ca18a35c944e8afff6c55c731133d_NONE.png" alt=""
+                     title="Select quick search option" width="2400"/>
+                <img src="7ce2588c3b24f5de74c8ed7ac06be9e6_NONE.png" alt=""
+                     title="Enter searchkeyword: &lt;span class='step-parameter'&gt;The Good Doctor&lt;/span&gt;" width="2400"/>
+                <img src="b7240d26677ce97ac42ecf458ccbdd0e_NONE.png" alt=""
+                     title="Click search button" width="2400"/>
+                <img src="b7240d26677ce97ac42ecf458ccbdd0e_NONE.png" alt=""
+                     title="Verify result displayed: &lt;span class='step-parameter'&gt;The Good Doctor (2003) (TV Episode)&lt;/span&gt;" width="2400"/>
+                <img src="2328546cacdd1dcda0087da27b895e3a_NONE.png" alt=""
+                     title="Is on the home page" width="2400"/>
+                <img src="d44ca18a35c944e8afff6c55c731133d_NONE.png" alt=""
+                     title="Select quick search option" width="2400"/>
+                <img src="d78dd1ecd6c248783e1e5c9d8d6d2d33_NONE.png" alt=""
+                     title="Enter searchkeyword: &lt;span class='step-parameter'&gt;Shameless&lt;/span&gt;" width="2400"/>
+                <img src="339c3940276cb57712f712671abd7bf1_NONE.png" alt=""
+                     title="Click search button" width="2400"/>
+                <img src="339c3940276cb57712f712671abd7bf1_NONE.png" alt=""
+                     title="Verify result displayed: &lt;span class='step-parameter'&gt;Shameless 'n' Andean (1997) (TV Episode)&lt;/span&gt;" width="2400"/>
+                <img src="2328546cacdd1dcda0087da27b895e3a_NONE.png" alt=""
+                     title="Is on the home page" width="2400"/>
+                <img src="d44ca18a35c944e8afff6c55c731133d_NONE.png" alt=""
+                     title="Select quick search option" width="2400"/>
+                <img src="0c4030eaaf075a2b279782a61d0cd81b_NONE.png" alt=""
+                     title="Enter searchkeyword: &lt;span class='step-parameter'&gt;Game Of Thrones&lt;/span&gt;" width="2400"/>
+                <img src="c4cc929714622d0c29c269a681548bb4_NONE.png" alt=""
+                     title="Click search button" width="2400"/>
+                <img src="c4cc929714622d0c29c269a681548bb4_NONE.png" alt=""
+                     title="Verify result displayed: &lt;span class='step-parameter'&gt;Game of Thrones Review: Battle of the Bastards - Season 6, Episode 9 (2016) (TV Episode)&lt;/span&gt;" width="2400"/>
+                <img src="2328546cacdd1dcda0087da27b895e3a_NONE.png" alt=""
+                     title="Is on the home page" width="2400"/>
+                <img src="d44ca18a35c944e8afff6c55c731133d_NONE.png" alt=""
+                     title="Select quick search option" width="2400"/>
+                <img src="230c2ac1f048753ab7d7ad4ef594fcbf_NONE.png" alt=""
+                     title="Enter searchkeyword: &lt;span class='step-parameter'&gt;Stranger Things&lt;/span&gt;" width="2400"/>
+                <img src="aa8c1d85fe68fce1f607e4f04826f70c_NONE.png" alt=""
+                     title="Click search button" width="2400"/>
+                <img src="aa8c1d85fe68fce1f607e4f04826f70c_NONE.png" alt=""
+                     title="Verify result displayed: &lt;span class='step-parameter'&gt;Stranger-er Things (2016) (TV Episode)&lt;/span&gt;" width="2400"/>
+                <img src="2328546cacdd1dcda0087da27b895e3a_NONE.png" alt=""
+                     title="Is on the home page" width="2400"/>
+                <img src="d44ca18a35c944e8afff6c55c731133d_NONE.png" alt=""
+                     title="Select quick search option" width="2400"/>
+                <img src="86927a7315b656e18311154b4583c678_NONE.png" alt=""
+                     title="Enter searchkeyword: &lt;span class='step-parameter'&gt;Big Little Lies&lt;/span&gt;" width="2400"/>
+                <img src="c170bd2f4ac792bfaf658ba4c7e6fe84_NONE.png" alt=""
+                     title="Click search button" width="2400"/>
+                <img src="c170bd2f4ac792bfaf658ba4c7e6fe84_NONE.png" alt=""
+                     title="Verify result displayed: &lt;span class='step-parameter'&gt;Big Lies, Little Lies (2011) (TV Episode)&lt;/span&gt;" width="2400"/>
+                <img src="2328546cacdd1dcda0087da27b895e3a_NONE.png" alt=""
+                     title="Is on the home page" width="2400"/>
+                <img src="d44ca18a35c944e8afff6c55c731133d_NONE.png" alt=""
+                     title="Select quick search option" width="2400"/>
+                <img src="042bc3267bad09d019b6067eeb9d98ff_NONE.png" alt=""
+                     title="Enter searchkeyword: &lt;span class='step-parameter'&gt;Attack on Titan&lt;/span&gt;" width="2400"/>
+                <img src="506ffbe40f869cfd9a8876641dc27eca_NONE.png" alt=""
+                     title="Click search button" width="2400"/>
+                <img src="506ffbe40f869cfd9a8876641dc27eca_NONE.png" alt=""
+                     title="Verify result displayed: &lt;span class='step-parameter'&gt;Attack on Titan: Part 1 (2014) (TV Episode)&lt;/span&gt;" width="2400"/>
+                <img src="2328546cacdd1dcda0087da27b895e3a_NONE.png" alt=""
+                     title="Is on the home page" width="2400"/>
+                <img src="d44ca18a35c944e8afff6c55c731133d_NONE.png" alt=""
+                     title="Select quick search option" width="2400"/>
+                <img src="b8462b797aeadb4d31219fd161b4d0b5_NONE.png" alt=""
+                     title="Enter searchkeyword: &lt;span class='step-parameter'&gt;The Wire&lt;/span&gt;" width="2400"/>
+                <img src="87e22d8608ed9ac4e1bd18884dc4468f_NONE.png" alt=""
+                     title="Click search button" width="2400"/>
+                <img src="87e22d8608ed9ac4e1bd18884dc4468f_NONE.png" alt=""
+                     title="Verify result displayed: &lt;span class='step-parameter'&gt;On the Wire (2002) (TV Episode)&lt;/span&gt;" width="2400"/>
+                <img src="2328546cacdd1dcda0087da27b895e3a_NONE.png" alt=""
+                     title="Is on the home page" width="2400"/>
+                <img src="d44ca18a35c944e8afff6c55c731133d_NONE.png" alt=""
+                     title="Select quick search option" width="2400"/>
+                <img src="b9cbe7f984d0771857a15c3912966a7d_NONE.png" alt=""
+                     title="Enter searchkeyword: &lt;span class='step-parameter'&gt;Cosmos&lt;/span&gt;" width="2400"/>
+                <img src="498750199d1ed5f1a5a0bfe5c3145f66_NONE.png" alt=""
+                     title="Click search button" width="2400"/>
+                <img src="498750199d1ed5f1a5a0bfe5c3145f66_NONE.png" alt=""
+                     title="Verify result displayed: &lt;span class='step-parameter'&gt;Cosmoscope (2002) (TV Episode)&lt;/span&gt;" width="2400"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 1.1.1</span>
+</div>
+</body>
+</html>

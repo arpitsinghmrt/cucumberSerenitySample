@@ -1,0 +1,17 @@
+<acceptance-test-run title="Test Scenario" name="Test Scenario" description="" steps="1" successful="1" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="14075" timestamp="2018-01-21T00:44:54.943+05:30">
+  <user-story id="#enter-feature-name-here" name="#Enter feature name here" path="testFeature.feature"/>
+  <tags>
+    <tag name="#Enter feature name here" type="feature"/>
+  </tags>
+  <test-group name="Given I am on IMDB home page" result="SUCCESS">
+    <screenshots>
+      <screenshot image="a9e04df82f6b917354b446c7f544672f_NONE.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="12928">
+      <screenshots>
+        <screenshot image="a9e04df82f6b917354b446c7f544672f_NONE.png"/>
+      </screenshots>
+      <description>Is on the home page</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

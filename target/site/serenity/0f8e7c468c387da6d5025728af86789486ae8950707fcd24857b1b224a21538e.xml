@@ -1,0 +1,658 @@
+<acceptance-test-run title="Validate search functionality on IMDB homepage" name="Validate search functionality on IMDB homepage" description="" steps="50" successful="50" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="223203" timestamp="2018-01-21T18:52:12.491+05:30">
+  <user-story id="as-a-imdb-user" name="As a IMDb user" path="search.feature"/>
+  <tags>
+    <tag name="As a im db user" type="feature"/>
+    <tag name="As a IMDb user" type="feature"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>searchKeyword</header>
+      <header>expectedSearchResult</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>Walking Dead</value>
+        <value>Walking Dead (2014) (TV Episode)</value>
+      </row>
+      <row result="SUCCESS">
+        <value>Rick and Morty</value>
+        <value>Rick and Morty! PPG 2016! (2014) (TV Episode)</value>
+      </row>
+      <row result="SUCCESS">
+        <value>The Good Doctor</value>
+        <value>The Good Doctor (2003) (TV Episode)</value>
+      </row>
+      <row result="SUCCESS">
+        <value>Shameless</value>
+        <value>Shameless &apos;n&apos; Andean (1997) (TV Episode)</value>
+      </row>
+      <row result="SUCCESS">
+        <value>Game Of Thrones</value>
+        <value>Game of Thrones Review: Battle of the Bastards - Season 6, Episode 9 (2016) (TV Episode)</value>
+      </row>
+      <row result="SUCCESS">
+        <value>Stranger Things</value>
+        <value>Stranger-er Things (2016) (TV Episode)</value>
+      </row>
+      <row result="SUCCESS">
+        <value>Big Little Lies</value>
+        <value>Big Lies, Little Lies (2011) (TV Episode)</value>
+      </row>
+      <row result="SUCCESS">
+        <value>Attack on Titan</value>
+        <value>Attack on Titan: Part 1 (2014) (TV Episode)</value>
+      </row>
+      <row result="SUCCESS">
+        <value>The Wire</value>
+        <value>On the Wire (2002) (TV Episode)</value>
+      </row>
+      <row result="SUCCESS">
+        <value>Cosmos</value>
+        <value>Cosmoscope (2002) (TV Episode)</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {searchKeyword=Walking Dead, expectedSearchResult=Walking Dead (2014) (TV Episode)}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="e0211f9a1eb49edec24c7049ae0e1a38_NONE.png"/>
+    </screenshots>
+    <test-group name="Given I am on IMDB home page" result="SUCCESS">
+      <screenshots>
+        <screenshot image="2328546cacdd1dcda0087da27b895e3a_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="9505">
+        <screenshots>
+          <screenshot image="2328546cacdd1dcda0087da27b895e3a_NONE.png"/>
+        </screenshots>
+        <description>Is on the home page</description>
+      </test-step>
+    </test-group>
+    <test-group name="When I select TV Episodes in quick search dropdown" result="SUCCESS">
+      <screenshots>
+        <screenshot image="d44ca18a35c944e8afff6c55c731133d_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="1210">
+        <screenshots>
+          <screenshot image="d44ca18a35c944e8afff6c55c731133d_NONE.png"/>
+        </screenshots>
+        <description>Select quick search option</description>
+      </test-step>
+    </test-group>
+    <test-group name="And I enter Walking Dead in search text box" result="SUCCESS">
+      <screenshots>
+        <screenshot image="6a25f56dfcf4e5510c38c44357cc5a94_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="828">
+        <screenshots>
+          <screenshot image="81a1de01c2df2d04e282a3a6acf3ae72_NONE.png"/>
+        </screenshots>
+        <description>Enter searchkeyword: &lt;span class=&apos;step-parameter&apos;&gt;Walking Dead&lt;/span&gt;</description>
+      </test-step>
+    </test-group>
+    <test-group name="And I click search button" result="SUCCESS">
+      <screenshots>
+        <screenshot image="e0211f9a1eb49edec24c7049ae0e1a38_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="5183">
+        <screenshots>
+          <screenshot image="e0211f9a1eb49edec24c7049ae0e1a38_NONE.png"/>
+        </screenshots>
+        <description>Click search button</description>
+      </test-step>
+    </test-group>
+    <test-group name="Then I should see Walking Dead (2014) (TV Episode) in the search results" result="SUCCESS">
+      <screenshots>
+        <screenshot image="e0211f9a1eb49edec24c7049ae0e1a38_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="890">
+        <screenshots>
+          <screenshot image="e0211f9a1eb49edec24c7049ae0e1a38_NONE.png"/>
+        </screenshots>
+        <description>Verify result displayed: &lt;span class=&apos;step-parameter&apos;&gt;Walking Dead (2014) (TV Episode)&lt;/span&gt;</description>
+      </test-step>
+    </test-group>
+  </test-group>
+  <test-group name="[1] {searchKeyword=Rick and Morty, expectedSearchResult=Rick and Morty! PPG 2016! (2014) (TV Episode)}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="5495d273ae11910b80d696b2784714bb_NONE.png"/>
+    </screenshots>
+    <test-group name="Given I am on IMDB home page" result="SUCCESS">
+      <screenshots>
+        <screenshot image="2328546cacdd1dcda0087da27b895e3a_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="14016">
+        <screenshots>
+          <screenshot image="2328546cacdd1dcda0087da27b895e3a_NONE.png"/>
+        </screenshots>
+        <description>Is on the home page</description>
+      </test-step>
+    </test-group>
+    <test-group name="When I select TV Episodes in quick search dropdown" result="SUCCESS">
+      <screenshots>
+        <screenshot image="d44ca18a35c944e8afff6c55c731133d_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="1135">
+        <screenshots>
+          <screenshot image="d44ca18a35c944e8afff6c55c731133d_NONE.png"/>
+        </screenshots>
+        <description>Select quick search option</description>
+      </test-step>
+    </test-group>
+    <test-group name="And I enter Rick and Morty in search text box" result="SUCCESS">
+      <screenshots>
+        <screenshot image="2aeafccb27cbea8a6de14bfac341b8ff_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="817">
+        <screenshots>
+          <screenshot image="45e1f53aa41220ad296968b4f8e656e3_NONE.png"/>
+        </screenshots>
+        <description>Enter searchkeyword: &lt;span class=&apos;step-parameter&apos;&gt;Rick and Morty&lt;/span&gt;</description>
+      </test-step>
+    </test-group>
+    <test-group name="And I click search button" result="SUCCESS">
+      <screenshots>
+        <screenshot image="5495d273ae11910b80d696b2784714bb_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="2545">
+        <screenshots>
+          <screenshot image="5495d273ae11910b80d696b2784714bb_NONE.png"/>
+        </screenshots>
+        <description>Click search button</description>
+      </test-step>
+    </test-group>
+    <test-group name="Then I should see Rick and Morty! PPG 2016! (2014) (TV Episode) in the search results" result="SUCCESS">
+      <screenshots>
+        <screenshot image="5495d273ae11910b80d696b2784714bb_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="600">
+        <screenshots>
+          <screenshot image="5495d273ae11910b80d696b2784714bb_NONE.png"/>
+        </screenshots>
+        <description>Verify result displayed: &lt;span class=&apos;step-parameter&apos;&gt;Rick and Morty! PPG 2016! (2014) (TV Episode)&lt;/span&gt;</description>
+      </test-step>
+    </test-group>
+  </test-group>
+  <test-group name="[1] {searchKeyword=The Good Doctor, expectedSearchResult=The Good Doctor (2003) (TV Episode)}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="f7d892820682b8d230d0ca82c2ab64bd_NONE.png"/>
+    </screenshots>
+    <test-group name="Given I am on IMDB home page" result="SUCCESS">
+      <screenshots>
+        <screenshot image="2328546cacdd1dcda0087da27b895e3a_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="8205">
+        <screenshots>
+          <screenshot image="2328546cacdd1dcda0087da27b895e3a_NONE.png"/>
+        </screenshots>
+        <description>Is on the home page</description>
+      </test-step>
+    </test-group>
+    <test-group name="When I select TV Episodes in quick search dropdown" result="SUCCESS">
+      <screenshots>
+        <screenshot image="d44ca18a35c944e8afff6c55c731133d_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="1203">
+        <screenshots>
+          <screenshot image="d44ca18a35c944e8afff6c55c731133d_NONE.png"/>
+        </screenshots>
+        <description>Select quick search option</description>
+      </test-step>
+    </test-group>
+    <test-group name="And I enter The Good Doctor in search text box" result="SUCCESS">
+      <screenshots>
+        <screenshot image="b6b441a786c590678f325af9addc5489_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="817">
+        <screenshots>
+          <screenshot image="7ce2588c3b24f5de74c8ed7ac06be9e6_NONE.png"/>
+        </screenshots>
+        <description>Enter searchkeyword: &lt;span class=&apos;step-parameter&apos;&gt;The Good Doctor&lt;/span&gt;</description>
+      </test-step>
+    </test-group>
+    <test-group name="And I click search button" result="SUCCESS">
+      <screenshots>
+        <screenshot image="f7d892820682b8d230d0ca82c2ab64bd_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="2653">
+        <screenshots>
+          <screenshot image="f7d892820682b8d230d0ca82c2ab64bd_NONE.png"/>
+        </screenshots>
+        <description>Click search button</description>
+      </test-step>
+    </test-group>
+    <test-group name="Then I should see The Good Doctor (2003) (TV Episode) in the search results" result="SUCCESS">
+      <screenshots>
+        <screenshot image="f7d892820682b8d230d0ca82c2ab64bd_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="765">
+        <screenshots>
+          <screenshot image="f7d892820682b8d230d0ca82c2ab64bd_NONE.png"/>
+        </screenshots>
+        <description>Verify result displayed: &lt;span class=&apos;step-parameter&apos;&gt;The Good Doctor (2003) (TV Episode)&lt;/span&gt;</description>
+      </test-step>
+    </test-group>
+  </test-group>
+  <test-group name="[1] {searchKeyword=Shameless, expectedSearchResult=Shameless &apos;n&apos; Andean (1997) (TV Episode)}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="339c3940276cb57712f712671abd7bf1_NONE.png"/>
+    </screenshots>
+    <test-group name="Given I am on IMDB home page" result="SUCCESS">
+      <screenshots>
+        <screenshot image="2328546cacdd1dcda0087da27b895e3a_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="7481">
+        <screenshots>
+          <screenshot image="2328546cacdd1dcda0087da27b895e3a_NONE.png"/>
+        </screenshots>
+        <description>Is on the home page</description>
+      </test-step>
+    </test-group>
+    <test-group name="When I select TV Episodes in quick search dropdown" result="SUCCESS">
+      <screenshots>
+        <screenshot image="d44ca18a35c944e8afff6c55c731133d_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="1147">
+        <screenshots>
+          <screenshot image="d44ca18a35c944e8afff6c55c731133d_NONE.png"/>
+        </screenshots>
+        <description>Select quick search option</description>
+      </test-step>
+    </test-group>
+    <test-group name="And I enter Shameless in search text box" result="SUCCESS">
+      <screenshots>
+        <screenshot image="4d57385edb7bec766733200ac156b3f0_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="848">
+        <screenshots>
+          <screenshot image="d78dd1ecd6c248783e1e5c9d8d6d2d33_NONE.png"/>
+        </screenshots>
+        <description>Enter searchkeyword: &lt;span class=&apos;step-parameter&apos;&gt;Shameless&lt;/span&gt;</description>
+      </test-step>
+    </test-group>
+    <test-group name="And I click search button" result="SUCCESS">
+      <screenshots>
+        <screenshot image="339c3940276cb57712f712671abd7bf1_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="3399">
+        <screenshots>
+          <screenshot image="339c3940276cb57712f712671abd7bf1_NONE.png"/>
+        </screenshots>
+        <description>Click search button</description>
+      </test-step>
+    </test-group>
+    <test-group name="Then I should see Shameless &apos;n&apos; Andean (1997) (TV Episode) in the search results" result="SUCCESS">
+      <screenshots>
+        <screenshot image="339c3940276cb57712f712671abd7bf1_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="921">
+        <screenshots>
+          <screenshot image="339c3940276cb57712f712671abd7bf1_NONE.png"/>
+        </screenshots>
+        <description>Verify result displayed: &lt;span class=&apos;step-parameter&apos;&gt;Shameless &apos;n&apos; Andean (1997) (TV Episode)&lt;/span&gt;</description>
+      </test-step>
+    </test-group>
+  </test-group>
+  <test-group name="[1] {searchKeyword=Game Of Thrones, expectedSearchResult=Game of Thrones Review: Battle of the Bastards - Season 6, Episode 9 (2016) (TV Episode)}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="65f966a84b7192186acdf80087f5124d_NONE.png"/>
+    </screenshots>
+    <test-group name="Given I am on IMDB home page" result="SUCCESS">
+      <screenshots>
+        <screenshot image="2328546cacdd1dcda0087da27b895e3a_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="8311">
+        <screenshots>
+          <screenshot image="2328546cacdd1dcda0087da27b895e3a_NONE.png"/>
+        </screenshots>
+        <description>Is on the home page</description>
+      </test-step>
+    </test-group>
+    <test-group name="When I select TV Episodes in quick search dropdown" result="SUCCESS">
+      <screenshots>
+        <screenshot image="d44ca18a35c944e8afff6c55c731133d_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="1191">
+        <screenshots>
+          <screenshot image="d44ca18a35c944e8afff6c55c731133d_NONE.png"/>
+        </screenshots>
+        <description>Select quick search option</description>
+      </test-step>
+    </test-group>
+    <test-group name="And I enter Game Of Thrones in search text box" result="SUCCESS">
+      <screenshots>
+        <screenshot image="d7fb7c0ef21d1ffd12dcf2f1f968afb9_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="812">
+        <screenshots>
+          <screenshot image="0c4030eaaf075a2b279782a61d0cd81b_NONE.png"/>
+        </screenshots>
+        <description>Enter searchkeyword: &lt;span class=&apos;step-parameter&apos;&gt;Game Of Thrones&lt;/span&gt;</description>
+      </test-step>
+    </test-group>
+    <test-group name="And I click search button" result="SUCCESS">
+      <screenshots>
+        <screenshot image="65f966a84b7192186acdf80087f5124d_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="3080">
+        <screenshots>
+          <screenshot image="65f966a84b7192186acdf80087f5124d_NONE.png"/>
+        </screenshots>
+        <description>Click search button</description>
+      </test-step>
+    </test-group>
+    <test-group name="Then I should see Game of Thrones Review: Battle of the Bastards - Season 6, Episode 9 (2016) (TV Episode) in the search results" result="SUCCESS">
+      <screenshots>
+        <screenshot image="65f966a84b7192186acdf80087f5124d_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="887">
+        <screenshots>
+          <screenshot image="65f966a84b7192186acdf80087f5124d_NONE.png"/>
+        </screenshots>
+        <description>Verify result displayed: &lt;span class=&apos;step-parameter&apos;&gt;Game of Thrones Review: Battle of the Bastards - Season 6, Episode 9 (2016) (TV Episode)&lt;/span&gt;</description>
+      </test-step>
+    </test-group>
+  </test-group>
+  <test-group name="[1] {searchKeyword=Stranger Things, expectedSearchResult=Stranger-er Things (2016) (TV Episode)}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="0ebe6a6e0cfb8f75b52baac0d465c7fd_NONE.png"/>
+    </screenshots>
+    <test-group name="Given I am on IMDB home page" result="SUCCESS">
+      <screenshots>
+        <screenshot image="2328546cacdd1dcda0087da27b895e3a_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="8540">
+        <screenshots>
+          <screenshot image="2328546cacdd1dcda0087da27b895e3a_NONE.png"/>
+        </screenshots>
+        <description>Is on the home page</description>
+      </test-step>
+    </test-group>
+    <test-group name="When I select TV Episodes in quick search dropdown" result="SUCCESS">
+      <screenshots>
+        <screenshot image="d44ca18a35c944e8afff6c55c731133d_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="1193">
+        <screenshots>
+          <screenshot image="d44ca18a35c944e8afff6c55c731133d_NONE.png"/>
+        </screenshots>
+        <description>Select quick search option</description>
+      </test-step>
+    </test-group>
+    <test-group name="And I enter Stranger Things in search text box" result="SUCCESS">
+      <screenshots>
+        <screenshot image="70ac67a999a46c9fa08df18745ce7be8_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="823">
+        <screenshots>
+          <screenshot image="230c2ac1f048753ab7d7ad4ef594fcbf_NONE.png"/>
+        </screenshots>
+        <description>Enter searchkeyword: &lt;span class=&apos;step-parameter&apos;&gt;Stranger Things&lt;/span&gt;</description>
+      </test-step>
+    </test-group>
+    <test-group name="And I click search button" result="SUCCESS">
+      <screenshots>
+        <screenshot image="0ebe6a6e0cfb8f75b52baac0d465c7fd_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="3008">
+        <screenshots>
+          <screenshot image="0ebe6a6e0cfb8f75b52baac0d465c7fd_NONE.png"/>
+        </screenshots>
+        <description>Click search button</description>
+      </test-step>
+    </test-group>
+    <test-group name="Then I should see Stranger-er Things (2016) (TV Episode) in the search results" result="SUCCESS">
+      <screenshots>
+        <screenshot image="0ebe6a6e0cfb8f75b52baac0d465c7fd_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="723">
+        <screenshots>
+          <screenshot image="0ebe6a6e0cfb8f75b52baac0d465c7fd_NONE.png"/>
+        </screenshots>
+        <description>Verify result displayed: &lt;span class=&apos;step-parameter&apos;&gt;Stranger-er Things (2016) (TV Episode)&lt;/span&gt;</description>
+      </test-step>
+    </test-group>
+  </test-group>
+  <test-group name="[1] {searchKeyword=Big Little Lies, expectedSearchResult=Big Lies, Little Lies (2011) (TV Episode)}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="80be1298ccb7131a8fb95149f8017fd8_NONE.png"/>
+    </screenshots>
+    <test-group name="Given I am on IMDB home page" result="SUCCESS">
+      <screenshots>
+        <screenshot image="2328546cacdd1dcda0087da27b895e3a_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="8144">
+        <screenshots>
+          <screenshot image="2328546cacdd1dcda0087da27b895e3a_NONE.png"/>
+        </screenshots>
+        <description>Is on the home page</description>
+      </test-step>
+    </test-group>
+    <test-group name="When I select TV Episodes in quick search dropdown" result="SUCCESS">
+      <screenshots>
+        <screenshot image="d44ca18a35c944e8afff6c55c731133d_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="1142">
+        <screenshots>
+          <screenshot image="d44ca18a35c944e8afff6c55c731133d_NONE.png"/>
+        </screenshots>
+        <description>Select quick search option</description>
+      </test-step>
+    </test-group>
+    <test-group name="And I enter Big Little Lies in search text box" result="SUCCESS">
+      <screenshots>
+        <screenshot image="7a38df69ccacdd84ceeae19c3c316d64_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="849">
+        <screenshots>
+          <screenshot image="86927a7315b656e18311154b4583c678_NONE.png"/>
+        </screenshots>
+        <description>Enter searchkeyword: &lt;span class=&apos;step-parameter&apos;&gt;Big Little Lies&lt;/span&gt;</description>
+      </test-step>
+    </test-group>
+    <test-group name="And I click search button" result="SUCCESS">
+      <screenshots>
+        <screenshot image="80be1298ccb7131a8fb95149f8017fd8_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="2380">
+        <screenshots>
+          <screenshot image="80be1298ccb7131a8fb95149f8017fd8_NONE.png"/>
+        </screenshots>
+        <description>Click search button</description>
+      </test-step>
+    </test-group>
+    <test-group name="Then I should see Big Lies, Little Lies (2011) (TV Episode) in the search results" result="SUCCESS">
+      <screenshots>
+        <screenshot image="80be1298ccb7131a8fb95149f8017fd8_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="501">
+        <screenshots>
+          <screenshot image="80be1298ccb7131a8fb95149f8017fd8_NONE.png"/>
+        </screenshots>
+        <description>Verify result displayed: &lt;span class=&apos;step-parameter&apos;&gt;Big Lies, Little Lies (2011) (TV Episode)&lt;/span&gt;</description>
+      </test-step>
+    </test-group>
+  </test-group>
+  <test-group name="[1] {searchKeyword=Attack on Titan, expectedSearchResult=Attack on Titan: Part 1 (2014) (TV Episode)}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="781c306d1cd3149afc9c56d552c4e780_NONE.png"/>
+    </screenshots>
+    <test-group name="Given I am on IMDB home page" result="SUCCESS">
+      <screenshots>
+        <screenshot image="2328546cacdd1dcda0087da27b895e3a_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="8753">
+        <screenshots>
+          <screenshot image="2328546cacdd1dcda0087da27b895e3a_NONE.png"/>
+        </screenshots>
+        <description>Is on the home page</description>
+      </test-step>
+    </test-group>
+    <test-group name="When I select TV Episodes in quick search dropdown" result="SUCCESS">
+      <screenshots>
+        <screenshot image="d44ca18a35c944e8afff6c55c731133d_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="1187">
+        <screenshots>
+          <screenshot image="d44ca18a35c944e8afff6c55c731133d_NONE.png"/>
+        </screenshots>
+        <description>Select quick search option</description>
+      </test-step>
+    </test-group>
+    <test-group name="And I enter Attack on Titan in search text box" result="SUCCESS">
+      <screenshots>
+        <screenshot image="3e56386c541987c905c23a6897d833c0_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="813">
+        <screenshots>
+          <screenshot image="042bc3267bad09d019b6067eeb9d98ff_NONE.png"/>
+        </screenshots>
+        <description>Enter searchkeyword: &lt;span class=&apos;step-parameter&apos;&gt;Attack on Titan&lt;/span&gt;</description>
+      </test-step>
+    </test-group>
+    <test-group name="And I click search button" result="SUCCESS">
+      <screenshots>
+        <screenshot image="781c306d1cd3149afc9c56d552c4e780_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="2722">
+        <screenshots>
+          <screenshot image="781c306d1cd3149afc9c56d552c4e780_NONE.png"/>
+        </screenshots>
+        <description>Click search button</description>
+      </test-step>
+    </test-group>
+    <test-group name="Then I should see Attack on Titan: Part 1 (2014) (TV Episode) in the search results" result="SUCCESS">
+      <screenshots>
+        <screenshot image="781c306d1cd3149afc9c56d552c4e780_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="638">
+        <screenshots>
+          <screenshot image="781c306d1cd3149afc9c56d552c4e780_NONE.png"/>
+        </screenshots>
+        <description>Verify result displayed: &lt;span class=&apos;step-parameter&apos;&gt;Attack on Titan: Part 1 (2014) (TV Episode)&lt;/span&gt;</description>
+      </test-step>
+    </test-group>
+  </test-group>
+  <test-group name="[1] {searchKeyword=The Wire, expectedSearchResult=On the Wire (2002) (TV Episode)}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="daa4dc9874ea4d4e4d3c40da038f823e_NONE.png"/>
+    </screenshots>
+    <test-group name="Given I am on IMDB home page" result="SUCCESS">
+      <screenshots>
+        <screenshot image="2328546cacdd1dcda0087da27b895e3a_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="28220">
+        <screenshots>
+          <screenshot image="2328546cacdd1dcda0087da27b895e3a_NONE.png"/>
+        </screenshots>
+        <description>Is on the home page</description>
+      </test-step>
+    </test-group>
+    <test-group name="When I select TV Episodes in quick search dropdown" result="SUCCESS">
+      <screenshots>
+        <screenshot image="d44ca18a35c944e8afff6c55c731133d_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="1116">
+        <screenshots>
+          <screenshot image="d44ca18a35c944e8afff6c55c731133d_NONE.png"/>
+        </screenshots>
+        <description>Select quick search option</description>
+      </test-step>
+    </test-group>
+    <test-group name="And I enter The Wire in search text box" result="SUCCESS">
+      <screenshots>
+        <screenshot image="911fc4cbfb20b9e933380e8660a7a841_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="790">
+        <screenshots>
+          <screenshot image="b8462b797aeadb4d31219fd161b4d0b5_NONE.png"/>
+        </screenshots>
+        <description>Enter searchkeyword: &lt;span class=&apos;step-parameter&apos;&gt;The Wire&lt;/span&gt;</description>
+      </test-step>
+    </test-group>
+    <test-group name="And I click search button" result="SUCCESS">
+      <screenshots>
+        <screenshot image="daa4dc9874ea4d4e4d3c40da038f823e_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="9946">
+        <screenshots>
+          <screenshot image="daa4dc9874ea4d4e4d3c40da038f823e_NONE.png"/>
+        </screenshots>
+        <description>Click search button</description>
+      </test-step>
+    </test-group>
+    <test-group name="Then I should see On the Wire (2002) (TV Episode) in the search results" result="SUCCESS">
+      <screenshots>
+        <screenshot image="daa4dc9874ea4d4e4d3c40da038f823e_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="894">
+        <screenshots>
+          <screenshot image="daa4dc9874ea4d4e4d3c40da038f823e_NONE.png"/>
+        </screenshots>
+        <description>Verify result displayed: &lt;span class=&apos;step-parameter&apos;&gt;On the Wire (2002) (TV Episode)&lt;/span&gt;</description>
+      </test-step>
+    </test-group>
+  </test-group>
+  <test-group name="[1] {searchKeyword=Cosmos, expectedSearchResult=Cosmoscope (2002) (TV Episode)}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="d8e40315a95e00f65b95c6a6545d00f2_NONE.png"/>
+    </screenshots>
+    <test-group name="Given I am on IMDB home page" result="SUCCESS">
+      <screenshots>
+        <screenshot image="2328546cacdd1dcda0087da27b895e3a_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="16062">
+        <screenshots>
+          <screenshot image="2328546cacdd1dcda0087da27b895e3a_NONE.png"/>
+        </screenshots>
+        <description>Is on the home page</description>
+      </test-step>
+    </test-group>
+    <test-group name="When I select TV Episodes in quick search dropdown" result="SUCCESS">
+      <screenshots>
+        <screenshot image="d44ca18a35c944e8afff6c55c731133d_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="1116">
+        <screenshots>
+          <screenshot image="d44ca18a35c944e8afff6c55c731133d_NONE.png"/>
+        </screenshots>
+        <description>Select quick search option</description>
+      </test-step>
+    </test-group>
+    <test-group name="And I enter Cosmos in search text box" result="SUCCESS">
+      <screenshots>
+        <screenshot image="aeb6e3c27858545810fb1bdfecfbcf4c_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="788">
+        <screenshots>
+          <screenshot image="b9cbe7f984d0771857a15c3912966a7d_NONE.png"/>
+        </screenshots>
+        <description>Enter searchkeyword: &lt;span class=&apos;step-parameter&apos;&gt;Cosmos&lt;/span&gt;</description>
+      </test-step>
+    </test-group>
+    <test-group name="And I click search button" result="SUCCESS">
+      <screenshots>
+        <screenshot image="d8e40315a95e00f65b95c6a6545d00f2_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="7566">
+        <screenshots>
+          <screenshot image="d8e40315a95e00f65b95c6a6545d00f2_NONE.png"/>
+        </screenshots>
+        <description>Click search button</description>
+      </test-step>
+    </test-group>
+    <test-group name="Then I should see Cosmoscope (2002) (TV Episode) in the search results" result="SUCCESS">
+      <screenshots>
+        <screenshot image="d8e40315a95e00f65b95c6a6545d00f2_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="887">
+        <screenshots>
+          <screenshot image="d8e40315a95e00f65b95c6a6545d00f2_NONE.png"/>
+        </screenshots>
+        <description>Verify result displayed: &lt;span class=&apos;step-parameter&apos;&gt;Cosmoscope (2002) (TV Episode)&lt;/span&gt;</description>
+      </test-step>
+    </test-group>
+  </test-group>
+</acceptance-test-run>

@@ -1,0 +1,2706 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Validate search functionality on IMDB homepage</title>
+    <link rel="shortcut icon" href="favicon.ico">
+
+<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+<!--[if IE 7]>
+<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">
+<![endif]--><!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><!-- Bootstrap -->
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script><link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- JQuery-UI -->
+<link type="text/css" href="jqueryui/1.11.2-start/jquery-ui.min.css" rel="Stylesheet" />
+<script type="text/javascript" src="jqueryui/1.11.2-start/jquery-ui.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.10.4/media/jqueryui/dataTables.jqueryui.css" rel="Stylesheet"/>
+<link type="text/css" href="css/tables.css" rel="stylesheet" />
+
+<script type="text/javascript" src="datatables/1.10.4/media/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="datatables/1.10.4/media/jqueryui/dataTables.jqueryui.min.js"></script><!-- ImgPreview -->
+<script src="scripts/imgpreview.full.jquery.js" type="text/javascript"></script>
+</head>
+
+<body class="results-page">
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-bdd-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">Demo Project using Serenity and Cucumber</span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+        <span class="breadcrumbs">
+            <a href="index.html" class="breadcrumbs">Home</a>
+
+            > <a href="a38fa024deb0e26bc04ad5e79db1a2139062397e442b8cd97abf70bc11a6ea66.html">As A Imdb User</a>
+            > Validate search functionality on IMDB homepage
+        </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 21-01-2018 17:32</span>
+    <br style="clear:left"/>
+</div>
+    <div class="clr"></div>
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fa fa-comments-o"></i>
+                                    <span class="story-header-title">As A Imdb User</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                I want to search for a TV program<br>So that i can see that in the search results
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top">
+                            <p class="tag">
+                                <span class="badge tag-badge">
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" href="24ca78925c970f26d074ac7e7173f1f45eef7526f173c7e3ee42f6757ce010eb.html">As A Im Db User
+                                    (feature)</a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><img class="story-outcome-icon"
+                                                            src="images/success.png"/></span>
+                            <span class="test-case-title">
+
+                                <span class="success-color">Validate Search Functionality On Imdb Homepage
+                                    <span class="related-issue-title"></span>
+                            </span>
+                        </span>
+                            <span style="float:right"><img src="images/driver-chrome.png" height="20"
+                                                           alt="chrome"
+                                                           title="chrome"/></span>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+    <div class="story-title">
+        <h3 class="story-header">Scenario:</h3>
+
+        <div class="scenario">Given I am on IMDB home page<br>When I select TV Episodes in quick search dropdown<br>And I enter Walking Dead in search text box<br>And I click search button<br>Then I should see Walking Dead (2014) (TV Episode) in the search results</div>
+
+    </div>
+
+    <div id="beforetable"></div>
+
+
+
+        <h3 class="story-header">Examples:</h3>
+            <div class="requirementNarrative"></div>
+        <div class="example-table">
+            <table>
+                <thead>
+                <tr>
+                        <th>Searchkeyword</th>
+                        <th>Expectedsearchresult</th>
+                </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                            <td class="test-SUCCESS"><a href="#0">Walking Dead</a>
+                            </td>
+                            <td class="test-SUCCESS"><a href="#0">Walking Dead (2014) (TV Episode)</a>
+                            </td>
+                    </tr>
+                    <tr>
+                            <td class="test-SUCCESS"><a href="#1">Rick and Morty</a>
+                            </td>
+                            <td class="test-SUCCESS"><a href="#1">Rick and Morty! PPG 2016! (2014) (TV Episode)</a>
+                            </td>
+                    </tr>
+                    <tr>
+                            <td class="test-SUCCESS"><a href="#2">The Good Doctor</a>
+                            </td>
+                            <td class="test-SUCCESS"><a href="#2">The Good Doctor (2003) (TV Episode)</a>
+                            </td>
+                    </tr>
+                    <tr>
+                            <td class="test-SUCCESS"><a href="#3">Shameless</a>
+                            </td>
+                            <td class="test-SUCCESS"><a href="#3">Shameless 'n' Andean (1997) (TV Episode)</a>
+                            </td>
+                    </tr>
+                    <tr>
+                            <td class="test-SUCCESS"><a href="#4">Game Of Thrones</a>
+                            </td>
+                            <td class="test-SUCCESS"><a href="#4">Game of Thrones Review: Battle of the Bastards - Season 6, Episode 9 (2016) (TV Episode)</a>
+                            </td>
+                    </tr>
+                    <tr>
+                            <td class="test-SUCCESS"><a href="#5">Stranger Things</a>
+                            </td>
+                            <td class="test-SUCCESS"><a href="#5">Stranger-er Things (2016) (TV Episode)</a>
+                            </td>
+                    </tr>
+                    <tr>
+                            <td class="test-SUCCESS"><a href="#6">Big Little Lies</a>
+                            </td>
+                            <td class="test-SUCCESS"><a href="#6">Big Lies, Little Lies (2011) (TV Episode)</a>
+                            </td>
+                    </tr>
+                    <tr>
+                            <td class="test-SUCCESS"><a href="#7">Attack on Titan</a>
+                            </td>
+                            <td class="test-SUCCESS"><a href="#7">Attack on Titan: Part 1 (2014) (TV Episode)</a>
+                            </td>
+                    </tr>
+                    <tr>
+                            <td class="test-SUCCESS"><a href="#8">The Wire</a>
+                            </td>
+                            <td class="test-SUCCESS"><a href="#8">On the Wire (2002) (TV Episode)</a>
+                            </td>
+                    </tr>
+                    <tr>
+                            <td class="test-SUCCESS"><a href="#9">Cosmos</a>
+                            </td>
+                            <td class="test-SUCCESS"><a href="#9">Cosmoscope (2002) (TV Episode)</a>
+                            </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    <div id="tablecontents">
+        <div>
+            <table class="step-table">
+                <tr class="step-titles">
+                    <th width="65">
+                        &nbsp;
+                    </th>
+
+                    <th width="%" class="step-description-column greentext">
+                        Steps
+                    </th>
+                    <th width="120" class="greentext">Screenshot</th>
+                    <th width="100" class="greentext">Outcome</th>
+                    <th width="75" class="greentext">Duration</th>
+                </tr>
+                <tr class="step-table-separator">
+                    <td colspan="5"></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        <a name="0"/>
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0')"
+                               style="display:block">
+                                <img src="images/plus.png" width="24" class="imgstepSection0"
+                                     style="margin-left: 20px; float:left;  padding-right:5px"/>
+                            </a>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0')"
+                               style="display:block">
+                            <span class="top-level-step">[1] {searchKeyword=Walking Dead, expectedSearchResult=Walking Dead (2014) (TV Episode)}</span>
+                            </a>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                        </td>
+                    <td width="100"><span class="top-level-step">SUCCESS</span></td>
+                    <td width="100"><span class="top-level-step">43.19s</span></td>
+                </tr>
+                    <tr>
+                    <td colspan="5">
+                    <table id="stepSection0" style="display:none; width:100%">
+
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 40px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-step">Given I am on IMDB home page</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                        </td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">33.69s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 60px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-group-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">Is on the home page</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="0f8e7c468c387da6d5025728af86789486ae8950707fcd24857b1b224a21538e_screenshots.html#screenshots?screenshot=0">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="2328546cacdd1dcda0087da27b895e3a_NONE.png"
+                                         href="2328546cacdd1dcda0087da27b895e3a_NONE.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">32.88s</span></td>
+                </tr>
+
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 40px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-step">When I select TV Episodes in quick search dropdown</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                        </td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">2.12s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 60px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-group-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">Select quick search option</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="0f8e7c468c387da6d5025728af86789486ae8950707fcd24857b1b224a21538e_screenshots.html#screenshots?screenshot=1">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="d44ca18a35c944e8afff6c55c731133d_NONE.png"
+                                         href="d44ca18a35c944e8afff6c55c731133d_NONE.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">1.47s</span></td>
+                </tr>
+
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 40px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-step">And I enter Walking Dead in search text box</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                        </td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">1.47s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 60px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-group-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">Enter searchkeyword: <span class='step-parameter'>Walking Dead</span></span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="0f8e7c468c387da6d5025728af86789486ae8950707fcd24857b1b224a21538e_screenshots.html#screenshots?screenshot=2">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="81a1de01c2df2d04e282a3a6acf3ae72_NONE.png"
+                                         href="81a1de01c2df2d04e282a3a6acf3ae72_NONE.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0.82s</span></td>
+                </tr>
+
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 40px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-step">And I click search button</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                        </td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">4.28s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 60px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-group-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">Click search button</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="0f8e7c468c387da6d5025728af86789486ae8950707fcd24857b1b224a21538e_screenshots.html#screenshots?screenshot=3">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="baadccaee8fa3573dc2bfd8ec4b1027b_NONE.png"
+                                         href="baadccaee8fa3573dc2bfd8ec4b1027b_NONE.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">3.91s</span></td>
+                </tr>
+
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 40px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-step">Then I should see Walking Dead (2014) (TV Episode) in the search results</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                        </td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">1.26s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 60px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-group-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">Verify result displayed: <span class='step-parameter'>Walking Dead (2014) (TV Episode)</span></span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="0f8e7c468c387da6d5025728af86789486ae8950707fcd24857b1b224a21538e_screenshots.html#screenshots?screenshot=4">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="baadccaee8fa3573dc2bfd8ec4b1027b_NONE.png"
+                                         href="baadccaee8fa3573dc2bfd8ec4b1027b_NONE.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0.9s</span></td>
+                </tr>
+
+
+                    </table>
+                    </td>
+                    <tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        <a name="1"/>
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection1')"
+                               style="display:block">
+                                <img src="images/plus.png" width="24" class="imgstepSection1"
+                                     style="margin-left: 20px; float:left;  padding-right:5px"/>
+                            </a>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection1')"
+                               style="display:block">
+                            <span class="top-level-step">[1] {searchKeyword=Rick and Morty, expectedSearchResult=Rick and Morty! PPG 2016! (2014) (TV Episode)}</span>
+                            </a>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                        </td>
+                    <td width="100"><span class="top-level-step">SUCCESS</span></td>
+                    <td width="100"><span class="top-level-step">20.1s</span></td>
+                </tr>
+                    <tr>
+                    <td colspan="5">
+                    <table id="stepSection1" style="display:none; width:100%">
+
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 40px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-step">Given I am on IMDB home page</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                        </td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">12.33s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 60px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-group-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">Is on the home page</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="0f8e7c468c387da6d5025728af86789486ae8950707fcd24857b1b224a21538e_screenshots.html#screenshots?screenshot=5">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="2328546cacdd1dcda0087da27b895e3a_NONE.png"
+                                         href="2328546cacdd1dcda0087da27b895e3a_NONE.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">11.66s</span></td>
+                </tr>
+
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 40px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-step">When I select TV Episodes in quick search dropdown</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                        </td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">1.88s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 60px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-group-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">Select quick search option</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="0f8e7c468c387da6d5025728af86789486ae8950707fcd24857b1b224a21538e_screenshots.html#screenshots?screenshot=6">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="d44ca18a35c944e8afff6c55c731133d_NONE.png"
+                                         href="d44ca18a35c944e8afff6c55c731133d_NONE.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">1.23s</span></td>
+                </tr>
+
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 40px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-step">And I enter Rick and Morty in search text box</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                        </td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">1.46s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 60px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-group-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">Enter searchkeyword: <span class='step-parameter'>Rick and Morty</span></span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="0f8e7c468c387da6d5025728af86789486ae8950707fcd24857b1b224a21538e_screenshots.html#screenshots?screenshot=7">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="45e1f53aa41220ad296968b4f8e656e3_NONE.png"
+                                         href="45e1f53aa41220ad296968b4f8e656e3_NONE.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0.81s</span></td>
+                </tr>
+
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 40px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-step">And I click search button</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                        </td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">3.07s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 60px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-group-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">Click search button</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="0f8e7c468c387da6d5025728af86789486ae8950707fcd24857b1b224a21538e_screenshots.html#screenshots?screenshot=8">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="c419396f68b29fc37ddb1f17acc3bb39_NONE.png"
+                                         href="c419396f68b29fc37ddb1f17acc3bb39_NONE.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">2.63s</span></td>
+                </tr>
+
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 40px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-step">Then I should see Rick and Morty! PPG 2016! (2014) (TV Episode) in the search results</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                        </td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">0.99s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 60px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-group-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">Verify result displayed: <span class='step-parameter'>Rick and Morty! PPG 2016! (2014) (TV Episode)</span></span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="0f8e7c468c387da6d5025728af86789486ae8950707fcd24857b1b224a21538e_screenshots.html#screenshots?screenshot=9">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="c419396f68b29fc37ddb1f17acc3bb39_NONE.png"
+                                         href="c419396f68b29fc37ddb1f17acc3bb39_NONE.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0.64s</span></td>
+                </tr>
+
+
+                    </table>
+                    </td>
+                    <tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        <a name="2"/>
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection2')"
+                               style="display:block">
+                                <img src="images/plus.png" width="24" class="imgstepSection2"
+                                     style="margin-left: 20px; float:left;  padding-right:5px"/>
+                            </a>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection2')"
+                               style="display:block">
+                            <span class="top-level-step">[1] {searchKeyword=The Good Doctor, expectedSearchResult=The Good Doctor (2003) (TV Episode)}</span>
+                            </a>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                        </td>
+                    <td width="100"><span class="top-level-step">SUCCESS</span></td>
+                    <td width="100"><span class="top-level-step">17.62s</span></td>
+                </tr>
+                    <tr>
+                    <td colspan="5">
+                    <table id="stepSection2" style="display:none; width:100%">
+
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 40px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-step">Given I am on IMDB home page</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                        </td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">9.48s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 60px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-group-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">Is on the home page</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="0f8e7c468c387da6d5025728af86789486ae8950707fcd24857b1b224a21538e_screenshots.html#screenshots?screenshot=10">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="2328546cacdd1dcda0087da27b895e3a_NONE.png"
+                                         href="2328546cacdd1dcda0087da27b895e3a_NONE.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">8.81s</span></td>
+                </tr>
+
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 40px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-step">When I select TV Episodes in quick search dropdown</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                        </td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">1.87s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 60px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-group-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">Select quick search option</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="0f8e7c468c387da6d5025728af86789486ae8950707fcd24857b1b224a21538e_screenshots.html#screenshots?screenshot=11">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="d44ca18a35c944e8afff6c55c731133d_NONE.png"
+                                         href="d44ca18a35c944e8afff6c55c731133d_NONE.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">1.19s</span></td>
+                </tr>
+
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 40px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-step">And I enter The Good Doctor in search text box</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                        </td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">1.5s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 60px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-group-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">Enter searchkeyword: <span class='step-parameter'>The Good Doctor</span></span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="0f8e7c468c387da6d5025728af86789486ae8950707fcd24857b1b224a21538e_screenshots.html#screenshots?screenshot=12">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="7ce2588c3b24f5de74c8ed7ac06be9e6_NONE.png"
+                                         href="7ce2588c3b24f5de74c8ed7ac06be9e6_NONE.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0.85s</span></td>
+                </tr>
+
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 40px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-step">And I click search button</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                        </td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">3.29s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 60px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-group-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">Click search button</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="0f8e7c468c387da6d5025728af86789486ae8950707fcd24857b1b224a21538e_screenshots.html#screenshots?screenshot=13">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="b7240d26677ce97ac42ecf458ccbdd0e_NONE.png"
+                                         href="b7240d26677ce97ac42ecf458ccbdd0e_NONE.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">2.93s</span></td>
+                </tr>
+
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 40px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-step">Then I should see The Good Doctor (2003) (TV Episode) in the search results</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                        </td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">1.11s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 60px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-group-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">Verify result displayed: <span class='step-parameter'>The Good Doctor (2003) (TV Episode)</span></span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="0f8e7c468c387da6d5025728af86789486ae8950707fcd24857b1b224a21538e_screenshots.html#screenshots?screenshot=14">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="b7240d26677ce97ac42ecf458ccbdd0e_NONE.png"
+                                         href="b7240d26677ce97ac42ecf458ccbdd0e_NONE.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0.75s</span></td>
+                </tr>
+
+
+                    </table>
+                    </td>
+                    <tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        <a name="3"/>
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection3')"
+                               style="display:block">
+                                <img src="images/plus.png" width="24" class="imgstepSection3"
+                                     style="margin-left: 20px; float:left;  padding-right:5px"/>
+                            </a>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection3')"
+                               style="display:block">
+                            <span class="top-level-step">[1] {searchKeyword=Shameless, expectedSearchResult=Shameless 'n' Andean (1997) (TV Episode)}</span>
+                            </a>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                        </td>
+                    <td width="100"><span class="top-level-step">SUCCESS</span></td>
+                    <td width="100"><span class="top-level-step">17.3s</span></td>
+                </tr>
+                    <tr>
+                    <td colspan="5">
+                    <table id="stepSection3" style="display:none; width:100%">
+
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 40px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-step">Given I am on IMDB home page</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                        </td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">8.63s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 60px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-group-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">Is on the home page</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="0f8e7c468c387da6d5025728af86789486ae8950707fcd24857b1b224a21538e_screenshots.html#screenshots?screenshot=15">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="2328546cacdd1dcda0087da27b895e3a_NONE.png"
+                                         href="2328546cacdd1dcda0087da27b895e3a_NONE.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">7.98s</span></td>
+                </tr>
+
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 40px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-step">When I select TV Episodes in quick search dropdown</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                        </td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">1.77s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 60px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-group-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">Select quick search option</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="0f8e7c468c387da6d5025728af86789486ae8950707fcd24857b1b224a21538e_screenshots.html#screenshots?screenshot=16">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="d44ca18a35c944e8afff6c55c731133d_NONE.png"
+                                         href="d44ca18a35c944e8afff6c55c731133d_NONE.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">1.14s</span></td>
+                </tr>
+
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 40px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-step">And I enter Shameless in search text box</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                        </td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">1.48s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 60px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-group-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">Enter searchkeyword: <span class='step-parameter'>Shameless</span></span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="0f8e7c468c387da6d5025728af86789486ae8950707fcd24857b1b224a21538e_screenshots.html#screenshots?screenshot=17">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="d78dd1ecd6c248783e1e5c9d8d6d2d33_NONE.png"
+                                         href="d78dd1ecd6c248783e1e5c9d8d6d2d33_NONE.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0.84s</span></td>
+                </tr>
+
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 40px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-step">And I click search button</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                        </td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">3.82s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 60px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-group-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">Click search button</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="0f8e7c468c387da6d5025728af86789486ae8950707fcd24857b1b224a21538e_screenshots.html#screenshots?screenshot=18">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="339c3940276cb57712f712671abd7bf1_NONE.png"
+                                         href="339c3940276cb57712f712671abd7bf1_NONE.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">3.47s</span></td>
+                </tr>
+
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 40px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-step">Then I should see Shameless 'n' Andean (1997) (TV Episode) in the search results</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                        </td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">1.23s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 60px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-group-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">Verify result displayed: <span class='step-parameter'>Shameless 'n' Andean (1997) (TV Episode)</span></span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="0f8e7c468c387da6d5025728af86789486ae8950707fcd24857b1b224a21538e_screenshots.html#screenshots?screenshot=19">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="339c3940276cb57712f712671abd7bf1_NONE.png"
+                                         href="339c3940276cb57712f712671abd7bf1_NONE.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0.87s</span></td>
+                </tr>
+
+
+                    </table>
+                    </td>
+                    <tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        <a name="4"/>
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection4')"
+                               style="display:block">
+                                <img src="images/plus.png" width="24" class="imgstepSection4"
+                                     style="margin-left: 20px; float:left;  padding-right:5px"/>
+                            </a>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection4')"
+                               style="display:block">
+                            <span class="top-level-step">[1] {searchKeyword=Game Of Thrones, expectedSearchResult=Game of Thrones Review: Battle of the Bastards - Season 6, Episode 9 (2016) (TV Episode)}</span>
+                            </a>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                        </td>
+                    <td width="100"><span class="top-level-step">SUCCESS</span></td>
+                    <td width="100"><span class="top-level-step">17.47s</span></td>
+                </tr>
+                    <tr>
+                    <td colspan="5">
+                    <table id="stepSection4" style="display:none; width:100%">
+
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 40px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-step">Given I am on IMDB home page</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                        </td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">8.83s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 60px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-group-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">Is on the home page</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="0f8e7c468c387da6d5025728af86789486ae8950707fcd24857b1b224a21538e_screenshots.html#screenshots?screenshot=20">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="2328546cacdd1dcda0087da27b895e3a_NONE.png"
+                                         href="2328546cacdd1dcda0087da27b895e3a_NONE.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">8.16s</span></td>
+                </tr>
+
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 40px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-step">When I select TV Episodes in quick search dropdown</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                        </td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">1.84s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 60px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-group-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">Select quick search option</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="0f8e7c468c387da6d5025728af86789486ae8950707fcd24857b1b224a21538e_screenshots.html#screenshots?screenshot=21">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="d44ca18a35c944e8afff6c55c731133d_NONE.png"
+                                         href="d44ca18a35c944e8afff6c55c731133d_NONE.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">1.2s</span></td>
+                </tr>
+
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 40px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-step">And I enter Game Of Thrones in search text box</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                        </td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">1.45s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 60px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-group-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">Enter searchkeyword: <span class='step-parameter'>Game Of Thrones</span></span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="0f8e7c468c387da6d5025728af86789486ae8950707fcd24857b1b224a21538e_screenshots.html#screenshots?screenshot=22">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="0c4030eaaf075a2b279782a61d0cd81b_NONE.png"
+                                         href="0c4030eaaf075a2b279782a61d0cd81b_NONE.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0.8s</span></td>
+                </tr>
+
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 40px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-step">And I click search button</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                        </td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">3.72s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 60px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-group-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">Click search button</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="0f8e7c468c387da6d5025728af86789486ae8950707fcd24857b1b224a21538e_screenshots.html#screenshots?screenshot=23">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="c4cc929714622d0c29c269a681548bb4_NONE.png"
+                                         href="c4cc929714622d0c29c269a681548bb4_NONE.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">3.36s</span></td>
+                </tr>
+
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 40px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-step">Then I should see Game of Thrones Review: Battle of the Bastards - Season 6, Episode 9 (2016) (TV Episode) in the search results</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                        </td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">1.25s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 60px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-group-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">Verify result displayed: <span class='step-parameter'>Game of Thrones Review: Battle of the Bastards - Season 6, Episode 9 (2016) (TV Episode)</span></span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="0f8e7c468c387da6d5025728af86789486ae8950707fcd24857b1b224a21538e_screenshots.html#screenshots?screenshot=24">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="c4cc929714622d0c29c269a681548bb4_NONE.png"
+                                         href="c4cc929714622d0c29c269a681548bb4_NONE.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0.89s</span></td>
+                </tr>
+
+
+                    </table>
+                    </td>
+                    <tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        <a name="5"/>
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection5')"
+                               style="display:block">
+                                <img src="images/plus.png" width="24" class="imgstepSection5"
+                                     style="margin-left: 20px; float:left;  padding-right:5px"/>
+                            </a>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection5')"
+                               style="display:block">
+                            <span class="top-level-step">[1] {searchKeyword=Stranger Things, expectedSearchResult=Stranger-er Things (2016) (TV Episode)}</span>
+                            </a>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                        </td>
+                    <td width="100"><span class="top-level-step">SUCCESS</span></td>
+                    <td width="100"><span class="top-level-step">17.58s</span></td>
+                </tr>
+                    <tr>
+                    <td colspan="5">
+                    <table id="stepSection5" style="display:none; width:100%">
+
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 40px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-step">Given I am on IMDB home page</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                        </td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">9.15s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 60px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-group-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">Is on the home page</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="0f8e7c468c387da6d5025728af86789486ae8950707fcd24857b1b224a21538e_screenshots.html#screenshots?screenshot=25">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="2328546cacdd1dcda0087da27b895e3a_NONE.png"
+                                         href="2328546cacdd1dcda0087da27b895e3a_NONE.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">8.49s</span></td>
+                </tr>
+
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 40px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-step">When I select TV Episodes in quick search dropdown</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                        </td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">1.82s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 60px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-group-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">Select quick search option</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="0f8e7c468c387da6d5025728af86789486ae8950707fcd24857b1b224a21538e_screenshots.html#screenshots?screenshot=26">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="d44ca18a35c944e8afff6c55c731133d_NONE.png"
+                                         href="d44ca18a35c944e8afff6c55c731133d_NONE.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">1.18s</span></td>
+                </tr>
+
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 40px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-step">And I enter Stranger Things in search text box</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                        </td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">1.45s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 60px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-group-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">Enter searchkeyword: <span class='step-parameter'>Stranger Things</span></span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="0f8e7c468c387da6d5025728af86789486ae8950707fcd24857b1b224a21538e_screenshots.html#screenshots?screenshot=27">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="230c2ac1f048753ab7d7ad4ef594fcbf_NONE.png"
+                                         href="230c2ac1f048753ab7d7ad4ef594fcbf_NONE.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0.81s</span></td>
+                </tr>
+
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 40px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-step">And I click search button</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                        </td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">3.67s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 60px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-group-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">Click search button</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="0f8e7c468c387da6d5025728af86789486ae8950707fcd24857b1b224a21538e_screenshots.html#screenshots?screenshot=28">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="aa8c1d85fe68fce1f607e4f04826f70c_NONE.png"
+                                         href="aa8c1d85fe68fce1f607e4f04826f70c_NONE.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">3.3s</span></td>
+                </tr>
+
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 40px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-step">Then I should see Stranger-er Things (2016) (TV Episode) in the search results</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                        </td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">1.13s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 60px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-group-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">Verify result displayed: <span class='step-parameter'>Stranger-er Things (2016) (TV Episode)</span></span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="0f8e7c468c387da6d5025728af86789486ae8950707fcd24857b1b224a21538e_screenshots.html#screenshots?screenshot=29">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="aa8c1d85fe68fce1f607e4f04826f70c_NONE.png"
+                                         href="aa8c1d85fe68fce1f607e4f04826f70c_NONE.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0.77s</span></td>
+                </tr>
+
+
+                    </table>
+                    </td>
+                    <tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        <a name="6"/>
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection6')"
+                               style="display:block">
+                                <img src="images/plus.png" width="24" class="imgstepSection6"
+                                     style="margin-left: 20px; float:left;  padding-right:5px"/>
+                            </a>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection6')"
+                               style="display:block">
+                            <span class="top-level-step">[1] {searchKeyword=Big Little Lies, expectedSearchResult=Big Lies, Little Lies (2011) (TV Episode)}</span>
+                            </a>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                        </td>
+                    <td width="100"><span class="top-level-step">SUCCESS</span></td>
+                    <td width="100"><span class="top-level-step">17.18s</span></td>
+                </tr>
+                    <tr>
+                    <td colspan="5">
+                    <table id="stepSection6" style="display:none; width:100%">
+
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 40px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-step">Given I am on IMDB home page</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                        </td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">9.15s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 60px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-group-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">Is on the home page</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="0f8e7c468c387da6d5025728af86789486ae8950707fcd24857b1b224a21538e_screenshots.html#screenshots?screenshot=30">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="2328546cacdd1dcda0087da27b895e3a_NONE.png"
+                                         href="2328546cacdd1dcda0087da27b895e3a_NONE.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">8.49s</span></td>
+                </tr>
+
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 40px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-step">When I select TV Episodes in quick search dropdown</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                        </td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">1.84s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 60px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-group-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">Select quick search option</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="0f8e7c468c387da6d5025728af86789486ae8950707fcd24857b1b224a21538e_screenshots.html#screenshots?screenshot=31">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="d44ca18a35c944e8afff6c55c731133d_NONE.png"
+                                         href="d44ca18a35c944e8afff6c55c731133d_NONE.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">1.21s</span></td>
+                </tr>
+
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 40px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-step">And I enter Big Little Lies in search text box</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                        </td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">1.46s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 60px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-group-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">Enter searchkeyword: <span class='step-parameter'>Big Little Lies</span></span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="0f8e7c468c387da6d5025728af86789486ae8950707fcd24857b1b224a21538e_screenshots.html#screenshots?screenshot=32">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="86927a7315b656e18311154b4583c678_NONE.png"
+                                         href="86927a7315b656e18311154b4583c678_NONE.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0.8s</span></td>
+                </tr>
+
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 40px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-step">And I click search button</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                        </td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">3.51s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 60px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-group-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">Click search button</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="0f8e7c468c387da6d5025728af86789486ae8950707fcd24857b1b224a21538e_screenshots.html#screenshots?screenshot=33">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="c170bd2f4ac792bfaf658ba4c7e6fe84_NONE.png"
+                                         href="c170bd2f4ac792bfaf658ba4c7e6fe84_NONE.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">3.1s</span></td>
+                </tr>
+
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 40px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-step">Then I should see Big Lies, Little Lies (2011) (TV Episode) in the search results</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                        </td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">0.85s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 60px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-group-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">Verify result displayed: <span class='step-parameter'>Big Lies, Little Lies (2011) (TV Episode)</span></span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="0f8e7c468c387da6d5025728af86789486ae8950707fcd24857b1b224a21538e_screenshots.html#screenshots?screenshot=34">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="c170bd2f4ac792bfaf658ba4c7e6fe84_NONE.png"
+                                         href="c170bd2f4ac792bfaf658ba4c7e6fe84_NONE.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0.49s</span></td>
+                </tr>
+
+
+                    </table>
+                    </td>
+                    <tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        <a name="7"/>
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection7')"
+                               style="display:block">
+                                <img src="images/plus.png" width="24" class="imgstepSection7"
+                                     style="margin-left: 20px; float:left;  padding-right:5px"/>
+                            </a>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection7')"
+                               style="display:block">
+                            <span class="top-level-step">[1] {searchKeyword=Attack on Titan, expectedSearchResult=Attack on Titan: Part 1 (2014) (TV Episode)}</span>
+                            </a>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                        </td>
+                    <td width="100"><span class="top-level-step">SUCCESS</span></td>
+                    <td width="100"><span class="top-level-step">81.16s</span></td>
+                </tr>
+                    <tr>
+                    <td colspan="5">
+                    <table id="stepSection7" style="display:none; width:100%">
+
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 40px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-step">Given I am on IMDB home page</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                        </td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">71.65s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 60px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-group-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">Is on the home page</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="0f8e7c468c387da6d5025728af86789486ae8950707fcd24857b1b224a21538e_screenshots.html#screenshots?screenshot=35">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="2328546cacdd1dcda0087da27b895e3a_NONE.png"
+                                         href="2328546cacdd1dcda0087da27b895e3a_NONE.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">70.99s</span></td>
+                </tr>
+
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 40px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-step">When I select TV Episodes in quick search dropdown</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                        </td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">1.77s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 60px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-group-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">Select quick search option</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="0f8e7c468c387da6d5025728af86789486ae8950707fcd24857b1b224a21538e_screenshots.html#screenshots?screenshot=36">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="d44ca18a35c944e8afff6c55c731133d_NONE.png"
+                                         href="d44ca18a35c944e8afff6c55c731133d_NONE.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">1.13s</span></td>
+                </tr>
+
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 40px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-step">And I enter Attack on Titan in search text box</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                        </td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">1.45s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 60px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-group-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">Enter searchkeyword: <span class='step-parameter'>Attack on Titan</span></span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="0f8e7c468c387da6d5025728af86789486ae8950707fcd24857b1b224a21538e_screenshots.html#screenshots?screenshot=37">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="042bc3267bad09d019b6067eeb9d98ff_NONE.png"
+                                         href="042bc3267bad09d019b6067eeb9d98ff_NONE.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0.81s</span></td>
+                </tr>
+
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 40px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-step">And I click search button</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                        </td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">4.93s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 60px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-group-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">Click search button</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="0f8e7c468c387da6d5025728af86789486ae8950707fcd24857b1b224a21538e_screenshots.html#screenshots?screenshot=38">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="506ffbe40f869cfd9a8876641dc27eca_NONE.png"
+                                         href="506ffbe40f869cfd9a8876641dc27eca_NONE.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">4.57s</span></td>
+                </tr>
+
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 40px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-step">Then I should see Attack on Titan: Part 1 (2014) (TV Episode) in the search results</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                        </td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">0.98s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 60px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-group-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">Verify result displayed: <span class='step-parameter'>Attack on Titan: Part 1 (2014) (TV Episode)</span></span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="0f8e7c468c387da6d5025728af86789486ae8950707fcd24857b1b224a21538e_screenshots.html#screenshots?screenshot=39">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="506ffbe40f869cfd9a8876641dc27eca_NONE.png"
+                                         href="506ffbe40f869cfd9a8876641dc27eca_NONE.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0.62s</span></td>
+                </tr>
+
+
+                    </table>
+                    </td>
+                    <tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        <a name="8"/>
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection8')"
+                               style="display:block">
+                                <img src="images/plus.png" width="24" class="imgstepSection8"
+                                     style="margin-left: 20px; float:left;  padding-right:5px"/>
+                            </a>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection8')"
+                               style="display:block">
+                            <span class="top-level-step">[1] {searchKeyword=The Wire, expectedSearchResult=On the Wire (2002) (TV Episode)}</span>
+                            </a>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                        </td>
+                    <td width="100"><span class="top-level-step">SUCCESS</span></td>
+                    <td width="100"><span class="top-level-step">93.46s</span></td>
+                </tr>
+                    <tr>
+                    <td colspan="5">
+                    <table id="stepSection8" style="display:none; width:100%">
+
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 40px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-step">Given I am on IMDB home page</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                        </td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">60.99s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 60px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-group-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">Is on the home page</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="0f8e7c468c387da6d5025728af86789486ae8950707fcd24857b1b224a21538e_screenshots.html#screenshots?screenshot=40">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="2328546cacdd1dcda0087da27b895e3a_NONE.png"
+                                         href="2328546cacdd1dcda0087da27b895e3a_NONE.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">60.34s</span></td>
+                </tr>
+
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 40px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-step">When I select TV Episodes in quick search dropdown</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                        </td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">1.76s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 60px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-group-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">Select quick search option</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="0f8e7c468c387da6d5025728af86789486ae8950707fcd24857b1b224a21538e_screenshots.html#screenshots?screenshot=41">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="d44ca18a35c944e8afff6c55c731133d_NONE.png"
+                                         href="d44ca18a35c944e8afff6c55c731133d_NONE.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">1.12s</span></td>
+                </tr>
+
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 40px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-step">And I enter The Wire in search text box</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                        </td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">1.42s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 60px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-group-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">Enter searchkeyword: <span class='step-parameter'>The Wire</span></span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="0f8e7c468c387da6d5025728af86789486ae8950707fcd24857b1b224a21538e_screenshots.html#screenshots?screenshot=42">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="b8462b797aeadb4d31219fd161b4d0b5_NONE.png"
+                                         href="b8462b797aeadb4d31219fd161b4d0b5_NONE.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0.79s</span></td>
+                </tr>
+
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 40px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-step">And I click search button</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                        </td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">27.58s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 60px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-group-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">Click search button</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="0f8e7c468c387da6d5025728af86789486ae8950707fcd24857b1b224a21538e_screenshots.html#screenshots?screenshot=43">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="87e22d8608ed9ac4e1bd18884dc4468f_NONE.png"
+                                         href="87e22d8608ed9ac4e1bd18884dc4468f_NONE.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">27.22s</span></td>
+                </tr>
+
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 40px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-step">Then I should see On the Wire (2002) (TV Episode) in the search results</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                        </td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">1.34s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 60px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-group-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">Verify result displayed: <span class='step-parameter'>On the Wire (2002) (TV Episode)</span></span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="0f8e7c468c387da6d5025728af86789486ae8950707fcd24857b1b224a21538e_screenshots.html#screenshots?screenshot=44">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="87e22d8608ed9ac4e1bd18884dc4468f_NONE.png"
+                                         href="87e22d8608ed9ac4e1bd18884dc4468f_NONE.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0.99s</span></td>
+                </tr>
+
+
+                    </table>
+                    </td>
+                    <tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        <a name="9"/>
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection9')"
+                               style="display:block">
+                                <img src="images/plus.png" width="24" class="imgstepSection9"
+                                     style="margin-left: 20px; float:left;  padding-right:5px"/>
+                            </a>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection9')"
+                               style="display:block">
+                            <span class="top-level-step">[1] {searchKeyword=Cosmos, expectedSearchResult=Cosmoscope (2002) (TV Episode)}</span>
+                            </a>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                        </td>
+                    <td width="100"><span class="top-level-step">SUCCESS</span></td>
+                    <td width="100"><span class="top-level-step">37.45s</span></td>
+                </tr>
+                    <tr>
+                    <td colspan="5">
+                    <table id="stepSection9" style="display:none; width:100%">
+
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 40px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-step">Given I am on IMDB home page</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                        </td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">24.39s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 60px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-group-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">Is on the home page</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="0f8e7c468c387da6d5025728af86789486ae8950707fcd24857b1b224a21538e_screenshots.html#screenshots?screenshot=45">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="2328546cacdd1dcda0087da27b895e3a_NONE.png"
+                                         href="2328546cacdd1dcda0087da27b895e3a_NONE.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">23.74s</span></td>
+                </tr>
+
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 40px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-step">When I select TV Episodes in quick search dropdown</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                        </td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">2.41s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 60px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-group-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">Select quick search option</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="0f8e7c468c387da6d5025728af86789486ae8950707fcd24857b1b224a21538e_screenshots.html#screenshots?screenshot=46">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="d44ca18a35c944e8afff6c55c731133d_NONE.png"
+                                         href="d44ca18a35c944e8afff6c55c731133d_NONE.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">1.77s</span></td>
+                </tr>
+
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 40px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-step">And I enter Cosmos in search text box</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                        </td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">1.43s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 60px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-group-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">Enter searchkeyword: <span class='step-parameter'>Cosmos</span></span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="0f8e7c468c387da6d5025728af86789486ae8950707fcd24857b1b224a21538e_screenshots.html#screenshots?screenshot=47">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="b9cbe7f984d0771857a15c3912966a7d_NONE.png"
+                                         href="b9cbe7f984d0771857a15c3912966a7d_NONE.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0.79s</span></td>
+                </tr>
+
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 40px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-step">And I click search button</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                        </td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">7.59s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 60px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-group-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">Click search button</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="0f8e7c468c387da6d5025728af86789486ae8950707fcd24857b1b224a21538e_screenshots.html#screenshots?screenshot=48">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="498750199d1ed5f1a5a0bfe5c3145f66_NONE.png"
+                                         href="498750199d1ed5f1a5a0bfe5c3145f66_NONE.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">7.22s</span></td>
+                </tr>
+
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 40px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-step">Then I should see Cosmoscope (2002) (TV Episode) in the search results</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                        </td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">1.25s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 60px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-group-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">Verify result displayed: <span class='step-parameter'>Cosmoscope (2002) (TV Episode)</span></span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="0f8e7c468c387da6d5025728af86789486ae8950707fcd24857b1b224a21538e_screenshots.html#screenshots?screenshot=49">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="498750199d1ed5f1a5a0bfe5c3145f66_NONE.png"
+                                         href="498750199d1ed5f1a5a0bfe5c3145f66_NONE.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0.89s</span></td>
+                </tr>
+
+
+                    </table>
+                    </td>
+                    <tr>
+                <tr class="test-SUCCESS">
+                    <td colspan="2"></td>
+                    <td width="100"><span class="top-level-step"><em>SUCCESS</em></span></td>
+                    <td width="100"><span class="top-level-step"><em>367.83s</em></span></td>
+                </tr>
+
+            </table>
+        </div>
+    </div>
+    <div id="beforefooter"></div>
+    <div id="bottomfooter">
+        <span class="version">Serenity BDD version 1.1.1</span>
+    </div>
+
+
+    <script type="text/javascript">
+        function toggleDiv(divId) {
+            $("#" + divId).toggle();
+            var imgsrc = $(".img" + divId).attr('src');
+            if (imgsrc == 'images/plus.png') {
+                $(".img" + divId).attr("src", function () {
+                    return "images/minus.png";
+                });
+
+            }
+            else {
+                $(".img" + divId).attr("src", function () {
+                    return "images/plus.png";
+                });
+            }
+        }
+    </script>
+
+    <script type="text/javascript">
+        $('.example-table table').DataTable({
+            "order": [
+                [1, "asc"]
+            ],
+            "pageLength": 25,
+            "scrollX": "100%",
+            "scrollXInner": "100%",
+            "scrollCollapse": true
+        });
+    </script>
+
+    <script type="text/javascript">
+        //<![CDATA[
+
+        $(document).ready(function () {
+            $('img.screenshot').imgPreview({
+                imgCSS: {
+                    width: '500px'
+                },
+                distanceFromCursor: {top: 10, left: -200}
+            });
+        });
+
+        //]]>
+    </script>
+    <div id="imgPreviewContainer" style="position: absolute; top: 612px; left: 355px; display: none; " class=""><img
+            src="" style="display: none; "></div>
+    <div id="imgPreviewContainer2" style="position: absolute; top: 925px; left: 320px; display: none; " class="">
+        <img style="width: 200px; display: none; " src=""></div>
+    <div id="imgPreviewWithStyles" style="position: absolute; top: 1272px; left: 321px; display: none; " class="">
+        <img style="height: 200px; opacity: 1; display: none; " src=""></div>
+    <div id="imgPreviewWithStyles2" style="display: none; position: absolute; "><img style="height: 200px; "></div>
+    <div id="imgPreviewWithStyles3" style="display: none; position: absolute; "><img style="height: 200px; "></div>
+
+</body>
+</html>

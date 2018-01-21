@@ -1,0 +1,92 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Decohere</title>
+  <meta name="description" content="Test Site for Automation" />
+  <meta name="author" content="Jeff Nyman" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" crossorigin="anonymous" />
+  <link rel="stylesheet" href="stylesheets/site.css" />
+  <link rel="stylesheet" href="stylesheets/font.css" />
+  <link rel="stylesheet" href="stylesheets/navbar.css" />
+</head>
+<body>
+
+  <nav class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/">Decohere</a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="openLogin"><strong>Login</strong> <span class="caret"></span></a>
+            <ul id="login-dp" class="dropdown-menu">
+              <li>
+                <div class="row">
+                  <div class="col-md-12">
+                    <form class="form" role="form" method="post" action="/" accept-charset="UTF-8" id="login-nav">
+                      <div class="form-group">
+                        <label class="sr-only" for="username">Email address</label>
+                        <input type="email" class="form-control" id="username" name="username" placeholder="Email address" required="" />
+                      </div>
+                      <div class="form-group">
+                        <label class="sr-only" for="password">Password</label>
+                        <input type="password" class="form-control" id="password" name="password" placeholder="Password" required="" />
+                      </div>
+                      <div class="form-group">
+                        <button type="submit" class="btn btn-primary btn-block" id="login">Sign in</button>
+                      </div>
+                    </form>
+                  </div>
+                </div> <!-- /.row -->
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div> <!-- /.navbar-collapse -->
+    </div> <!-- /.container-fluid -->
+  </nav>
+
+  <header>
+    <h1 class="site-logo">Decohere <span id="subtitle" name="subtitle" class="subtitle">Entangled<br />Testing<br />Application</span></h1>
+  </header>
+
+  <section>
+    
+    <article id="index">
+  <img class="site-image" src="/images/tester.png" alt="Tester Gorilla" />
+
+  <div class="container-fluid">
+    <h1>Decohere</h1>
+    <h2>A Test App for Symbiont (and Other Automation Tools)</h2>
+
+    <h3>Purpose</h3>
+
+    <p class="purpose" id="purpose" name="purpose">This is a <em>test application</em> for the <strong>Symbiont</strong> framework.</p>
+
+    <p>You can login with user name "admin@decohere.com" and password "admin". It's not meant to be secure, clearly. This is more just to allow for checking state.</p>
+
+    <p>Not all areas of the site require login.</p>
+  </div>
+</article>
+
+  </section>
+
+  <footer>
+    <p>Decohere - Entangled Testing Application, by <a href="http://testerstories.com/" id="blog">Jeff Nyman</a>. For use with <a href="https://github.com/jnyman/symbiont" id="app">Symbiont</a> and other automation tools.</p>
+  </footer>
+
+  <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" crossorigin="anonymous"></script>
+
+
+</body></html>

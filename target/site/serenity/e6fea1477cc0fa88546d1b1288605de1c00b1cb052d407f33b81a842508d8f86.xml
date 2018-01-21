@@ -1,0 +1,116 @@
+<acceptance-test-run title="Registration in IMDb website" name="Registration in IMDb website" description="" steps="10" successful="10" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="79621" timestamp="2018-01-21T17:30:53.196+05:30">
+  <user-story id="as-a-imdb-user" name="As a IMDb user" path="userRegistration.feature"/>
+  <tags>
+    <tag name="As a IMDb user" type="feature"/>
+  </tags>
+  <test-group name="Given I am on IMDB home page" result="SUCCESS">
+    <screenshots>
+      <screenshot image="2328546cacdd1dcda0087da27b895e3a_NONE.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="47150">
+      <screenshots>
+        <screenshot image="2328546cacdd1dcda0087da27b895e3a_NONE.png"/>
+      </screenshots>
+      <description>Is on the home page</description>
+    </test-step>
+  </test-group>
+  <test-group name="When I click Other Sign in options" result="SUCCESS">
+    <screenshots>
+      <screenshot image="9afc056dbd78f11694ac3eb8b82fcc82_NONE.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="3378">
+      <screenshots>
+        <screenshot image="9afc056dbd78f11694ac3eb8b82fcc82_NONE.png"/>
+      </screenshots>
+      <description>Click other sign in option</description>
+    </test-step>
+  </test-group>
+  <test-group name="And I click Create a New Account" result="SUCCESS">
+    <screenshots>
+      <screenshot image="9f096440a98191525661f4a7ab8361df_NONE.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="3697">
+      <screenshots>
+        <screenshot image="0f88bd0121d0901e5ed7128f2c8d8b6e_NONE.png"/>
+      </screenshots>
+      <description>Click create new account button</description>
+    </test-step>
+  </test-group>
+  <test-group name="And I enter name in First Name textbox" result="SUCCESS">
+    <screenshots>
+      <screenshot image="407a8cca641e96166bfd186c705d3411_NONE.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="501">
+      <screenshots>
+        <screenshot image="9b231e122c3f450a42007848d9babc82_NONE.png"/>
+      </screenshots>
+      <description>Enter user name: &lt;span class=&apos;step-parameter&apos;&gt;Golden Raynor DDS&lt;/span&gt;</description>
+    </test-step>
+  </test-group>
+  <test-group name="And I enter email in Email textbox" result="SUCCESS">
+    <screenshots>
+      <screenshot image="0f101e83b0bd13530f18821a12a21e2b_NONE.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="502">
+      <screenshots>
+        <screenshot image="d7ae5948119ccc43f863cf0089db8021_NONE.png"/>
+      </screenshots>
+      <description>Enter email address: &lt;span class=&apos;step-parameter&apos;&gt;alex.ullrich@example.com&lt;/span&gt;</description>
+    </test-step>
+  </test-group>
+  <test-group name="And I enter Password in password textbox" result="SUCCESS">
+    <screenshots>
+      <screenshot image="41c60315a606589195f48cb4d9487315_NONE.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="438">
+      <screenshots>
+        <screenshot image="5521785080a8c667bf77756b5e59f90e_NONE.png"/>
+      </screenshots>
+      <description>Enter password: &lt;span class=&apos;step-parameter&apos;&gt;er3upenpe&lt;/span&gt;</description>
+    </test-step>
+  </test-group>
+  <test-group name="And I enter password again in Re-enter password textbox" result="SUCCESS">
+    <screenshots>
+      <screenshot image="0ec0448151efadefc0c29fdfed1c9fe1_NONE.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="446">
+      <screenshots>
+        <screenshot image="7c841df76c910231c726d42eec14191d_NONE.png"/>
+      </screenshots>
+      <description>Re enter password: &lt;span class=&apos;step-parameter&apos;&gt;er3upenpe&lt;/span&gt;</description>
+    </test-step>
+  </test-group>
+  <test-group name="And I click Create your IMDb account button" result="SUCCESS">
+    <screenshots>
+      <screenshot image="14da024073a420d94545df3e0590bff5_NONE.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="10927">
+      <screenshots>
+        <screenshot image="e0b44ce72b81816a262f3ab515ee1dcd_NONE.png"/>
+      </screenshots>
+      <description>Click create your account button</description>
+    </test-step>
+  </test-group>
+  <test-group name="Then I should get logged in to my account" result="SUCCESS">
+    <screenshots>
+      <screenshot image="14da024073a420d94545df3e0590bff5_NONE.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="672">
+      <screenshots>
+        <screenshot image="14da024073a420d94545df3e0590bff5_NONE.png"/>
+      </screenshots>
+      <description>Verify user logged in: &lt;span class=&apos;step-parameter&apos;&gt;Golden Raynor DDS&lt;/span&gt;</description>
+    </test-step>
+  </test-group>
+  <test-group name="And I log out of the application" result="SUCCESS">
+    <screenshots>
+      <screenshot image="2328546cacdd1dcda0087da27b895e3a_NONE.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="5941">
+      <screenshots>
+        <screenshot image="2328546cacdd1dcda0087da27b895e3a_NONE.png"/>
+      </screenshots>
+      <description>Log out of application</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

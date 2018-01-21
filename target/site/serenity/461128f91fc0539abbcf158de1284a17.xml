@@ -1,0 +1,26 @@
+<acceptance-test-run title="Add numbers" name="addNumbers" steps="3" successful="3" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="23701" timestamp="2018-01-20T02:30:43.020+05:30" session-id="65286a5b275ceea616ba1597d6812f67" test-source="JUnit">
+  <user-story id="com.seneity.assignment.SearchSteps" name="Test class" path="com.seneity.assignment"/>
+  <tags>
+    <tag name="Test class" type="story"/>
+  </tags>
+  <test-step result="SUCCESS" duration="6365">
+    <screenshots>
+      <screenshot image="c5c8ff7f7754977ad37ae3811f30b191.png"/>
+      <screenshot image="a431f032ace7df06cd7481d9a8adabf5.png"/>
+    </screenshots>
+    <description>Is on the home page</description>
+  </test-step>
+  <test-step result="SUCCESS" duration="14334">
+    <screenshots>
+      <screenshot image="31d089e7b0cb74260f48597576f48e85.png"/>
+      <screenshot image="3be22c67d8a9c0f0f7fdde235ed3ed3d.png"/>
+    </screenshots>
+    <description>Logs in as admin</description>
+  </test-step>
+  <test-step result="SUCCESS" duration="1110">
+    <screenshots>
+      <screenshot image="3be22c67d8a9c0f0f7fdde235ed3ed3d.png"/>
+    </screenshots>
+    <description>Should be on landing page</description>
+  </test-step>
+</acceptance-test-run>
