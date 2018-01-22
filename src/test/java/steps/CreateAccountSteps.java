@@ -1,10 +1,14 @@
 package steps;
 
+import cucumber.api.java.Before;
 import jline.internal.Log;
 import net.thucydides.core.annotations.Step;
 import pages.CreateAccountPage;
 import pages.ImdbHomePage;
 import pages.SignInPage;
+import testDataGenerators.TestDataGenerator;
+
+import java.io.IOException;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
@@ -12,6 +16,7 @@ public class CreateAccountSteps {
     private ImdbHomePage imdbHomePage;
     private SignInPage signInPage;
     private CreateAccountPage createAccountPage;
+    private TestDataGenerator testDataGenerator = new TestDataGenerator();
 
     @Step
     public void clickOtherSignInOption() {
@@ -20,6 +25,7 @@ public class CreateAccountSteps {
 
     @Step
     public void clickCreateNewAccountButton() {
+
         signInPage.click_create_new_account();
     }
 
@@ -44,19 +50,17 @@ public class CreateAccountSteps {
     }
 
     @Step
-    public void clickCreateYourAccountButton()
-    {
+    public void clickCreateYourAccountButton() {
         createAccountPage.click_create_imdb_account_button();
     }
+
     @Step
-    public void verifyUserLoggedIn(String userName)
-    {
+    public void verifyUserLoggedIn(String userName) {
         assertThat(imdbHomePage.read_logged_in_user_name()).isEqualToIgnoringCase(userName);
     }
 
     @Step
-    public void logOutOfApplication()
-    {
+    public void logOutOfApplication() {
         imdbHomePage.log_out_of_application();
     }
 }

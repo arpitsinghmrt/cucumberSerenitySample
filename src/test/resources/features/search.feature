@@ -1,4 +1,4 @@
-Feature: As a IMDb user
+Feature: As an IMDb user
   I want to search for a TV program
   So that i can see that in the search results
 

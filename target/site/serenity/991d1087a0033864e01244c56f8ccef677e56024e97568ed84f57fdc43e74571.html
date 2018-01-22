@@ -36,7 +36,7 @@
     <script class="code" type="text/javascript">$(document).ready(function () {
         var test_results_plot = $.jqplot('test_results_pie_chart', [
             [
-                ['Passing', 1],
+                ['Passing', 0],
                 
                 ['Pending', 0],
                 
@@ -44,7 +44,7 @@
                 
                 ['Failing', 0],
                 
-                ['Errors',  0]
+                ['Errors',  1]
             ]
         ], {
 
@@ -73,17 +73,17 @@
                 marginTop: '15px'
             },
             series: [
-                {label: '13 / 13 tests passed' },
-                {label: '0 / 13 tests pending'},
-                {label: '0 / 13 tests not executed'},
-                {label: '0 / 13 tests failed'},
-                {label: '0 / 13 errors'}
+                {label: '0 / 15 tests passed' },
+                {label: '0 / 15 tests pending'},
+                {label: '0 / 15 tests not executed'},
+                {label: '0 / 15 tests failed'},
+                {label: '15 / 15 errors'}
             ]
         });
 
         var weighted_test_results_plot = $.jqplot('weighted_test_results_pie_chart', [
             [
-                ['Passing', 1],
+                ['Passing', 0],
                 
                 ['Pending', 0],
                 
@@ -91,7 +91,7 @@
                 
                 ['Failing', 0],
                 
-                ['Errors', 0]
+                ['Errors', 1]
             ]
         ], {
 
@@ -121,11 +121,11 @@
                 marginTop: '15px'
             },
             series: [
-                {label: '13 / 13 tests passed (1% of all test steps)' },
-                {label: '0 / 13 tests pending'},
-                {label: '0 / 13 tests not executed'},
-                {label: '0 / 13 tests failed (0% of all test steps)'},
-                {label: '0 / 13 errors (0% of all test steps)'}
+                {label: '0 / 15 tests passed (0% of all test steps)' },
+                {label: '0 / 15 tests pending'},
+                {label: '0 / 15 tests not executed'},
+                {label: '0 / 15 tests failed (0% of all test steps)'},
+                {label: '15 / 15 errors (1% of all test steps)'}
             ]
         });
 
@@ -193,7 +193,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 21-01-2018 17:48</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 22-01-2018 09:15</span>
     <br style="clear:left"/>
 </div>
 <div class="clr"></div>
@@ -207,15 +207,14 @@
     <tr>
         <td width="375px" valign="top">
             <div class="test-count-summary">
-                <span class="test-count-title">4
-                    test scenarios (13 tests in all, including 10
+                <span class="test-count-title">3
+                    test scenarios (15 tests in all, including 14
                     rows of test data)</span>
                 <div>
 
                 <span class="test-count">
-                    13
-                        <a href="18a4ad233c0da559e8e5ce64f116f9d7a397b713b93080c6231c8ae9ebd888e3.html">passed</a>
-                    ,
+                    0
+passed,
                 </span>
                 <span class="test-count">
                     0
@@ -226,8 +225,9 @@ pending,
 failed,
                 </span>
                 <span class="test-count">
-                    0
-errors,
+                    15
+                        <a href="34c9cd8677f14da9d10c69abb2f1ea0ab1c768dabfdeebfd0b49db74f76bccdb.html">with errors</a>
+                    ,
                 </span>
                 <span class="test-count">
                     0
@@ -282,9 +282,9 @@ skipped
         <body>
         <tr>
             <td class="summary-leading-column">Automated</td>
-            <td>13</td>
-            <td>13 (100%)</td>
+            <td>15</td>
             <td>0 (0%)</td>
+            <td>15 (100%)</td>
             <td>0 (0%)</td>
             <td>0 (0%)</td>
         </tr>
@@ -298,15 +298,15 @@ skipped
         </tr>
         <tr>
             <td class="summary-leading-column">Total</td>
-            <td>13</td>
-            <td>13 (100%)</td>
+            <td>15</td>
             <td>0 (0%)</td>
+            <td>15 (0%)</td>
             <td>0 (0%)</td>
             <td>0 (0%)</td>
         </tr>
         <tr>
             <td class="summary-leading-column">Total Duration</td>
-                <td colspan="5">9 minutes 33 seconds</td>
+                <td colspan="5">2 seconds</td>
         </tr>
         </body>
     </table>
@@ -329,7 +329,7 @@ skipped
             </tr>
                 <tr>
                     <td class="bluetext" class="tag-title">
-                        <span class="SUCCESS-text ellipsis">
+                        <span class="ERROR-text ellipsis">
                                 <a href="24ca78925c970f26d074ac7e7173f1f45eef7526f173c7e3ee42f6757ce010eb.html" title="As A Im Db User">As A Im Db User</a>
                         </span>
                     </td>
@@ -338,7 +338,7 @@ skipped
 
                         <table>
                             <tr>
-                                <td class="related-tag-percentage"><span title="11 out of 11 tests (118 steps) passing">100%</span></td>
+                                <td class="related-tag-percentage"><span title="0 out of 11 tests (0 steps) passing">0%</span></td>
                                 <td width="150px">
                                     <a href="24ca78925c970f26d074ac7e7173f1f45eef7526f173c7e3ee42f6757ce010eb.html">
                                         <div class="percentagebar"
@@ -349,13 +349,13 @@ skipped
                                                  title="0 out of 11 tests (0 steps) skipped or ignored">
                                                 <div class="errorbar"
                                                      style="width: 150px;"
-                                                     title="0 out of 11 tests (0 steps) broken">
+                                                     title="11 out of 11 tests (75 steps) broken">
                                                     <div class="failingbar"
-                                                         style="width: 150px;"
+                                                         style="width: 0px;"
                                                          title="0 out of 11 tests (0 steps) failing">
                                                         <div class="passingbar"
-                                                             style="width: 150px;"
-                                                             title="11 out of 11 tests (118 steps) passing">
+                                                             style="width: 0px;"
+                                                             title="0 out of 11 tests (0 steps) passing">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -378,7 +378,7 @@ skipped
                     <table>
                         <tr>
                             <td colspan="2">
-                                <span class="caption">Test results weighted by test size in steps (average steps per test: 12.153846) .</span>
+                                <span class="caption">Test results weighted by test size in steps (average steps per test: 8.2) .</span>
                                 <span class="togglePieChart" id="toggleWeightedPieChart"><a href="#">Show/Hide Pie
                                     Chart</a></span>
                             </td>
@@ -410,9 +410,9 @@ skipped
         <body>
         <tr>
             <td class="summary-leading-column">Automated</td>
-            <td>13</td>
-            <td>13 (100%)</td>
+            <td>15</td>
             <td>0 (0%)</td>
+            <td>15 (100%)</td>
             <td>0 (0%)</td>
             <td>0 (0%)</td>
         </tr>
@@ -426,15 +426,15 @@ skipped
         </tr>
         <tr>
             <td class="summary-leading-column">Total</td>
-            <td>13</td>
-            <td>13 (100%)</td>
+            <td>15</td>
             <td>0 (0%)</td>
+            <td>15 (0%)</td>
             <td>0 (0%)</td>
             <td>0 (0%)</td>
         </tr>
         <tr>
             <td class="summary-leading-column">Total Duration</td>
-                <td colspan="5">9 minutes 33 seconds</td>
+                <td colspan="5">2 seconds</td>
         </tr>
         </body>
     </table>
@@ -457,7 +457,7 @@ skipped
             </tr>
                 <tr>
                     <td class="bluetext" class="tag-title">
-                        <span class="SUCCESS-text ellipsis">
+                        <span class="ERROR-text ellipsis">
                                 <a href="24ca78925c970f26d074ac7e7173f1f45eef7526f173c7e3ee42f6757ce010eb.html" title="As A Im Db User">As A Im Db User</a>
                         </span>
                     </td>
@@ -466,7 +466,7 @@ skipped
 
                         <table>
                             <tr>
-                                <td class="related-tag-percentage"><span title="11 out of 11 tests (118 steps) passing">100%</span></td>
+                                <td class="related-tag-percentage"><span title="0 out of 11 tests (0 steps) passing">0%</span></td>
                                 <td width="150px">
                                     <a href="24ca78925c970f26d074ac7e7173f1f45eef7526f173c7e3ee42f6757ce010eb.html">
                                         <div class="percentagebar"
@@ -477,13 +477,13 @@ skipped
                                                  title="0 out of 11 tests (0 steps) skipped or ignored">
                                                 <div class="errorbar"
                                                      style="width: 150px;"
-                                                     title="0 out of 11 tests (0 steps) broken">
+                                                     title="11 out of 11 tests (75 steps) broken">
                                                     <div class="failingbar"
-                                                         style="width: 150px;"
+                                                         style="width: 0px;"
                                                          title="0 out of 11 tests (0 steps) failing">
                                                         <div class="passingbar"
-                                                             style="width: 150px;"
-                                                             title="11 out of 11 tests (118 steps) passing">
+                                                             style="width: 0px;"
+                                                             title="0 out of 11 tests (0 steps) passing">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -530,18 +530,18 @@ skipped
 
 
 
-                        <tr class="test-SUCCESS">
-                            <td><img src="images/success.png" title="SUCCESS"
+                        <tr class="test-ERROR">
+                            <td><img src="images/cross.png" title="ERROR"
                                      class="summary-icon"/>
                                 
-                                <span style="display:none">SUCCESS</span></td>
-                            <td class="SUCCESS-text">
-                                <a href="e6fea1477cc0fa88546d1b1288605de1c00b1cb052d407f33b81a842508d8f86.html" class="ellipsis" title="">
+                                <span style="display:none">ERROR</span></td>
+                            <td class="ERROR-text">
+                                <a href="e6fea1477cc0fa88546d1b1288605de1c00b1cb052d407f33b81a842508d8f86.html" class="ellipsis" title="net.thucydides.core.webdriver.UnsupportedDriverException: Could not instantiate class org.openqa.selenium.phantomjs.PhantomJSDriver">
                                     Registration in IMDb website 
                                 </a>
                             </td>
 
-                            <td class="lightgreentext">20</td>
+                            <td class="lightgreentext">48</td>
 
 
                             <td class="bluetext">
@@ -550,50 +550,24 @@ skipped
                                      class="summary-icon"/>
                                 <span style="display:none">0</span>
                             </td>
-                            <td class="lightgreentext">79.62</td>
+                            <td class="lightgreentext">0.38</td>
                         </tr>
 
 
 
 
-                        <tr class="test-SUCCESS">
-                            <td><img src="images/success.png" title="SUCCESS"
+                        <tr class="test-ERROR">
+                            <td><img src="images/cross.png" title="ERROR"
                                      class="summary-icon"/>
                                 
-                                <span style="display:none">SUCCESS</span></td>
-                            <td class="SUCCESS-text">
-                                <a href="01ce0b968abcf0ce8be10dd1a23d9fb304a493b26976c916f2ff5dab0c1d7c03.html" class="ellipsis" title="">
-                                    Registration to IMDb website 
-                                </a>
-                            </td>
-
-                            <td class="lightgreentext">20</td>
-
-
-                            <td class="bluetext">
-                                <img src="images/traffic-in-progress.gif"
-                                     title="Over the last 0 tests: 0 passed, 0 failed, 0 pending"
-                                     class="summary-icon"/>
-                                <span style="display:none">0</span>
-                            </td>
-                            <td class="lightgreentext">68.8</td>
-                        </tr>
-
-
-
-
-                        <tr class="test-SUCCESS">
-                            <td><img src="images/success.png" title="SUCCESS"
-                                     class="summary-icon"/>
-                                
-                                <span style="display:none">SUCCESS</span></td>
-                            <td class="SUCCESS-text">
-                                <a href="49f9a3753f49784a2b5fd9f0d62704e5ec0f830be02ba09c49b1be566073f688.html" class="ellipsis" title="">
+                                <span style="display:none">ERROR</span></td>
+                            <td class="ERROR-text">
+                                <a href="49f9a3753f49784a2b5fd9f0d62704e5ec0f830be02ba09c49b1be566073f688.html" class="ellipsis" title="net.thucydides.core.webdriver.UnsupportedDriverException: Could not instantiate class org.openqa.selenium.phantomjs.PhantomJSDriver">
                                     Validate director name displayed on program details page 
                                 </a>
                             </td>
 
-                            <td class="lightgreentext">8</td>
+                            <td class="lightgreentext">5</td>
 
 
                             <td class="bluetext">
@@ -602,24 +576,24 @@ skipped
                                      class="summary-icon"/>
                                 <span style="display:none">0</span>
                             </td>
-                            <td class="lightgreentext">57.73</td>
+                            <td class="lightgreentext">0.07</td>
                         </tr>
 
 
 
 
-                        <tr class="test-SUCCESS">
-                            <td><img src="images/success.png" title="SUCCESS"
+                        <tr class="test-ERROR">
+                            <td><img src="images/cross.png" title="ERROR"
                                      class="summary-icon"/>
                                 
-                                <span style="display:none">SUCCESS</span></td>
-                            <td class="SUCCESS-text">
-                                <a href="0f8e7c468c387da6d5025728af86789486ae8950707fcd24857b1b224a21538e.html" class="ellipsis" title="">
+                                <span style="display:none">ERROR</span></td>
+                            <td class="ERROR-text">
+                                <a href="0f8e7c468c387da6d5025728af86789486ae8950707fcd24857b1b224a21538e.html" class="ellipsis" title="net.thucydides.core.webdriver.UnsupportedDriverException: Could not instantiate class org.openqa.selenium.phantomjs.PhantomJSDriver">
                                     Validate search functionality on IMDB homepage 
                                 </a>
                             </td>
 
-                            <td class="lightgreentext">110</td>
+                            <td class="lightgreentext">70</td>
 
 
                             <td class="bluetext">
@@ -628,7 +602,7 @@ skipped
                                      class="summary-icon"/>
                                 <span style="display:none">0</span>
                             </td>
-                            <td class="lightgreentext">367.83</td>
+                            <td class="lightgreentext">1.36</td>
                         </tr>
                         </tbody>
                     </table>

@@ -8,7 +8,6 @@ import jline.internal.Log;
 import net.thucydides.core.annotations.Steps;
 import org.junit.Before;
 import steps.SearchContentSteps;
-import testDataGenerators.ReadExcel;
 
 import java.io.IOException;
 
@@ -16,16 +15,7 @@ public class SearchSteps {
 
     @Steps
     private SearchContentSteps searchContentSteps;
-    private ReadExcel readExcel = new ReadExcel();
 
-    @Before
-    public void genTest() {
-        try {
-            readExcel.readExcelData();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
 
     @Given("^I am on IMDB home page$")
     public void iAmOnIMDBHomePage() throws Throwable {

@@ -1,5 +1,4 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
-"As a IMDb user","Registration in IMDb website","SUCCESS","2018-01-21T17:30:53.196+05:30","0.0","79.62"
-"As a IMDb user","Registration to IMDb website","SUCCESS","2018-01-21T17:21:52.136+05:30","0.0","68.8"
-"As a IMDb user","Validate director name displayed on program details page","SUCCESS","2018-01-21T17:29:54.443+05:30","0.0","57.73"
-"As a IMDb user","Validate search functionality on IMDB homepage","SUCCESS","2018-01-21T17:23:44.972+05:30","0.0","367.83"
+"As a IMDb user","Registration in IMDb website","ERROR","2018-01-22T09:15:57.242+05:30","0.0","0.38"
+"As a IMDb user","Validate director name displayed on program details page","ERROR","2018-01-22T09:15:56.672+05:30","0.0","0.07"
+"As a IMDb user","Validate search functionality on IMDB homepage","ERROR","2018-01-22T09:15:54.451+05:30","0.0","1.36"

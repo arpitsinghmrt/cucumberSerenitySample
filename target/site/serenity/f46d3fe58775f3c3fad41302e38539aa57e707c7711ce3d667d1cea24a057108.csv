@@ -1,3 +1,0 @@
-"Story","Title","Result","Date","Stability","Duration (s)"
-"As a IMDb user","Validate director name displayed on program details page","SUCCESS","2018-01-21T17:29:54.443+05:30","0.0","57.73"
-"As a IMDb user","Validate search functionality on IMDB homepage","SUCCESS","2018-01-21T17:23:44.972+05:30","0.0","367.83"

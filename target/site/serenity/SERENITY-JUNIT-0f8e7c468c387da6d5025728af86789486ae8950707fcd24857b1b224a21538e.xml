@@ -1,1 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="As a IMDb user" skipped="0" tests="10" time="223.2" timestamp="2018-01-21 06:52:12"><testcase name="Validate search functionality on IMDB homepage"/></testsuite>
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="15" failures="0" name="As a IMDb user" skipped="0" tests="15" time="1.81" timestamp="2018-01-22 09:15:54"><testcase name="Validate search functionality on IMDB homepage"><error message="Could not instantiate class org.openqa.selenium.phantomjs.PhantomJSDriver" type="net.thucydides.core.webdriver.UnsupportedDriverException">Could not instantiate class org.openqa.selenium.phantomjs.PhantomJSDriver</error><system-err>Could not instantiate class org.openqa.selenium.phantomjs.PhantomJSDriver
+steps.SearchContentSteps.isOnTheHomePage(SearchContentSteps.java:19)
+com.seneity.assignment.SearchSteps.iAmOnIMDBHomePage(SearchSteps.java:22)
+</system-err></testcase><testcase name="Validate director name displayed on program details page"><error message="Could not instantiate class org.openqa.selenium.phantomjs.PhantomJSDriver" type="net.thucydides.core.webdriver.UnsupportedDriverException">Could not instantiate class org.openqa.selenium.phantomjs.PhantomJSDriver</error><system-err>Could not instantiate class org.openqa.selenium.phantomjs.PhantomJSDriver
+steps.SearchContentSteps.isOnTheHomePage(SearchContentSteps.java:19)
+com.seneity.assignment.SearchSteps.iAmOnIMDBHomePage(SearchSteps.java:22)
+</system-err></testcase><testcase name="Registration in IMDb website"><error message="Could not instantiate class org.openqa.selenium.phantomjs.PhantomJSDriver" type="net.thucydides.core.webdriver.UnsupportedDriverException">Could not instantiate class org.openqa.selenium.phantomjs.PhantomJSDriver</error><system-err>Could not instantiate class org.openqa.selenium.phantomjs.PhantomJSDriver
+steps.SearchContentSteps.isOnTheHomePage(SearchContentSteps.java:19)
+com.seneity.assignment.SearchSteps.iAmOnIMDBHomePage(SearchSteps.java:22)
+</system-err></testcase></testsuite>

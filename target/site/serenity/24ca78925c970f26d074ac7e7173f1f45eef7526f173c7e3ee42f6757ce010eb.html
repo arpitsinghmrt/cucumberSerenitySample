@@ -33,11 +33,11 @@
     <script class="code" type="text/javascript">$(document).ready(function () {
         var plot1 = $.jqplot('coverage_pie_chart', [
             [
-                ['Passing', 1],
+                ['Passing', 0],
                 ['Pending', 0],
                 ['Ignored', 0],
                 ['Failing', 0],
-                ['Errors',  0]
+                ['Errors',  1]
             ]
         ], {
             gridPadding: {top: 0, bottom: 38, left: 0, right: 0},
@@ -65,10 +65,10 @@
                 marginTop: '15px'
             },
             series: [
-                {label: '100% requirements tested successfully'},
+                {label: '0% requirements tested successfully'},
                 {label: '0% requirements untested'},
                 {label: '0%} requirements failing'},
-                {label: '0%} requirements with errors'}
+                {label: '100%} requirements with errors'}
             ]
         });
         // Results table
@@ -155,7 +155,7 @@
             <a href="#"><i class="fa fa-comments-o"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 21-01-2018 17:48</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 22-01-2018 09:15</span>
     <br style="clear:left"/>
 </div>
 
@@ -196,7 +196,7 @@
                                 <tr>
                                     <td class="summary-leading-column">Acceptance Criteria (tests)</td>
                                     <td>11</td>
-                                    <td>11</td>
+                                    <td>0</td>
                                     <td>0</td>
                                     <td>0</td>
                                     <td>0</td>
@@ -227,8 +227,8 @@
         <tr>
             <td class="summary-leading-column">Automated</td>
             <td>11</td>
-            <td>11 (100%)</td>
             <td>0 (0%)</td>
+            <td>11 (100%)</td>
             <td>0 (0%)</td>
             <td>0 (0%)</td>
         </tr>
@@ -243,14 +243,14 @@
         <tr>
             <td class="summary-leading-column">Total</td>
             <td>11</td>
-            <td>11 (100%)</td>
             <td>0 (0%)</td>
+            <td>11 (0%)</td>
             <td>0 (0%)</td>
             <td>0 (0%)</td>
         </tr>
         <tr>
             <td class="summary-leading-column">Total Duration</td>
-                <td colspan="5">7 minutes 5 seconds</td>
+                <td colspan="5">1 seconds</td>
         </tr>
         </body>
     </table>
@@ -280,51 +280,51 @@
                                         <tbody>
 
 
-                                            <tr class="test-SUCCESS">
+                                            <tr class="test-ERROR">
                                                 <td>
-                                                    <img src="images/success.png"
-                                                         title="SUCCESS"
+                                                    <img src="images/cross.png"
+                                                         title="ERROR"
                                                          class="summary-icon"/>
-                                                    <span style="display:none">SUCCESS</span>
+                                                    <span style="display:none">ERROR</span>
                                                     
                                                 </td>
-                                                <td class="SUCCESS-text"><a
+                                                <td class="ERROR-text"><a
                                                         href="49f9a3753f49784a2b5fd9f0d62704e5ec0f830be02ba09c49b1be566073f688.html"
-                                                        title="">Validate director name displayed on program details page </a>
+                                                        title="net.thucydides.core.webdriver.UnsupportedDriverException: Could not instantiate class org.openqa.selenium.phantomjs.PhantomJSDriver">Validate director name displayed on program details page </a>
                                                 </td>
 
-                                                <td class="lightgreentext">8</td>
+                                                <td class="lightgreentext">5</td>
                                                 <td class="bluetext">
                                                     <img src="images/traffic-in-progress.gif"
                                                          title="Over the last 0 tests: 0 passed, 0 failed, 0 pending"
                                                          class="summary-icon"/>
                                                     <span style="display:none">0</span>
                                                 </td>
-                                                <td class="lightgreentext">57.73</td>
+                                                <td class="lightgreentext">0.07</td>
                                             </tr>
 
 
-                                            <tr class="test-SUCCESS">
+                                            <tr class="test-ERROR">
                                                 <td>
-                                                    <img src="images/success.png"
-                                                         title="SUCCESS"
+                                                    <img src="images/cross.png"
+                                                         title="ERROR"
                                                          class="summary-icon"/>
-                                                    <span style="display:none">SUCCESS</span>
+                                                    <span style="display:none">ERROR</span>
                                                     
                                                 </td>
-                                                <td class="SUCCESS-text"><a
+                                                <td class="ERROR-text"><a
                                                         href="0f8e7c468c387da6d5025728af86789486ae8950707fcd24857b1b224a21538e.html"
-                                                        title="">Validate search functionality on IMDB homepage </a>
+                                                        title="net.thucydides.core.webdriver.UnsupportedDriverException: Could not instantiate class org.openqa.selenium.phantomjs.PhantomJSDriver">Validate search functionality on IMDB homepage </a>
                                                 </td>
 
-                                                <td class="lightgreentext">110</td>
+                                                <td class="lightgreentext">70</td>
                                                 <td class="bluetext">
                                                     <img src="images/traffic-in-progress.gif"
                                                          title="Over the last 0 tests: 0 passed, 0 failed, 0 pending"
                                                          class="summary-icon"/>
                                                     <span style="display:none">0</span>
                                                 </td>
-                                                <td class="lightgreentext">367.83</td>
+                                                <td class="lightgreentext">1.36</td>
                                             </tr>
                                         </tbody>
                                     </table>

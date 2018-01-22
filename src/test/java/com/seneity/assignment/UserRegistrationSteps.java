@@ -2,16 +2,25 @@ package com.seneity.assignment;
 
 import com.github.javafaker.Faker;
 import cucumber.api.PendingException;
+import cucumber.api.java.Before;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import net.thucydides.core.annotations.Steps;
+import org.junit.BeforeClass;
+import org.junit.Test;
 import steps.CreateAccountSteps;
+import testDataGenerators.TestDataGenerator;
+
+import java.io.IOException;
 
 public class UserRegistrationSteps {
     Faker faker = new Faker();
-    String password = faker.internet().password(8,10);
+    String password = faker.internet().password(8, 10);
     String fullName = faker.name().fullName();
+
+
+
     @Steps
     private CreateAccountSteps createAccountSteps;
 
@@ -27,7 +36,7 @@ public class UserRegistrationSteps {
 
     @And("^I enter name in First Name textbox$")
     public void iEnterNameInFirstNameTextbox() throws Throwable {
-       createAccountSteps.enterUserName(fullName);
+        createAccountSteps.enterUserName(fullName);
     }
 
     @And("^I enter email in Email textbox$")
@@ -37,18 +46,18 @@ public class UserRegistrationSteps {
 
     @And("^I enter Password in password textbox$")
     public void iEnterPasswordInPasswordTextbox() throws Throwable {
-        System.out.printf("password is: "+password);
+        System.out.printf("password is: " + password);
         createAccountSteps.enterPassword(password);
     }
 
     @And("^I enter password again in Re-enter password textbox$")
     public void iEnterPasswordAgainInReEnterPasswordTextbox() throws Throwable {
-       createAccountSteps.reEnterPassword(password);
+        createAccountSteps.reEnterPassword(password);
     }
 
     @And("^I click Create your IMDb account button$")
     public void iClickCreateYourIMDbAccountButton() throws Throwable {
-       createAccountSteps.clickCreateYourAccountButton();
+        createAccountSteps.clickCreateYourAccountButton();
     }
 
     @Then("^I should get logged in to my account$")

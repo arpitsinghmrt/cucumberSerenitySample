@@ -1,8 +1,8 @@
-Feature: As a IMDb user
+Feature: As an IMDb user
   I want to create account on IMDb site
   So that i can login to the application
 
-  Scenario: Registration in IMDb website
+  Scenario Outline: Registration in IMDb website
     Given I am on IMDB home page
     When I click Other Sign in options
     And I click Create a New Account
@@ -14,3 +14,9 @@ Feature: As a IMDb user
     Then I should get logged in to my account
     And I log out of the application
 
+    Examples:
+      | TestDataRowNumber |
+      | 1                 |
+      | 2                 |
+      | 3                 |
+      | 4                 |
