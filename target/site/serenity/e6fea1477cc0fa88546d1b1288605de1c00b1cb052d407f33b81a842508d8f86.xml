@@ -1,4 +1,4 @@
-<acceptance-test-run title="Registration in IMDb website" name="Registration in IMDb website" description="" steps="40" successful="0" failures="0" errors="4" skipped="36" ignored="0" pending="0" annotated-result="ERROR" result="ERROR" duration="379" timestamp="2018-01-22T09:15:57.242+05:30">
+<acceptance-test-run title="Registration in IMDb website" name="Registration in IMDb website" description="" steps="40" successful="37" failures="0" errors="2" skipped="1" ignored="0" pending="0" annotated-result="ERROR" result="ERROR" duration="1594551" timestamp="2018-01-22T09:04:10.298+05:30">
   <user-story id="as-a-imdb-user" name="As a IMDb user" path="userRegistration.feature"/>
   <tags>
     <tag name="As a IMDb user" type="feature"/>
@@ -11,10 +11,10 @@
       <header>TestDataRowNumber</header>
     </headers>
     <rows>
-      <row result="ERROR">
+      <row result="SUCCESS">
         <value>1</value>
       </row>
-      <row result="ERROR">
+      <row result="SUCCESS">
         <value>2</value>
       </row>
       <row result="ERROR">
@@ -25,150 +25,479 @@
       </row>
     </rows>
   </examples>
-  <test-group name="[1] {TestDataRowNumber=1}" result="ERROR">
-    <test-group name="Given I am on IMDB home page" result="ERROR">
-      <test-step result="ERROR" duration="42">
+  <test-group name="[1] {TestDataRowNumber=1}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="3d0e9e9a219b90cd8d4fb4ed12431ac8_NONE.png"/>
+    </screenshots>
+    <test-group name="Given I am on IMDB home page" result="SUCCESS">
+      <screenshots>
+        <screenshot image="483f1b46485a69aede3f46322f62a01e_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="17913">
+        <screenshots>
+          <screenshot image="483f1b46485a69aede3f46322f62a01e_NONE.png"/>
+        </screenshots>
         <description>Is on the home page</description>
-        <error>net.thucydides.core.webdriver.UnsupportedDriverException: Could not instantiate class org.openqa.selenium.phantomjs.PhantomJSDriver</error>
-        <exception>net.thucydides.core.webdriver.UnsupportedDriverException:Could not instantiate class org.openqa.selenium.phantomjs.PhantomJSDriver
-[steps.SearchContentSteps.isOnTheHomePage(SearchContentSteps.java:19), com.seneity.assignment.SearchSteps.iAmOnIMDBHomePage(SearchSteps.java:22)]</exception>
       </test-step>
     </test-group>
-    <test-step result="SKIPPED" duration="3">
-      <description>When I click Other Sign in options</description>
-    </test-step>
-    <test-step result="SKIPPED" duration="4">
-      <description>And I click Create a New Account</description>
-    </test-step>
-    <test-step result="SKIPPED" duration="4">
-      <description>And I enter name in First Name textbox</description>
-    </test-step>
-    <test-step result="SKIPPED" duration="3">
-      <description>And I enter email in Email textbox</description>
-    </test-step>
-    <test-step result="SKIPPED" duration="4">
-      <description>And I enter Password in password textbox</description>
-    </test-step>
-    <test-step result="SKIPPED" duration="3">
-      <description>And I enter password again in Re-enter password textbox</description>
-    </test-step>
-    <test-step result="SKIPPED" duration="3">
-      <description>And I click Create your IMDb account button</description>
-    </test-step>
-    <test-step result="SKIPPED" duration="4">
-      <description>Then I should get logged in to my account</description>
-    </test-step>
-    <test-step result="SKIPPED" duration="3">
-      <description>And I log out of the application</description>
-    </test-step>
+    <test-group name="When I click Other Sign in options" result="SUCCESS">
+      <screenshots>
+        <screenshot image="5700bbd0d80fc0c81ba4a4b0b5dc5065_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="7097">
+        <screenshots>
+          <screenshot image="5700bbd0d80fc0c81ba4a4b0b5dc5065_NONE.png"/>
+        </screenshots>
+        <description>Click other sign in option</description>
+      </test-step>
+    </test-group>
+    <test-group name="And I click Create a New Account" result="SUCCESS">
+      <screenshots>
+        <screenshot image="e94a8b4bbb9734ff44fe3ce2c71b9a52_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="3253">
+        <screenshots>
+          <screenshot image="06cd9c03c1eb889a3168628e8a9516e9_NONE.png"/>
+        </screenshots>
+        <description>Click create new account button</description>
+      </test-step>
+    </test-group>
+    <test-group name="And I enter name in First Name textbox" result="SUCCESS">
+      <screenshots>
+        <screenshot image="f3905afbe8d8d4c8819afaef5b491470_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="520">
+        <screenshots>
+          <screenshot image="e7259c58f565b15a1265c703d2f85ba3_NONE.png"/>
+        </screenshots>
+        <description>Enter user name: &lt;span class=&apos;step-parameter&apos;&gt;Aurelia Koepp MD&lt;/span&gt;</description>
+      </test-step>
+    </test-group>
+    <test-group name="And I enter email in Email textbox" result="SUCCESS">
+      <screenshots>
+        <screenshot image="355aa77d47ad13d630fc58b895743a6f_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="569">
+        <screenshots>
+          <screenshot image="81be6d28de65237900c3bc3682decdf7_NONE.png"/>
+        </screenshots>
+        <description>Enter email address: &lt;span class=&apos;step-parameter&apos;&gt;maribel.wintheiser@example.com&lt;/span&gt;</description>
+      </test-step>
+    </test-group>
+    <test-group name="And I enter Password in password textbox" result="SUCCESS">
+      <screenshots>
+        <screenshot image="7223b97765915a6603a8cfe748c88953_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="470">
+        <screenshots>
+          <screenshot image="13bdc8294ebe6ffa23bb53de4059a9cd_NONE.png"/>
+        </screenshots>
+        <description>Enter password: &lt;span class=&apos;step-parameter&apos;&gt;dbixwrgos&lt;/span&gt;</description>
+      </test-step>
+    </test-group>
+    <test-group name="And I enter password again in Re-enter password textbox" result="SUCCESS">
+      <screenshots>
+        <screenshot image="5d0afeb4b57f9bc17fe2ab962ee5605d_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="488">
+        <screenshots>
+          <screenshot image="17864c85fc0b3df7b2e0cf63773d65ce_NONE.png"/>
+        </screenshots>
+        <description>Re enter password: &lt;span class=&apos;step-parameter&apos;&gt;dbixwrgos&lt;/span&gt;</description>
+      </test-step>
+    </test-group>
+    <test-group name="And I click Create your IMDb account button" result="SUCCESS">
+      <screenshots>
+        <screenshot image="ee8b32d00706746b59c4ab18b4ff6d5b_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="6024">
+        <screenshots>
+          <screenshot image="13c5c7eb2adc2c5e1ad92f1426bdc554_NONE.png"/>
+        </screenshots>
+        <description>Click create your account button</description>
+      </test-step>
+    </test-group>
+    <test-group name="Then I should get logged in to my account" result="SUCCESS">
+      <screenshots>
+        <screenshot image="ee8b32d00706746b59c4ab18b4ff6d5b_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="1067">
+        <screenshots>
+          <screenshot image="ee8b32d00706746b59c4ab18b4ff6d5b_NONE.png"/>
+        </screenshots>
+        <description>Verify user logged in: &lt;span class=&apos;step-parameter&apos;&gt;Aurelia Koepp MD&lt;/span&gt;</description>
+      </test-step>
+    </test-group>
+    <test-group name="And I log out of the application" result="SUCCESS">
+      <screenshots>
+        <screenshot image="3d0e9e9a219b90cd8d4fb4ed12431ac8_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="17684">
+        <screenshots>
+          <screenshot image="3d0e9e9a219b90cd8d4fb4ed12431ac8_NONE.png"/>
+        </screenshots>
+        <description>Log out of application</description>
+      </test-step>
+    </test-group>
   </test-group>
-  <test-group name="[1] {TestDataRowNumber=2}" result="ERROR">
-    <test-group name="Given I am on IMDB home page" result="ERROR">
-      <test-step result="ERROR" duration="46">
+  <test-group name="[1] {TestDataRowNumber=2}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="ace71c7fff66cd9b20407979405ad23f_NONE.png"/>
+    </screenshots>
+    <test-group name="Given I am on IMDB home page" result="SUCCESS">
+      <screenshots>
+        <screenshot image="4efc8008a918a725b8b6373a755451bb_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="16608">
+        <screenshots>
+          <screenshot image="00acf2dfa64981258d0e2e3d181f5079_NONE.png"/>
+        </screenshots>
         <description>Is on the home page</description>
-        <error>net.thucydides.core.webdriver.UnsupportedDriverException: Could not instantiate class org.openqa.selenium.phantomjs.PhantomJSDriver</error>
-        <exception>net.thucydides.core.webdriver.UnsupportedDriverException:Could not instantiate class org.openqa.selenium.phantomjs.PhantomJSDriver
-[steps.SearchContentSteps.isOnTheHomePage(SearchContentSteps.java:19), com.seneity.assignment.SearchSteps.iAmOnIMDBHomePage(SearchSteps.java:22)]</exception>
       </test-step>
     </test-group>
-    <test-step result="SKIPPED" duration="10">
-      <description>When I click Other Sign in options</description>
-    </test-step>
-    <test-step result="SKIPPED" duration="3">
-      <description>And I click Create a New Account</description>
-    </test-step>
-    <test-step result="SKIPPED" duration="2">
-      <description>And I enter name in First Name textbox</description>
-    </test-step>
-    <test-step result="SKIPPED" duration="2">
-      <description>And I enter email in Email textbox</description>
-    </test-step>
-    <test-step result="SKIPPED" duration="4">
-      <description>And I enter Password in password textbox</description>
-    </test-step>
-    <test-step result="SKIPPED" duration="3">
-      <description>And I enter password again in Re-enter password textbox</description>
-    </test-step>
-    <test-step result="SKIPPED" duration="3">
-      <description>And I click Create your IMDb account button</description>
-    </test-step>
-    <test-step result="SKIPPED" duration="3">
-      <description>Then I should get logged in to my account</description>
-    </test-step>
-    <test-step result="SKIPPED" duration="3">
-      <description>And I log out of the application</description>
-    </test-step>
+    <test-group name="When I click Other Sign in options" result="SUCCESS">
+      <screenshots>
+        <screenshot image="5700bbd0d80fc0c81ba4a4b0b5dc5065_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="2193">
+        <screenshots>
+          <screenshot image="5700bbd0d80fc0c81ba4a4b0b5dc5065_NONE.png"/>
+        </screenshots>
+        <description>Click other sign in option</description>
+      </test-step>
+    </test-group>
+    <test-group name="And I click Create a New Account" result="SUCCESS">
+      <screenshots>
+        <screenshot image="d80703f49deae52bcf06569ff7ff080b_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="17344">
+        <screenshots>
+          <screenshot image="bb08cefcd9eaa50029392ace07fc3150_NONE.png"/>
+        </screenshots>
+        <description>Click create new account button</description>
+      </test-step>
+    </test-group>
+    <test-group name="And I enter name in First Name textbox" result="SUCCESS">
+      <screenshots>
+        <screenshot image="8cfeb63d1ee18dd4ccf56d0f0427e23c_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="504">
+        <screenshots>
+          <screenshot image="f268ea5355650d4115d932a7bc4e6c4c_NONE.png"/>
+        </screenshots>
+        <description>Enter user name: &lt;span class=&apos;step-parameter&apos;&gt;Adonis Pfeffer I&lt;/span&gt;</description>
+      </test-step>
+    </test-group>
+    <test-group name="And I enter email in Email textbox" result="SUCCESS">
+      <screenshots>
+        <screenshot image="644b6e8af21141f2a8d4510db2614b87_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="549">
+        <screenshots>
+          <screenshot image="644b6e8af21141f2a8d4510db2614b87_NONE.png"/>
+        </screenshots>
+        <description>Enter email address: &lt;span class=&apos;step-parameter&apos;&gt;micah.kunze@example.com&lt;/span&gt;</description>
+      </test-step>
+    </test-group>
+    <test-group name="And I enter Password in password textbox" result="SUCCESS">
+      <screenshots>
+        <screenshot image="e226ba4047530115bdde6e98582a72bc_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="456">
+        <screenshots>
+          <screenshot image="84f0f6c0f9197dd05b6d47b8193f4699_NONE.png"/>
+        </screenshots>
+        <description>Enter password: &lt;span class=&apos;step-parameter&apos;&gt;jj4rutxr&lt;/span&gt;</description>
+      </test-step>
+    </test-group>
+    <test-group name="And I enter password again in Re-enter password textbox" result="SUCCESS">
+      <screenshots>
+        <screenshot image="00f40666fac0e7c20e3b926b8575a4a2_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="450">
+        <screenshots>
+          <screenshot image="17d18983f7460e844f3614d06312c2a3_NONE.png"/>
+        </screenshots>
+        <description>Re enter password: &lt;span class=&apos;step-parameter&apos;&gt;jj4rutxr&lt;/span&gt;</description>
+      </test-step>
+    </test-group>
+    <test-group name="And I click Create your IMDb account button" result="SUCCESS">
+      <screenshots>
+        <screenshot image="760edb4b418ceffe1bc692c372686809_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="6923">
+        <screenshots>
+          <screenshot image="760edb4b418ceffe1bc692c372686809_NONE.png"/>
+        </screenshots>
+        <description>Click create your account button</description>
+      </test-step>
+    </test-group>
+    <test-group name="Then I should get logged in to my account" result="SUCCESS">
+      <screenshots>
+        <screenshot image="ec106e57b48c09836a05eafd0eaee3dd_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="36164">
+        <screenshots>
+          <screenshot image="ec106e57b48c09836a05eafd0eaee3dd_NONE.png"/>
+        </screenshots>
+        <description>Verify user logged in: &lt;span class=&apos;step-parameter&apos;&gt;Adonis Pfeffer I&lt;/span&gt;</description>
+      </test-step>
+    </test-group>
+    <test-group name="And I log out of the application" result="SUCCESS">
+      <screenshots>
+        <screenshot image="ace71c7fff66cd9b20407979405ad23f_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="16663">
+        <screenshots>
+          <screenshot image="ace71c7fff66cd9b20407979405ad23f_NONE.png"/>
+        </screenshots>
+        <description>Log out of application</description>
+      </test-step>
+    </test-group>
   </test-group>
   <test-group name="[1] {TestDataRowNumber=3}" result="ERROR">
-    <test-group name="Given I am on IMDB home page" result="ERROR">
-      <test-step result="ERROR" duration="48">
+    <test-group name="Given I am on IMDB home page" result="SUCCESS">
+      <screenshots>
+        <screenshot image="253f498c8f85c3370b7674674ef424b6_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="16483">
+        <screenshots>
+          <screenshot image="253f498c8f85c3370b7674674ef424b6_NONE.png"/>
+        </screenshots>
         <description>Is on the home page</description>
-        <error>net.thucydides.core.webdriver.UnsupportedDriverException: Could not instantiate class org.openqa.selenium.phantomjs.PhantomJSDriver</error>
-        <exception>net.thucydides.core.webdriver.UnsupportedDriverException:Could not instantiate class org.openqa.selenium.phantomjs.PhantomJSDriver
-[steps.SearchContentSteps.isOnTheHomePage(SearchContentSteps.java:19), com.seneity.assignment.SearchSteps.iAmOnIMDBHomePage(SearchSteps.java:22)]</exception>
       </test-step>
     </test-group>
-    <test-step result="SKIPPED" duration="4">
-      <description>When I click Other Sign in options</description>
-    </test-step>
-    <test-step result="SKIPPED" duration="4">
-      <description>And I click Create a New Account</description>
-    </test-step>
-    <test-step result="SKIPPED" duration="3">
-      <description>And I enter name in First Name textbox</description>
-    </test-step>
-    <test-step result="SKIPPED" duration="4">
-      <description>And I enter email in Email textbox</description>
-    </test-step>
-    <test-step result="SKIPPED" duration="3">
-      <description>And I enter Password in password textbox</description>
-    </test-step>
-    <test-step result="SKIPPED" duration="4">
-      <description>And I enter password again in Re-enter password textbox</description>
-    </test-step>
-    <test-step result="SKIPPED" duration="3">
-      <description>And I click Create your IMDb account button</description>
-    </test-step>
-    <test-step result="SKIPPED" duration="3">
-      <description>Then I should get logged in to my account</description>
-    </test-step>
-    <test-step result="SKIPPED" duration="3">
-      <description>And I log out of the application</description>
-    </test-step>
+    <test-group name="When I click Other Sign in options" result="SUCCESS">
+      <screenshots>
+        <screenshot image="5700bbd0d80fc0c81ba4a4b0b5dc5065_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="2540">
+        <screenshots>
+          <screenshot image="5700bbd0d80fc0c81ba4a4b0b5dc5065_NONE.png"/>
+        </screenshots>
+        <description>Click other sign in option</description>
+      </test-step>
+    </test-group>
+    <test-group name="And I click Create a New Account" result="SUCCESS">
+      <screenshots>
+        <screenshot image="e94a8b4bbb9734ff44fe3ce2c71b9a52_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="2305">
+        <screenshots>
+          <screenshot image="06cd9c03c1eb889a3168628e8a9516e9_NONE.png"/>
+        </screenshots>
+        <description>Click create new account button</description>
+      </test-step>
+    </test-group>
+    <test-group name="And I enter name in First Name textbox" result="SUCCESS">
+      <screenshots>
+        <screenshot image="8b8d343b58d16fdc52650521ec496c8d_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="48156">
+        <screenshots>
+          <screenshot image="44f71cfe683643c3d1df6fb94abd9f12_NONE.png"/>
+        </screenshots>
+        <description>Enter user name: &lt;span class=&apos;step-parameter&apos;&gt;Kristina Daugherty&lt;/span&gt;</description>
+      </test-step>
+    </test-group>
+    <test-group name="And I enter email in Email textbox" result="SUCCESS">
+      <screenshots>
+        <screenshot image="580910111bcd7b08d65570be2bb342ec_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="812">
+        <screenshots>
+          <screenshot image="493ca98b822161874659e93c3bb7f134_NONE.png"/>
+        </screenshots>
+        <description>Enter email address: &lt;span class=&apos;step-parameter&apos;&gt;vidal.heathcote@example.com&lt;/span&gt;</description>
+      </test-step>
+    </test-group>
+    <test-group name="And I enter Password in password textbox" result="SUCCESS">
+      <screenshots>
+        <screenshot image="21df10ac07188aec5b41a0090318a5a4_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="147601">
+        <screenshots>
+          <screenshot image="4565e498a3ad393bb73a5bee8dde6417_NONE.png"/>
+        </screenshots>
+        <description>Enter password: &lt;span class=&apos;step-parameter&apos;&gt;i4eawhh1&lt;/span&gt;</description>
+      </test-step>
+    </test-group>
+    <test-group name="And I enter password again in Re-enter password textbox" result="SUCCESS">
+      <screenshots>
+        <screenshot image="30725e527057c338522c3456f07294f4_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="519">
+        <screenshots>
+          <screenshot image="14695bba4ec5a8deeb8d6ae44014a855_NONE.png"/>
+        </screenshots>
+        <description>Re enter password: &lt;span class=&apos;step-parameter&apos;&gt;i4eawhh1&lt;/span&gt;</description>
+      </test-step>
+    </test-group>
+    <test-group name="And I click Create your IMDb account button" result="SUCCESS">
+      <screenshots>
+        <screenshot image="39202c88c8785fd78df91f5cdec293e1_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="10891">
+        <screenshots>
+          <screenshot image="39202c88c8785fd78df91f5cdec293e1_NONE.png"/>
+        </screenshots>
+        <description>Click create your account button</description>
+      </test-step>
+    </test-group>
+    <test-group name="Then I should get logged in to my account" result="SUCCESS">
+      <screenshots>
+        <screenshot image="39202c88c8785fd78df91f5cdec293e1_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="97892">
+        <screenshots>
+          <screenshot image="39202c88c8785fd78df91f5cdec293e1_NONE.png"/>
+        </screenshots>
+        <description>Verify user logged in: &lt;span class=&apos;step-parameter&apos;&gt;Kristina Daugherty&lt;/span&gt;</description>
+      </test-step>
+    </test-group>
+    <test-group name="And I log out of the application" result="ERROR">
+      <test-step result="ERROR" duration="6328">
+        <screenshots>
+          <screenshot image="ce9bb9dbfed851ec94e762d102488ae2_NONE.png"/>
+        </screenshots>
+        <description>Log out of application</description>
+        <error>net.thucydides.core.webdriver.exceptions.ElementShouldBeVisibleException: Timed out after 5 seconds waiting for net.serenitybdd.core.pages.WebElementFacadeImpl$1@e52363e
+Build info: version: &apos;2.46.0&apos;, revision: &apos;61506a4624b13675f24581e453592342b7485d71&apos;, time: &apos;2015-06-04 10:22:50&apos;
+System info: host: &apos;inarpits.local&apos;, ip: &apos;192.168.1.2&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.13.2&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: driver.version: unknown
+Build info: version: &apos;2.46.0&apos;, revision: &apos;61506a4624b13675f24581e453592342b7485d71&apos;, time: &apos;2015-06-04 10:22:50&apos;
+System info: host: &apos;inarpits.local&apos;, ip: &apos;192.168.1.2&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.13.2&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: driver.version: unknown</error>
+        <exception>net.thucydides.core.webdriver.exceptions.ElementShouldBeVisibleException:Timed out after 5 seconds waiting for net.serenitybdd.core.pages.WebElementFacadeImpl$1@e52363e
+Build info: version: &apos;2.46.0&apos;, revision: &apos;61506a4624b13675f24581e453592342b7485d71&apos;, time: &apos;2015-06-04 10:22:50&apos;
+System info: host: &apos;inarpits.local&apos;, ip: &apos;192.168.1.2&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.13.2&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: driver.version: unknown
+Build info: version: &apos;2.46.0&apos;, revision: &apos;61506a4624b13675f24581e453592342b7485d71&apos;, time: &apos;2015-06-04 10:22:50&apos;
+System info: host: &apos;inarpits.local&apos;, ip: &apos;192.168.1.2&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.13.2&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: driver.version: unknown
+[pages.ImdbHomePage.log_out_of_application(ImdbHomePage.java:59), steps.CreateAccountSteps.logOutOfApplication(CreateAccountSteps.java:64), com.seneity.assignment.UserRegistrationSteps.iLogOutOfTheApplication(UserRegistrationSteps.java:70)]</exception>
+      </test-step>
+    </test-group>
   </test-group>
   <test-group name="[1] {TestDataRowNumber=4}" result="ERROR">
-    <test-group name="Given I am on IMDB home page" result="ERROR">
-      <test-step result="ERROR" duration="42">
+    <test-group name="Given I am on IMDB home page" result="SUCCESS">
+      <screenshots>
+        <screenshot image="d2ad82c377d8d7ca8ab71eeb1f0122ed_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="15714">
+        <screenshots>
+          <screenshot image="d2ad82c377d8d7ca8ab71eeb1f0122ed_NONE.png"/>
+        </screenshots>
         <description>Is on the home page</description>
-        <error>net.thucydides.core.webdriver.UnsupportedDriverException: Could not instantiate class org.openqa.selenium.phantomjs.PhantomJSDriver</error>
-        <exception>net.thucydides.core.webdriver.UnsupportedDriverException:Could not instantiate class org.openqa.selenium.phantomjs.PhantomJSDriver
-[steps.SearchContentSteps.isOnTheHomePage(SearchContentSteps.java:19), com.seneity.assignment.SearchSteps.iAmOnIMDBHomePage(SearchSteps.java:22)]</exception>
       </test-step>
     </test-group>
-    <test-step result="SKIPPED" duration="3">
-      <description>When I click Other Sign in options</description>
-    </test-step>
-    <test-step result="SKIPPED" duration="3">
-      <description>And I click Create a New Account</description>
-    </test-step>
-    <test-step result="SKIPPED" duration="3">
-      <description>And I enter name in First Name textbox</description>
-    </test-step>
-    <test-step result="SKIPPED" duration="3">
-      <description>And I enter email in Email textbox</description>
-    </test-step>
-    <test-step result="SKIPPED" duration="4">
-      <description>And I enter Password in password textbox</description>
-    </test-step>
-    <test-step result="SKIPPED" duration="4">
-      <description>And I enter password again in Re-enter password textbox</description>
-    </test-step>
-    <test-step result="SKIPPED" duration="4">
-      <description>And I click Create your IMDb account button</description>
-    </test-step>
-    <test-step result="SKIPPED" duration="3">
-      <description>Then I should get logged in to my account</description>
-    </test-step>
+    <test-group name="When I click Other Sign in options" result="SUCCESS">
+      <screenshots>
+        <screenshot image="9afc056dbd78f11694ac3eb8b82fcc82_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="7116">
+        <screenshots>
+          <screenshot image="9afc056dbd78f11694ac3eb8b82fcc82_NONE.png"/>
+        </screenshots>
+        <description>Click other sign in option</description>
+      </test-step>
+    </test-group>
+    <test-group name="And I click Create a New Account" result="SUCCESS">
+      <screenshots>
+        <screenshot image="4dfea6140af26f4a8fc1e14d0bc0db10_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="606937">
+        <screenshots>
+          <screenshot image="69b9d64137bde52181c45e96fa95f9bd_NONE.png"/>
+        </screenshots>
+        <description>Click create new account button</description>
+      </test-step>
+    </test-group>
+    <test-group name="And I enter name in First Name textbox" result="SUCCESS">
+      <screenshots>
+        <screenshot image="7bcd7e8c27958b0b9d9c2ec0a2c21476_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="522">
+        <screenshots>
+          <screenshot image="1e1f9ae7d655d508d91f5a50da260bea_NONE.png"/>
+        </screenshots>
+        <description>Enter user name: &lt;span class=&apos;step-parameter&apos;&gt;Savanah Schuster&lt;/span&gt;</description>
+      </test-step>
+    </test-group>
+    <test-group name="And I enter email in Email textbox" result="SUCCESS">
+      <screenshots>
+        <screenshot image="181b3e7da8f2a6ebba96aa9e3f497537_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="4153">
+        <screenshots>
+          <screenshot image="a9ebb094adcbd5537c22fa25145f1621_NONE.png"/>
+        </screenshots>
+        <description>Enter email address: &lt;span class=&apos;step-parameter&apos;&gt;lottie.rau@example.com&lt;/span&gt;</description>
+      </test-step>
+    </test-group>
+    <test-group name="And I enter Password in password textbox" result="SUCCESS">
+      <screenshots>
+        <screenshot image="3d5e875e0ea31b8a78c23396ba8a1b8f_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="465">
+        <screenshots>
+          <screenshot image="3ed056f4e8be0c608536319cefb7e487_NONE.png"/>
+        </screenshots>
+        <description>Enter password: &lt;span class=&apos;step-parameter&apos;&gt;qkityk1av&lt;/span&gt;</description>
+      </test-step>
+    </test-group>
+    <test-group name="And I enter password again in Re-enter password textbox" result="SUCCESS">
+      <screenshots>
+        <screenshot image="66d10c70fef3a0f20b3c9ca1edec18bd_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="484">
+        <screenshots>
+          <screenshot image="577d9ea9e05a99329a0c1ad008be70f6_NONE.png"/>
+        </screenshots>
+        <description>Re enter password: &lt;span class=&apos;step-parameter&apos;&gt;qkityk1av&lt;/span&gt;</description>
+      </test-step>
+    </test-group>
+    <test-group name="And I click Create your IMDb account button" result="SUCCESS">
+      <test-step result="SUCCESS" duration="358531">
+        <description>Click create your account button</description>
+      </test-step>
+    </test-group>
+    <test-group name="Then I should get logged in to my account" result="ERROR">
+      <test-step result="ERROR" duration="15">
+        <description>Verify user logged in: &lt;span class=&apos;step-parameter&apos;&gt;Savanah Schuster&lt;/span&gt;</description>
+        <error>org.openqa.selenium.NoSuchElementException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=63.0.3239.132)
+  (Driver info: chromedriver=2.33.506106 (8a06c39c4582fbfbab6966dbb1c38a9173bfb1a2),platform=Mac OS X 10.13.2 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1 milliseconds
+Build info: version: &apos;2.46.0&apos;, revision: &apos;61506a4624b13675f24581e453592342b7485d71&apos;, time: &apos;2015-06-04 10:22:50&apos;
+System info: host: &apos;inarpits&apos;, ip: &apos;192.168.43.36&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.13.2&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.33.506106 (8a06c39c4582fbfbab6966dbb1c38a9173bfb1a2), userDataDir=/var/folders/gx/h7w3x5k10f3bd79nq3mxtpsh0000gp/T/.org.chromium.Chromium.t8gUBf}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=63.0.3239.132, platform=MAC, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 5ec6d6dffcf74e4d47fe374f3b5fcb6d
+*** Element info: {Using=xpath, value=//*[@id=&apos;navUserMenu&apos;]/p/a}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.46.0&apos;, revision: &apos;61506a4624b13675f24581e453592342b7485d71&apos;, time: &apos;2015-06-04 10:22:50&apos;
+System info: host: &apos;inarpits&apos;, ip: &apos;192.168.43.36&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.13.2&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: driver.version: unknown</error>
+        <exception>org.openqa.selenium.NoSuchElementException:no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=63.0.3239.132)
+  (Driver info: chromedriver=2.33.506106 (8a06c39c4582fbfbab6966dbb1c38a9173bfb1a2),platform=Mac OS X 10.13.2 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1 milliseconds
+Build info: version: &apos;2.46.0&apos;, revision: &apos;61506a4624b13675f24581e453592342b7485d71&apos;, time: &apos;2015-06-04 10:22:50&apos;
+System info: host: &apos;inarpits&apos;, ip: &apos;192.168.43.36&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.13.2&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.33.506106 (8a06c39c4582fbfbab6966dbb1c38a9173bfb1a2), userDataDir=/var/folders/gx/h7w3x5k10f3bd79nq3mxtpsh0000gp/T/.org.chromium.Chromium.t8gUBf}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=63.0.3239.132, platform=MAC, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 5ec6d6dffcf74e4d47fe374f3b5fcb6d
+*** Element info: {Using=xpath, value=//*[@id=&apos;navUserMenu&apos;]/p/a}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.46.0&apos;, revision: &apos;61506a4624b13675f24581e453592342b7485d71&apos;, time: &apos;2015-06-04 10:22:50&apos;
+System info: host: &apos;inarpits&apos;, ip: &apos;192.168.43.36&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.13.2&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: driver.version: unknown
+[pages.ImdbHomePage.read_logged_in_user_name(ImdbHomePage.java:53), steps.CreateAccountSteps.verifyUserLoggedIn(CreateAccountSteps.java:59), com.seneity.assignment.UserRegistrationSteps.iShouldGetLoggedInToMyAccount(UserRegistrationSteps.java:65)]</exception>
+      </test-step>
+    </test-group>
     <test-step result="SKIPPED" duration="3">
       <description>And I log out of the application</description>
     </test-step>

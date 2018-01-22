@@ -1,24 +1,51 @@
-<acceptance-test-run title="Validate director name displayed on program details page" name="Validate director name displayed on program details page" description="" steps="4" successful="0" failures="0" errors="1" skipped="3" ignored="0" pending="0" annotated-result="ERROR" result="ERROR" duration="69" timestamp="2018-01-22T09:15:56.672+05:30">
+<acceptance-test-run title="Validate director name displayed on program details page" name="Validate director name displayed on program details page" description="" steps="4" successful="4" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="164116" timestamp="2018-01-22T09:01:25.101+05:30">
   <user-story id="as-a-imdb-user" name="As a IMDb user" path="search.feature"/>
   <tags>
     <tag name="As a im db user" type="feature"/>
     <tag name="As a IMDb user" type="feature"/>
   </tags>
-  <test-group name="Given I am on IMDB home page" result="ERROR">
-    <test-step result="ERROR" duration="44">
+  <test-group name="Given I am on IMDB home page" result="SUCCESS">
+    <screenshots>
+      <screenshot image="3d41cf1d67e0ed53dc975ca65bdc8495_NONE.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="18156">
+      <screenshots>
+        <screenshot image="3d41cf1d67e0ed53dc975ca65bdc8495_NONE.png"/>
+      </screenshots>
       <description>Is on the home page</description>
-      <error>net.thucydides.core.webdriver.UnsupportedDriverException: Could not instantiate class org.openqa.selenium.phantomjs.PhantomJSDriver</error>
-      <exception>net.thucydides.core.webdriver.UnsupportedDriverException:Could not instantiate class org.openqa.selenium.phantomjs.PhantomJSDriver
-[steps.SearchContentSteps.isOnTheHomePage(SearchContentSteps.java:19), com.seneity.assignment.SearchSteps.iAmOnIMDBHomePage(SearchSteps.java:22)]</exception>
     </test-step>
   </test-group>
-  <test-step result="SKIPPED" duration="3">
-    <description>When I select Most Popular TV Shows from Movies, TV and Showtimes menu</description>
-  </test-step>
-  <test-step result="SKIPPED" duration="4">
-    <description>And I click on The Walking Dead (2010) on Most Popular TV Shows page</description>
-  </test-step>
-  <test-step result="SKIPPED" duration="4">
-    <description>Then I should see Creator: Frank Darabont on the program Details page</description>
-  </test-step>
+  <test-group name="When I select Most Popular TV Shows from Movies, TV and Showtimes menu" result="SUCCESS">
+    <screenshots>
+      <screenshot image="e673535c87b999df5a5d07b8be3f42d2_NONE.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="10632">
+      <screenshots>
+        <screenshot image="e673535c87b999df5a5d07b8be3f42d2_NONE.png"/>
+      </screenshots>
+      <description>Select option from first dropdown: &lt;span class=&apos;step-parameter&apos;&gt;Most Popular TV Shows&lt;/span&gt;</description>
+    </test-step>
+  </test-group>
+  <test-group name="And I click on The Walking Dead (2010) on Most Popular TV Shows page" result="SUCCESS">
+    <screenshots>
+      <screenshot image="6114486c401a37aca5b77750de5a2647_NONE.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="6877">
+      <screenshots>
+        <screenshot image="c4803f038ee1c6bb827acf51e9fb6595_NONE.png"/>
+      </screenshots>
+      <description>Select tv show on most popular tv shows page: &lt;span class=&apos;step-parameter&apos;&gt;The Walking Dead (2010)&lt;/span&gt;</description>
+    </test-step>
+  </test-group>
+  <test-group name="Then I should see Creator: Frank Darabont on the program Details page" result="SUCCESS">
+    <screenshots>
+      <screenshot image="c2006d4844076fa6fcb4375208c77514_NONE.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="1089">
+      <screenshots>
+        <screenshot image="33fdfc7d82d9aa126ad9552a0b9f892a_NONE.png"/>
+      </screenshots>
+      <description>Verify director name: &lt;span class=&apos;step-parameter&apos;&gt;Creator: Frank Darabont&lt;/span&gt;</description>
+    </test-step>
+  </test-group>
 </acceptance-test-run>

@@ -33,11 +33,11 @@
     <script class="code" type="text/javascript">$(document).ready(function () {
         var plot1 = $.jqplot('coverage_pie_chart', [
             [
-                ['Passing', 0],
+                ['Passing', 0.909091],
                 ['Pending', 0],
                 ['Ignored', 0],
                 ['Failing', 0],
-                ['Errors',  1]
+                ['Errors',  0.090909]
             ]
         ], {
             gridPadding: {top: 0, bottom: 38, left: 0, right: 0},
@@ -65,10 +65,10 @@
                 marginTop: '15px'
             },
             series: [
-                {label: '0% requirements tested successfully'},
+                {label: '90.9% requirements tested successfully'},
                 {label: '0% requirements untested'},
                 {label: '0%} requirements failing'},
-                {label: '100%} requirements with errors'}
+                {label: '9.1%} requirements with errors'}
             ]
         });
         // Results table
@@ -155,7 +155,7 @@
             <a href="#"><i class="fa fa-comments-o"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 22-01-2018 09:15</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 22-01-2018 09:30</span>
     <br style="clear:left"/>
 </div>
 
@@ -196,7 +196,7 @@
                                 <tr>
                                     <td class="summary-leading-column">Acceptance Criteria (tests)</td>
                                     <td>11</td>
-                                    <td>0</td>
+                                    <td>1</td>
                                     <td>0</td>
                                     <td>0</td>
                                     <td>0</td>
@@ -227,8 +227,8 @@
         <tr>
             <td class="summary-leading-column">Automated</td>
             <td>11</td>
-            <td>0 (0%)</td>
-            <td>11 (100%)</td>
+            <td>10 (91%)</td>
+            <td>1 (9%)</td>
             <td>0 (0%)</td>
             <td>0 (0%)</td>
         </tr>
@@ -243,14 +243,14 @@
         <tr>
             <td class="summary-leading-column">Total</td>
             <td>11</td>
-            <td>0 (0%)</td>
-            <td>11 (0%)</td>
+            <td>10 (91%)</td>
+            <td>1 (0%)</td>
             <td>0 (0%)</td>
             <td>0 (0%)</td>
         </tr>
         <tr>
             <td class="summary-leading-column">Total Duration</td>
-                <td colspan="5">1 seconds</td>
+                <td colspan="5">21 minutes 53 seconds</td>
         </tr>
         </body>
     </table>
@@ -280,27 +280,27 @@
                                         <tbody>
 
 
-                                            <tr class="test-ERROR">
+                                            <tr class="test-SUCCESS">
                                                 <td>
-                                                    <img src="images/cross.png"
-                                                         title="ERROR"
+                                                    <img src="images/success.png"
+                                                         title="SUCCESS"
                                                          class="summary-icon"/>
-                                                    <span style="display:none">ERROR</span>
+                                                    <span style="display:none">SUCCESS</span>
                                                     
                                                 </td>
-                                                <td class="ERROR-text"><a
+                                                <td class="SUCCESS-text"><a
                                                         href="49f9a3753f49784a2b5fd9f0d62704e5ec0f830be02ba09c49b1be566073f688.html"
-                                                        title="net.thucydides.core.webdriver.UnsupportedDriverException: Could not instantiate class org.openqa.selenium.phantomjs.PhantomJSDriver">Validate director name displayed on program details page </a>
+                                                        title="">Validate director name displayed on program details page </a>
                                                 </td>
 
-                                                <td class="lightgreentext">5</td>
+                                                <td class="lightgreentext">8</td>
                                                 <td class="bluetext">
                                                     <img src="images/traffic-in-progress.gif"
                                                          title="Over the last 0 tests: 0 passed, 0 failed, 0 pending"
                                                          class="summary-icon"/>
                                                     <span style="display:none">0</span>
                                                 </td>
-                                                <td class="lightgreentext">0.07</td>
+                                                <td class="lightgreentext">164.12</td>
                                             </tr>
 
 
@@ -314,17 +314,17 @@
                                                 </td>
                                                 <td class="ERROR-text"><a
                                                         href="0f8e7c468c387da6d5025728af86789486ae8950707fcd24857b1b224a21538e.html"
-                                                        title="net.thucydides.core.webdriver.UnsupportedDriverException: Could not instantiate class org.openqa.selenium.phantomjs.PhantomJSDriver">Validate search functionality on IMDB homepage </a>
+                                                        title="org.openqa.selenium.WebDriverException: unknown error: Element (button id='navbar-submit-button' class='primary btn' type='submit')...(/button) is not clickable at point (789, 38). Other element would receive the click: (div class='video-player__header-internal' data-reactid='.1.1.0.0.0.0.0.$=1$header.0')...(/div)   (Session info: chrome=63.0.3239.132)   (Driver info: chromedriver=2.33.506106 (8a06c39c4582fbfbab6966dbb1c38a9173bfb1a2),platform=Mac OS X 10.13.2 x86_64) (WARNING: The server did not provide any stacktrace information) Command duration or timeout: 25 milliseconds Build info: version: '2.46.0', revision: '61506a4624b13675f24581e453592342b7485d71', time: '2015-06-04 10:22:50' System info: host: 'inarpits.local', ip: '192.168.1.2', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.2', java.version: '1.8.0_131' Driver info: org.openqa.selenium.chrome.ChromeDriver Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.33.506106 (8a06c39c4582fbfbab6966dbb1c38a9173bfb1a2), userDataDir=/var/folders/gx/h7w3x5k10f3bd79nq3mxtpsh0000gp/T/.org.chromium.Chromium.VG7lY1}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=63.0.3239.132, platform=MAC, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}] Session ID: b47d7bc4d9c3245476e7377a839c75f0">Validate search functionality on IMDB homepage </a>
                                                 </td>
 
-                                                <td class="lightgreentext">70</td>
+                                                <td class="lightgreentext">109</td>
                                                 <td class="bluetext">
                                                     <img src="images/traffic-in-progress.gif"
                                                          title="Over the last 0 tests: 0 passed, 0 failed, 0 pending"
                                                          class="summary-icon"/>
                                                     <span style="display:none">0</span>
                                                 </td>
-                                                <td class="lightgreentext">1.36</td>
+                                                <td class="lightgreentext">1149.59</td>
                                             </tr>
                                         </tbody>
                                     </table>

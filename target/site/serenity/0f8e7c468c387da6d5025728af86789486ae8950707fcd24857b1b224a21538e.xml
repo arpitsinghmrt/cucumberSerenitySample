@@ -1,4 +1,4 @@
-<acceptance-test-run title="Validate search functionality on IMDB homepage" name="Validate search functionality on IMDB homepage" description="" steps="50" successful="0" failures="0" errors="10" skipped="40" ignored="0" pending="0" annotated-result="ERROR" result="ERROR" duration="1357" timestamp="2018-01-22T09:15:54.451+05:30">
+<acceptance-test-run title="Validate search functionality on IMDB homepage" name="Validate search functionality on IMDB homepage" description="" steps="50" successful="48" failures="0" errors="1" skipped="1" ignored="0" pending="0" result="ERROR" duration="1149591" timestamp="2018-01-22T08:42:13.175+05:30">
   <user-story id="as-a-imdb-user" name="As a IMDb user" path="search.feature"/>
   <tags>
     <tag name="As a im db user" type="feature"/>
@@ -13,27 +13,27 @@
       <header>expectedSearchResult</header>
     </headers>
     <rows>
-      <row result="ERROR">
+      <row result="SUCCESS">
         <value>Walking Dead</value>
         <value>Walking Dead (2014) (TV Episode)</value>
       </row>
-      <row result="ERROR">
+      <row result="SUCCESS">
         <value>Rick and Morty</value>
         <value>Rick and Morty! PPG 2016! (2014) (TV Episode)</value>
       </row>
-      <row result="ERROR">
+      <row result="SUCCESS">
         <value>The Good Doctor</value>
         <value>The Good Doctor (2003) (TV Episode)</value>
       </row>
-      <row result="ERROR">
+      <row result="SUCCESS">
         <value>Shameless</value>
         <value>Shameless &apos;n&apos; Andean (1997) (TV Episode)</value>
       </row>
-      <row result="ERROR">
+      <row result="SUCCESS">
         <value>Game Of Thrones</value>
         <value>Game of Thrones Review: Battle of the Bastards - Season 6, Episode 9 (2016) (TV Episode)</value>
       </row>
-      <row result="ERROR">
+      <row result="SUCCESS">
         <value>Stranger Things</value>
         <value>Stranger-er Things (2016) (TV Episode)</value>
       </row>
@@ -41,238 +41,623 @@
         <value>Big Little Lies</value>
         <value>Big Lies, Little Lies (2011) (TV Episode)</value>
       </row>
-      <row result="ERROR">
+      <row result="SUCCESS">
         <value>Attack on Titan</value>
         <value>Attack on Titan: Part 1 (2014) (TV Episode)</value>
       </row>
-      <row result="ERROR">
+      <row result="SUCCESS">
         <value>The Wire</value>
         <value>On the Wire (2002) (TV Episode)</value>
       </row>
-      <row result="ERROR">
+      <row result="SUCCESS">
         <value>Cosmos</value>
         <value>Cosmoscope (2002) (TV Episode)</value>
       </row>
     </rows>
   </examples>
-  <test-group name="[1] {searchKeyword=Walking Dead, expectedSearchResult=Walking Dead (2014) (TV Episode)}" result="ERROR">
-    <test-group name="Given I am on IMDB home page" result="ERROR">
-      <test-step result="ERROR" duration="112">
+  <test-group name="[1] {searchKeyword=Walking Dead, expectedSearchResult=Walking Dead (2014) (TV Episode)}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="e5a07d7286276128979b46e634d5ebae_NONE.png"/>
+    </screenshots>
+    <test-group name="Given I am on IMDB home page" result="SUCCESS">
+      <screenshots>
+        <screenshot image="3d0e9e9a219b90cd8d4fb4ed12431ac8_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="17821">
+        <screenshots>
+          <screenshot image="3d0e9e9a219b90cd8d4fb4ed12431ac8_NONE.png"/>
+        </screenshots>
         <description>Is on the home page</description>
-        <error>net.thucydides.core.webdriver.UnsupportedDriverException: Could not instantiate class org.openqa.selenium.phantomjs.PhantomJSDriver</error>
-        <exception>net.thucydides.core.webdriver.UnsupportedDriverException:Could not instantiate class org.openqa.selenium.phantomjs.PhantomJSDriver
-[steps.SearchContentSteps.isOnTheHomePage(SearchContentSteps.java:19), com.seneity.assignment.SearchSteps.iAmOnIMDBHomePage(SearchSteps.java:22)]</exception>
       </test-step>
     </test-group>
-    <test-step result="SKIPPED" duration="6">
-      <description>When I select TV Episodes in quick search dropdown</description>
-    </test-step>
-    <test-step result="SKIPPED" duration="13">
-      <description>And I enter Walking Dead in search text box</description>
-    </test-step>
-    <test-step result="SKIPPED" duration="6">
-      <description>And I click search button</description>
-    </test-step>
-    <test-step result="SKIPPED" duration="5">
-      <description>Then I should see Walking Dead (2014) (TV Episode) in the search results</description>
-    </test-step>
+    <test-group name="When I select TV Episodes in quick search dropdown" result="SUCCESS">
+      <screenshots>
+        <screenshot image="6c179643552e0e36e9f9442e62f1239d_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="1276">
+        <screenshots>
+          <screenshot image="6c179643552e0e36e9f9442e62f1239d_NONE.png"/>
+        </screenshots>
+        <description>Select quick search option</description>
+      </test-step>
+    </test-group>
+    <test-group name="And I enter Walking Dead in search text box" result="SUCCESS">
+      <screenshots>
+        <screenshot image="6572ded015b72dbd1052f589171ce3f2_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="920">
+        <screenshots>
+          <screenshot image="a379fde831d1b49ee2d1b4fc4b4bdd8e_NONE.png"/>
+        </screenshots>
+        <description>Enter searchkeyword: &lt;span class=&apos;step-parameter&apos;&gt;Walking Dead&lt;/span&gt;</description>
+      </test-step>
+    </test-group>
+    <test-group name="And I click search button" result="SUCCESS">
+      <screenshots>
+        <screenshot image="e5a07d7286276128979b46e634d5ebae_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="3017">
+        <screenshots>
+          <screenshot image="e5a07d7286276128979b46e634d5ebae_NONE.png"/>
+        </screenshots>
+        <description>Click search button</description>
+      </test-step>
+    </test-group>
+    <test-group name="Then I should see Walking Dead (2014) (TV Episode) in the search results" result="SUCCESS">
+      <screenshots>
+        <screenshot image="e5a07d7286276128979b46e634d5ebae_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="1014">
+        <screenshots>
+          <screenshot image="e5a07d7286276128979b46e634d5ebae_NONE.png"/>
+        </screenshots>
+        <description>Verify result displayed: &lt;span class=&apos;step-parameter&apos;&gt;Walking Dead (2014) (TV Episode)&lt;/span&gt;</description>
+      </test-step>
+    </test-group>
   </test-group>
-  <test-group name="[1] {searchKeyword=Rick and Morty, expectedSearchResult=Rick and Morty! PPG 2016! (2014) (TV Episode)}" result="ERROR">
-    <test-group name="Given I am on IMDB home page" result="ERROR">
-      <test-step result="ERROR" duration="64">
+  <test-group name="[1] {searchKeyword=Rick and Morty, expectedSearchResult=Rick and Morty! PPG 2016! (2014) (TV Episode)}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="30ebe8d2f76213dcca0191ebc38e1370_NONE.png"/>
+    </screenshots>
+    <test-group name="Given I am on IMDB home page" result="SUCCESS">
+      <screenshots>
+        <screenshot image="253f498c8f85c3370b7674674ef424b6_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="16039">
+        <screenshots>
+          <screenshot image="253f498c8f85c3370b7674674ef424b6_NONE.png"/>
+        </screenshots>
         <description>Is on the home page</description>
-        <error>net.thucydides.core.webdriver.UnsupportedDriverException: Could not instantiate class org.openqa.selenium.phantomjs.PhantomJSDriver</error>
-        <exception>net.thucydides.core.webdriver.UnsupportedDriverException:Could not instantiate class org.openqa.selenium.phantomjs.PhantomJSDriver
-[steps.SearchContentSteps.isOnTheHomePage(SearchContentSteps.java:19), com.seneity.assignment.SearchSteps.iAmOnIMDBHomePage(SearchSteps.java:22)]</exception>
       </test-step>
     </test-group>
-    <test-step result="SKIPPED" duration="6">
-      <description>When I select TV Episodes in quick search dropdown</description>
-    </test-step>
-    <test-step result="SKIPPED" duration="6">
-      <description>And I enter Rick and Morty in search text box</description>
-    </test-step>
-    <test-step result="SKIPPED" duration="5">
-      <description>And I click search button</description>
-    </test-step>
-    <test-step result="SKIPPED" duration="6">
-      <description>Then I should see Rick and Morty! PPG 2016! (2014) (TV Episode) in the search results</description>
-    </test-step>
+    <test-group name="When I select TV Episodes in quick search dropdown" result="SUCCESS">
+      <screenshots>
+        <screenshot image="0a6432fd1a27fdbc680ff6611e3d4ebb_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="1222">
+        <screenshots>
+          <screenshot image="0a6432fd1a27fdbc680ff6611e3d4ebb_NONE.png"/>
+        </screenshots>
+        <description>Select quick search option</description>
+      </test-step>
+    </test-group>
+    <test-group name="And I enter Rick and Morty in search text box" result="SUCCESS">
+      <screenshots>
+        <screenshot image="1585be8c39fc403a1e63ab6ec356a2c4_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="870">
+        <screenshots>
+          <screenshot image="b84b8b363f8baae03bc04f4046406f72_NONE.png"/>
+        </screenshots>
+        <description>Enter searchkeyword: &lt;span class=&apos;step-parameter&apos;&gt;Rick and Morty&lt;/span&gt;</description>
+      </test-step>
+    </test-group>
+    <test-group name="And I click search button" result="SUCCESS">
+      <screenshots>
+        <screenshot image="30ebe8d2f76213dcca0191ebc38e1370_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="2977">
+        <screenshots>
+          <screenshot image="30ebe8d2f76213dcca0191ebc38e1370_NONE.png"/>
+        </screenshots>
+        <description>Click search button</description>
+      </test-step>
+    </test-group>
+    <test-group name="Then I should see Rick and Morty! PPG 2016! (2014) (TV Episode) in the search results" result="SUCCESS">
+      <screenshots>
+        <screenshot image="30ebe8d2f76213dcca0191ebc38e1370_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="673">
+        <screenshots>
+          <screenshot image="30ebe8d2f76213dcca0191ebc38e1370_NONE.png"/>
+        </screenshots>
+        <description>Verify result displayed: &lt;span class=&apos;step-parameter&apos;&gt;Rick and Morty! PPG 2016! (2014) (TV Episode)&lt;/span&gt;</description>
+      </test-step>
+    </test-group>
   </test-group>
-  <test-group name="[1] {searchKeyword=The Good Doctor, expectedSearchResult=The Good Doctor (2003) (TV Episode)}" result="ERROR">
-    <test-group name="Given I am on IMDB home page" result="ERROR">
-      <test-step result="ERROR" duration="47">
+  <test-group name="[1] {searchKeyword=The Good Doctor, expectedSearchResult=The Good Doctor (2003) (TV Episode)}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="588536b62d9adf7ec3befc6f3a3f3f66_NONE.png"/>
+    </screenshots>
+    <test-group name="Given I am on IMDB home page" result="SUCCESS">
+      <screenshots>
+        <screenshot image="ace71c7fff66cd9b20407979405ad23f_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="18258">
+        <screenshots>
+          <screenshot image="ace71c7fff66cd9b20407979405ad23f_NONE.png"/>
+        </screenshots>
         <description>Is on the home page</description>
-        <error>net.thucydides.core.webdriver.UnsupportedDriverException: Could not instantiate class org.openqa.selenium.phantomjs.PhantomJSDriver</error>
-        <exception>net.thucydides.core.webdriver.UnsupportedDriverException:Could not instantiate class org.openqa.selenium.phantomjs.PhantomJSDriver
-[steps.SearchContentSteps.isOnTheHomePage(SearchContentSteps.java:19), com.seneity.assignment.SearchSteps.iAmOnIMDBHomePage(SearchSteps.java:22)]</exception>
       </test-step>
     </test-group>
-    <test-step result="SKIPPED" duration="7">
-      <description>When I select TV Episodes in quick search dropdown</description>
-    </test-step>
-    <test-step result="SKIPPED" duration="6">
-      <description>And I enter The Good Doctor in search text box</description>
-    </test-step>
-    <test-step result="SKIPPED" duration="6">
-      <description>And I click search button</description>
-    </test-step>
-    <test-step result="SKIPPED" duration="7">
-      <description>Then I should see The Good Doctor (2003) (TV Episode) in the search results</description>
-    </test-step>
+    <test-group name="When I select TV Episodes in quick search dropdown" result="SUCCESS">
+      <screenshots>
+        <screenshot image="0ea614703a84e35915272f9306e061b7_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="1314">
+        <screenshots>
+          <screenshot image="0ea614703a84e35915272f9306e061b7_NONE.png"/>
+        </screenshots>
+        <description>Select quick search option</description>
+      </test-step>
+    </test-group>
+    <test-group name="And I enter The Good Doctor in search text box" result="SUCCESS">
+      <screenshots>
+        <screenshot image="cd3af51f50923cdd9158a8a4011d734d_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="897">
+        <screenshots>
+          <screenshot image="9d103f8a5ff24ac27e576efcd5defdcd_NONE.png"/>
+        </screenshots>
+        <description>Enter searchkeyword: &lt;span class=&apos;step-parameter&apos;&gt;The Good Doctor&lt;/span&gt;</description>
+      </test-step>
+    </test-group>
+    <test-group name="And I click search button" result="SUCCESS">
+      <screenshots>
+        <screenshot image="588536b62d9adf7ec3befc6f3a3f3f66_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="2708">
+        <screenshots>
+          <screenshot image="588536b62d9adf7ec3befc6f3a3f3f66_NONE.png"/>
+        </screenshots>
+        <description>Click search button</description>
+      </test-step>
+    </test-group>
+    <test-group name="Then I should see The Good Doctor (2003) (TV Episode) in the search results" result="SUCCESS">
+      <screenshots>
+        <screenshot image="588536b62d9adf7ec3befc6f3a3f3f66_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="852">
+        <screenshots>
+          <screenshot image="588536b62d9adf7ec3befc6f3a3f3f66_NONE.png"/>
+        </screenshots>
+        <description>Verify result displayed: &lt;span class=&apos;step-parameter&apos;&gt;The Good Doctor (2003) (TV Episode)&lt;/span&gt;</description>
+      </test-step>
+    </test-group>
   </test-group>
-  <test-group name="[1] {searchKeyword=Shameless, expectedSearchResult=Shameless &apos;n&apos; Andean (1997) (TV Episode)}" result="ERROR">
-    <test-group name="Given I am on IMDB home page" result="ERROR">
-      <test-step result="ERROR" duration="71">
+  <test-group name="[1] {searchKeyword=Shameless, expectedSearchResult=Shameless &apos;n&apos; Andean (1997) (TV Episode)}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="45882b41f49b7068ab79863920029497_NONE.png"/>
+    </screenshots>
+    <test-group name="Given I am on IMDB home page" result="SUCCESS">
+      <screenshots>
+        <screenshot image="347c11885da13dc6dccdb933c287180e_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="18173">
+        <screenshots>
+          <screenshot image="347c11885da13dc6dccdb933c287180e_NONE.png"/>
+        </screenshots>
         <description>Is on the home page</description>
-        <error>net.thucydides.core.webdriver.UnsupportedDriverException: Could not instantiate class org.openqa.selenium.phantomjs.PhantomJSDriver</error>
-        <exception>net.thucydides.core.webdriver.UnsupportedDriverException:Could not instantiate class org.openqa.selenium.phantomjs.PhantomJSDriver
-[steps.SearchContentSteps.isOnTheHomePage(SearchContentSteps.java:19), com.seneity.assignment.SearchSteps.iAmOnIMDBHomePage(SearchSteps.java:22)]</exception>
       </test-step>
     </test-group>
-    <test-step result="SKIPPED" duration="5">
-      <description>When I select TV Episodes in quick search dropdown</description>
-    </test-step>
-    <test-step result="SKIPPED" duration="6">
-      <description>And I enter Shameless in search text box</description>
-    </test-step>
-    <test-step result="SKIPPED" duration="5">
-      <description>And I click search button</description>
-    </test-step>
-    <test-step result="SKIPPED" duration="10">
-      <description>Then I should see Shameless &apos;n&apos; Andean (1997) (TV Episode) in the search results</description>
-    </test-step>
+    <test-group name="When I select TV Episodes in quick search dropdown" result="SUCCESS">
+      <screenshots>
+        <screenshot image="d9d3a2f978703c5129a126bfd86a1547_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="1318">
+        <screenshots>
+          <screenshot image="6f46f7e4301e07336d31e6c84842f062_NONE.png"/>
+        </screenshots>
+        <description>Select quick search option</description>
+      </test-step>
+    </test-group>
+    <test-group name="And I enter Shameless in search text box" result="SUCCESS">
+      <screenshots>
+        <screenshot image="c6dab0780dc79209851b6cddda46b126_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="968">
+        <screenshots>
+          <screenshot image="654b8077672bbd0dfb7604ac6315ffa6_NONE.png"/>
+        </screenshots>
+        <description>Enter searchkeyword: &lt;span class=&apos;step-parameter&apos;&gt;Shameless&lt;/span&gt;</description>
+      </test-step>
+    </test-group>
+    <test-group name="And I click search button" result="SUCCESS">
+      <screenshots>
+        <screenshot image="45882b41f49b7068ab79863920029497_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="6270">
+        <screenshots>
+          <screenshot image="45882b41f49b7068ab79863920029497_NONE.png"/>
+        </screenshots>
+        <description>Click search button</description>
+      </test-step>
+    </test-group>
+    <test-group name="Then I should see Shameless &apos;n&apos; Andean (1997) (TV Episode) in the search results" result="SUCCESS">
+      <screenshots>
+        <screenshot image="45882b41f49b7068ab79863920029497_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="953">
+        <screenshots>
+          <screenshot image="45882b41f49b7068ab79863920029497_NONE.png"/>
+        </screenshots>
+        <description>Verify result displayed: &lt;span class=&apos;step-parameter&apos;&gt;Shameless &apos;n&apos; Andean (1997) (TV Episode)&lt;/span&gt;</description>
+      </test-step>
+    </test-group>
   </test-group>
-  <test-group name="[1] {searchKeyword=Game Of Thrones, expectedSearchResult=Game of Thrones Review: Battle of the Bastards - Season 6, Episode 9 (2016) (TV Episode)}" result="ERROR">
-    <test-group name="Given I am on IMDB home page" result="ERROR">
-      <test-step result="ERROR" duration="60">
+  <test-group name="[1] {searchKeyword=Game Of Thrones, expectedSearchResult=Game of Thrones Review: Battle of the Bastards - Season 6, Episode 9 (2016) (TV Episode)}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="9d72d891436bef0fa43ea893cc3cc28d_NONE.png"/>
+    </screenshots>
+    <test-group name="Given I am on IMDB home page" result="SUCCESS">
+      <screenshots>
+        <screenshot image="9f289af8c74f21088a5f37699148f9d6_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="17499">
+        <screenshots>
+          <screenshot image="9f289af8c74f21088a5f37699148f9d6_NONE.png"/>
+        </screenshots>
         <description>Is on the home page</description>
-        <error>net.thucydides.core.webdriver.UnsupportedDriverException: Could not instantiate class org.openqa.selenium.phantomjs.PhantomJSDriver</error>
-        <exception>net.thucydides.core.webdriver.UnsupportedDriverException:Could not instantiate class org.openqa.selenium.phantomjs.PhantomJSDriver
-[steps.SearchContentSteps.isOnTheHomePage(SearchContentSteps.java:19), com.seneity.assignment.SearchSteps.iAmOnIMDBHomePage(SearchSteps.java:22)]</exception>
       </test-step>
     </test-group>
-    <test-step result="SKIPPED" duration="5">
-      <description>When I select TV Episodes in quick search dropdown</description>
-    </test-step>
-    <test-step result="SKIPPED" duration="5">
-      <description>And I enter Game Of Thrones in search text box</description>
-    </test-step>
-    <test-step result="SKIPPED" duration="5">
-      <description>And I click search button</description>
-    </test-step>
-    <test-step result="SKIPPED" duration="9">
-      <description>Then I should see Game of Thrones Review: Battle of the Bastards - Season 6, Episode 9 (2016) (TV Episode) in the search results</description>
-    </test-step>
+    <test-group name="When I select TV Episodes in quick search dropdown" result="SUCCESS">
+      <screenshots>
+        <screenshot image="165207b497ba1e8cc4d4d002d7c05283_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="1235">
+        <screenshots>
+          <screenshot image="165207b497ba1e8cc4d4d002d7c05283_NONE.png"/>
+        </screenshots>
+        <description>Select quick search option</description>
+      </test-step>
+    </test-group>
+    <test-group name="And I enter Game Of Thrones in search text box" result="SUCCESS">
+      <screenshots>
+        <screenshot image="b638cb8a868dbdc7dfb5e7048770b04c_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="866">
+        <screenshots>
+          <screenshot image="b0e6e280684f1d6ce8e8df26092372e2_NONE.png"/>
+        </screenshots>
+        <description>Enter searchkeyword: &lt;span class=&apos;step-parameter&apos;&gt;Game Of Thrones&lt;/span&gt;</description>
+      </test-step>
+    </test-group>
+    <test-group name="And I click search button" result="SUCCESS">
+      <screenshots>
+        <screenshot image="9d72d891436bef0fa43ea893cc3cc28d_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="3105">
+        <screenshots>
+          <screenshot image="9d72d891436bef0fa43ea893cc3cc28d_NONE.png"/>
+        </screenshots>
+        <description>Click search button</description>
+      </test-step>
+    </test-group>
+    <test-group name="Then I should see Game of Thrones Review: Battle of the Bastards - Season 6, Episode 9 (2016) (TV Episode) in the search results" result="SUCCESS">
+      <screenshots>
+        <screenshot image="9d72d891436bef0fa43ea893cc3cc28d_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="978">
+        <screenshots>
+          <screenshot image="9d72d891436bef0fa43ea893cc3cc28d_NONE.png"/>
+        </screenshots>
+        <description>Verify result displayed: &lt;span class=&apos;step-parameter&apos;&gt;Game of Thrones Review: Battle of the Bastards - Season 6, Episode 9 (2016) (TV Episode)&lt;/span&gt;</description>
+      </test-step>
+    </test-group>
   </test-group>
-  <test-group name="[1] {searchKeyword=Stranger Things, expectedSearchResult=Stranger-er Things (2016) (TV Episode)}" result="ERROR">
-    <test-group name="Given I am on IMDB home page" result="ERROR">
-      <test-step result="ERROR" duration="42">
+  <test-group name="[1] {searchKeyword=Stranger Things, expectedSearchResult=Stranger-er Things (2016) (TV Episode)}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="891a8e63239761ec171011be4b2303d4_NONE.png"/>
+    </screenshots>
+    <test-group name="Given I am on IMDB home page" result="SUCCESS">
+      <screenshots>
+        <screenshot image="f37b35d8a9f1293133d0b6c9468755df_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="14886">
+        <screenshots>
+          <screenshot image="f37b35d8a9f1293133d0b6c9468755df_NONE.png"/>
+        </screenshots>
         <description>Is on the home page</description>
-        <error>net.thucydides.core.webdriver.UnsupportedDriverException: Could not instantiate class org.openqa.selenium.phantomjs.PhantomJSDriver</error>
-        <exception>net.thucydides.core.webdriver.UnsupportedDriverException:Could not instantiate class org.openqa.selenium.phantomjs.PhantomJSDriver
-[steps.SearchContentSteps.isOnTheHomePage(SearchContentSteps.java:19), com.seneity.assignment.SearchSteps.iAmOnIMDBHomePage(SearchSteps.java:22)]</exception>
       </test-step>
     </test-group>
-    <test-step result="SKIPPED" duration="7">
-      <description>When I select TV Episodes in quick search dropdown</description>
-    </test-step>
-    <test-step result="SKIPPED" duration="4">
-      <description>And I enter Stranger Things in search text box</description>
-    </test-step>
-    <test-step result="SKIPPED" duration="5">
-      <description>And I click search button</description>
-    </test-step>
-    <test-step result="SKIPPED" duration="4">
-      <description>Then I should see Stranger-er Things (2016) (TV Episode) in the search results</description>
-    </test-step>
+    <test-group name="When I select TV Episodes in quick search dropdown" result="SUCCESS">
+      <screenshots>
+        <screenshot image="025ca3918bf5e82214f4c3667eb9e5da_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="1235">
+        <screenshots>
+          <screenshot image="06155756522f6747fc97f6bd37804834_NONE.png"/>
+        </screenshots>
+        <description>Select quick search option</description>
+      </test-step>
+    </test-group>
+    <test-group name="And I enter Stranger Things in search text box" result="SUCCESS">
+      <screenshots>
+        <screenshot image="1fc78c9ef20f757e1390d5e582bfbbad_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="958">
+        <screenshots>
+          <screenshot image="ca274e55883c12bdcc35c456947c7a88_NONE.png"/>
+        </screenshots>
+        <description>Enter searchkeyword: &lt;span class=&apos;step-parameter&apos;&gt;Stranger Things&lt;/span&gt;</description>
+      </test-step>
+    </test-group>
+    <test-group name="And I click search button" result="SUCCESS">
+      <screenshots>
+        <screenshot image="891a8e63239761ec171011be4b2303d4_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="9713">
+        <screenshots>
+          <screenshot image="891a8e63239761ec171011be4b2303d4_NONE.png"/>
+        </screenshots>
+        <description>Click search button</description>
+      </test-step>
+    </test-group>
+    <test-group name="Then I should see Stranger-er Things (2016) (TV Episode) in the search results" result="SUCCESS">
+      <screenshots>
+        <screenshot image="891a8e63239761ec171011be4b2303d4_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="1219">
+        <screenshots>
+          <screenshot image="891a8e63239761ec171011be4b2303d4_NONE.png"/>
+        </screenshots>
+        <description>Verify result displayed: &lt;span class=&apos;step-parameter&apos;&gt;Stranger-er Things (2016) (TV Episode)&lt;/span&gt;</description>
+      </test-step>
+    </test-group>
   </test-group>
   <test-group name="[1] {searchKeyword=Big Little Lies, expectedSearchResult=Big Lies, Little Lies (2011) (TV Episode)}" result="ERROR">
-    <test-group name="Given I am on IMDB home page" result="ERROR">
-      <test-step result="ERROR" duration="48">
+    <test-group name="Given I am on IMDB home page" result="SUCCESS">
+      <screenshots>
+        <screenshot image="b765e422c1db19668574507cf96bfb5a_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="17526">
+        <screenshots>
+          <screenshot image="483f1b46485a69aede3f46322f62a01e_NONE.png"/>
+        </screenshots>
         <description>Is on the home page</description>
-        <error>net.thucydides.core.webdriver.UnsupportedDriverException: Could not instantiate class org.openqa.selenium.phantomjs.PhantomJSDriver</error>
-        <exception>net.thucydides.core.webdriver.UnsupportedDriverException:Could not instantiate class org.openqa.selenium.phantomjs.PhantomJSDriver
-[steps.SearchContentSteps.isOnTheHomePage(SearchContentSteps.java:19), com.seneity.assignment.SearchSteps.iAmOnIMDBHomePage(SearchSteps.java:22)]</exception>
       </test-step>
     </test-group>
-    <test-step result="SKIPPED" duration="5">
-      <description>When I select TV Episodes in quick search dropdown</description>
-    </test-step>
-    <test-step result="SKIPPED" duration="4">
-      <description>And I enter Big Little Lies in search text box</description>
-    </test-step>
-    <test-step result="SKIPPED" duration="4">
-      <description>And I click search button</description>
-    </test-step>
+    <test-group name="When I select TV Episodes in quick search dropdown" result="SUCCESS">
+      <screenshots>
+        <screenshot image="33a1dec98d7ab3b18315632f5a4cccd2_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="1822">
+        <screenshots>
+          <screenshot image="9e221aa8015abd94b361bc88c1f7cf5e_NONE.png"/>
+        </screenshots>
+        <description>Select quick search option</description>
+      </test-step>
+    </test-group>
+    <test-group name="And I enter Big Little Lies in search text box" result="SUCCESS">
+      <screenshots>
+        <screenshot image="25ea81023c7a988473744af66b5d17aa_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="1608">
+        <screenshots>
+          <screenshot image="7f40b61a945985e32e4a1bb0fa328f8b_NONE.png"/>
+        </screenshots>
+        <description>Enter searchkeyword: &lt;span class=&apos;step-parameter&apos;&gt;Big Little Lies&lt;/span&gt;</description>
+      </test-step>
+    </test-group>
+    <test-group name="And I click search button" result="ERROR">
+      <test-step result="ERROR" duration="656">
+        <screenshots>
+          <screenshot image="ab376c87cfadf8a42d09ef3566c73426_NONE.png"/>
+        </screenshots>
+        <description>Click search button</description>
+        <error>org.openqa.selenium.WebDriverException: unknown error: Element &lt;button id=&quot;navbar-submit-button&quot; class=&quot;primary btn&quot; type=&quot;submit&quot;&gt;...&lt;/button&gt; is not clickable at point (789, 38). Other element would receive the click: &lt;div class=&quot;video-player__header-internal&quot; data-reactid=&quot;.1.1.0.0.0.0.0.$=1$header.0&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=63.0.3239.132)
+  (Driver info: chromedriver=2.33.506106 (8a06c39c4582fbfbab6966dbb1c38a9173bfb1a2),platform=Mac OS X 10.13.2 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 25 milliseconds
+Build info: version: &apos;2.46.0&apos;, revision: &apos;61506a4624b13675f24581e453592342b7485d71&apos;, time: &apos;2015-06-04 10:22:50&apos;
+System info: host: &apos;inarpits.local&apos;, ip: &apos;192.168.1.2&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.13.2&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.33.506106 (8a06c39c4582fbfbab6966dbb1c38a9173bfb1a2), userDataDir=/var/folders/gx/h7w3x5k10f3bd79nq3mxtpsh0000gp/T/.org.chromium.Chromium.VG7lY1}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=63.0.3239.132, platform=MAC, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: b47d7bc4d9c3245476e7377a839c75f0</error>
+        <exception>org.openqa.selenium.WebDriverException:unknown error: Element &lt;button id=&quot;navbar-submit-button&quot; class=&quot;primary btn&quot; type=&quot;submit&quot;&gt;...&lt;/button&gt; is not clickable at point (789, 38). Other element would receive the click: &lt;div class=&quot;video-player__header-internal&quot; data-reactid=&quot;.1.1.0.0.0.0.0.$=1$header.0&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=63.0.3239.132)
+  (Driver info: chromedriver=2.33.506106 (8a06c39c4582fbfbab6966dbb1c38a9173bfb1a2),platform=Mac OS X 10.13.2 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 25 milliseconds
+Build info: version: &apos;2.46.0&apos;, revision: &apos;61506a4624b13675f24581e453592342b7485d71&apos;, time: &apos;2015-06-04 10:22:50&apos;
+System info: host: &apos;inarpits.local&apos;, ip: &apos;192.168.1.2&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.13.2&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.33.506106 (8a06c39c4582fbfbab6966dbb1c38a9173bfb1a2), userDataDir=/var/folders/gx/h7w3x5k10f3bd79nq3mxtpsh0000gp/T/.org.chromium.Chromium.VG7lY1}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=63.0.3239.132, platform=MAC, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: b47d7bc4d9c3245476e7377a839c75f0
+[pages.ImdbHomePage.click_search_button(ImdbHomePage.java:39), steps.SearchContentSteps.clickSearchButton(SearchContentSteps.java:34), com.seneity.assignment.SearchSteps.iClickSearchButton(SearchSteps.java:38)]</exception>
+      </test-step>
+    </test-group>
     <test-step result="SKIPPED" duration="4">
       <description>Then I should see Big Lies, Little Lies (2011) (TV Episode) in the search results</description>
     </test-step>
   </test-group>
-  <test-group name="[1] {searchKeyword=Attack on Titan, expectedSearchResult=Attack on Titan: Part 1 (2014) (TV Episode)}" result="ERROR">
-    <test-group name="Given I am on IMDB home page" result="ERROR">
-      <test-step result="ERROR" duration="47">
+  <test-group name="[1] {searchKeyword=Attack on Titan, expectedSearchResult=Attack on Titan: Part 1 (2014) (TV Episode)}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="c7465e6bfbc9997ace46d61bba18d5b5_NONE.png"/>
+    </screenshots>
+    <test-group name="Given I am on IMDB home page" result="SUCCESS">
+      <screenshots>
+        <screenshot image="ace71c7fff66cd9b20407979405ad23f_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="16665">
+        <screenshots>
+          <screenshot image="ace71c7fff66cd9b20407979405ad23f_NONE.png"/>
+        </screenshots>
         <description>Is on the home page</description>
-        <error>net.thucydides.core.webdriver.UnsupportedDriverException: Could not instantiate class org.openqa.selenium.phantomjs.PhantomJSDriver</error>
-        <exception>net.thucydides.core.webdriver.UnsupportedDriverException:Could not instantiate class org.openqa.selenium.phantomjs.PhantomJSDriver
-[steps.SearchContentSteps.isOnTheHomePage(SearchContentSteps.java:19), com.seneity.assignment.SearchSteps.iAmOnIMDBHomePage(SearchSteps.java:22)]</exception>
       </test-step>
     </test-group>
-    <test-step result="SKIPPED" duration="4">
-      <description>When I select TV Episodes in quick search dropdown</description>
-    </test-step>
-    <test-step result="SKIPPED" duration="3">
-      <description>And I enter Attack on Titan in search text box</description>
-    </test-step>
-    <test-step result="SKIPPED" duration="4">
-      <description>And I click search button</description>
-    </test-step>
-    <test-step result="SKIPPED" duration="5">
-      <description>Then I should see Attack on Titan: Part 1 (2014) (TV Episode) in the search results</description>
-    </test-step>
+    <test-group name="When I select TV Episodes in quick search dropdown" result="SUCCESS">
+      <screenshots>
+        <screenshot image="0ea614703a84e35915272f9306e061b7_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="1206">
+        <screenshots>
+          <screenshot image="0ea614703a84e35915272f9306e061b7_NONE.png"/>
+        </screenshots>
+        <description>Select quick search option</description>
+      </test-step>
+    </test-group>
+    <test-group name="And I enter Attack on Titan in search text box" result="SUCCESS">
+      <screenshots>
+        <screenshot image="47b1cd3eaa090bb6e6844d2221d3ea96_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="911">
+        <screenshots>
+          <screenshot image="fa718cdffbddf4b241f0c77238852b14_NONE.png"/>
+        </screenshots>
+        <description>Enter searchkeyword: &lt;span class=&apos;step-parameter&apos;&gt;Attack on Titan&lt;/span&gt;</description>
+      </test-step>
+    </test-group>
+    <test-group name="And I click search button" result="SUCCESS">
+      <screenshots>
+        <screenshot image="c7465e6bfbc9997ace46d61bba18d5b5_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="3423">
+        <screenshots>
+          <screenshot image="c7465e6bfbc9997ace46d61bba18d5b5_NONE.png"/>
+        </screenshots>
+        <description>Click search button</description>
+      </test-step>
+    </test-group>
+    <test-group name="Then I should see Attack on Titan: Part 1 (2014) (TV Episode) in the search results" result="SUCCESS">
+      <screenshots>
+        <screenshot image="c7465e6bfbc9997ace46d61bba18d5b5_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="11878">
+        <screenshots>
+          <screenshot image="c7465e6bfbc9997ace46d61bba18d5b5_NONE.png"/>
+        </screenshots>
+        <description>Verify result displayed: &lt;span class=&apos;step-parameter&apos;&gt;Attack on Titan: Part 1 (2014) (TV Episode)&lt;/span&gt;</description>
+      </test-step>
+    </test-group>
   </test-group>
-  <test-group name="[1] {searchKeyword=The Wire, expectedSearchResult=On the Wire (2002) (TV Episode)}" result="ERROR">
-    <test-group name="Given I am on IMDB home page" result="ERROR">
-      <test-step result="ERROR" duration="47">
+  <test-group name="[1] {searchKeyword=The Wire, expectedSearchResult=On the Wire (2002) (TV Episode)}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="c8ee6b4a43c681ba0e025ac85097ca1d_NONE.png"/>
+    </screenshots>
+    <test-group name="Given I am on IMDB home page" result="SUCCESS">
+      <screenshots>
+        <screenshot image="08e96b905b4d53a5d96530dc22f3aeb8_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="16232">
+        <screenshots>
+          <screenshot image="253f498c8f85c3370b7674674ef424b6_NONE.png"/>
+        </screenshots>
         <description>Is on the home page</description>
-        <error>net.thucydides.core.webdriver.UnsupportedDriverException: Could not instantiate class org.openqa.selenium.phantomjs.PhantomJSDriver</error>
-        <exception>net.thucydides.core.webdriver.UnsupportedDriverException:Could not instantiate class org.openqa.selenium.phantomjs.PhantomJSDriver
-[steps.SearchContentSteps.isOnTheHomePage(SearchContentSteps.java:19), com.seneity.assignment.SearchSteps.iAmOnIMDBHomePage(SearchSteps.java:22)]</exception>
       </test-step>
     </test-group>
-    <test-step result="SKIPPED" duration="5">
-      <description>When I select TV Episodes in quick search dropdown</description>
-    </test-step>
-    <test-step result="SKIPPED" duration="4">
-      <description>And I enter The Wire in search text box</description>
-    </test-step>
-    <test-step result="SKIPPED" duration="4">
-      <description>And I click search button</description>
-    </test-step>
-    <test-step result="SKIPPED" duration="4">
-      <description>Then I should see On the Wire (2002) (TV Episode) in the search results</description>
-    </test-step>
+    <test-group name="When I select TV Episodes in quick search dropdown" result="SUCCESS">
+      <screenshots>
+        <screenshot image="3a15d9008fb44f026d6d8bb1b5166c3b_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="1654">
+        <screenshots>
+          <screenshot image="5e6474a86f53a3ae07be7494d2698395_NONE.png"/>
+        </screenshots>
+        <description>Select quick search option</description>
+      </test-step>
+    </test-group>
+    <test-group name="And I enter The Wire in search text box" result="SUCCESS">
+      <screenshots>
+        <screenshot image="3963ee2af5ad3a1f23ea9930121b53ec_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="740">
+        <screenshots>
+          <screenshot image="b89316e76b50fb5987771c41533f6293_NONE.png"/>
+        </screenshots>
+        <description>Enter searchkeyword: &lt;span class=&apos;step-parameter&apos;&gt;The Wire&lt;/span&gt;</description>
+      </test-step>
+    </test-group>
+    <test-group name="And I click search button" result="SUCCESS">
+      <screenshots>
+        <screenshot image="c8ee6b4a43c681ba0e025ac85097ca1d_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="3068">
+        <screenshots>
+          <screenshot image="c8ee6b4a43c681ba0e025ac85097ca1d_NONE.png"/>
+        </screenshots>
+        <description>Click search button</description>
+      </test-step>
+    </test-group>
+    <test-group name="Then I should see On the Wire (2002) (TV Episode) in the search results" result="SUCCESS">
+      <screenshots>
+        <screenshot image="c8ee6b4a43c681ba0e025ac85097ca1d_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="58312">
+        <screenshots>
+          <screenshot image="c8ee6b4a43c681ba0e025ac85097ca1d_NONE.png"/>
+        </screenshots>
+        <description>Verify result displayed: &lt;span class=&apos;step-parameter&apos;&gt;On the Wire (2002) (TV Episode)&lt;/span&gt;</description>
+      </test-step>
+    </test-group>
   </test-group>
-  <test-group name="[1] {searchKeyword=Cosmos, expectedSearchResult=Cosmoscope (2002) (TV Episode)}" result="ERROR">
-    <test-group name="Given I am on IMDB home page" result="ERROR">
-      <test-step result="ERROR" duration="42">
+  <test-group name="[1] {searchKeyword=Cosmos, expectedSearchResult=Cosmoscope (2002) (TV Episode)}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="889ad57d5bb855351b594f2ee81b1a2c_NONE.png"/>
+    </screenshots>
+    <test-group name="Given I am on IMDB home page" result="SUCCESS">
+      <screenshots>
+        <screenshot image="d6eec5bcf92d1a74cde913f3087924df_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="18123">
+        <screenshots>
+          <screenshot image="d6eec5bcf92d1a74cde913f3087924df_NONE.png"/>
+        </screenshots>
         <description>Is on the home page</description>
-        <error>net.thucydides.core.webdriver.UnsupportedDriverException: Could not instantiate class org.openqa.selenium.phantomjs.PhantomJSDriver</error>
-        <exception>net.thucydides.core.webdriver.UnsupportedDriverException:Could not instantiate class org.openqa.selenium.phantomjs.PhantomJSDriver
-[steps.SearchContentSteps.isOnTheHomePage(SearchContentSteps.java:19), com.seneity.assignment.SearchSteps.iAmOnIMDBHomePage(SearchSteps.java:22)]</exception>
       </test-step>
     </test-group>
-    <test-step result="SKIPPED" duration="4">
-      <description>When I select TV Episodes in quick search dropdown</description>
-    </test-step>
-    <test-step result="SKIPPED" duration="5">
-      <description>And I enter Cosmos in search text box</description>
-    </test-step>
-    <test-step result="SKIPPED" duration="3">
-      <description>And I click search button</description>
-    </test-step>
-    <test-step result="SKIPPED" duration="4">
-      <description>Then I should see Cosmoscope (2002) (TV Episode) in the search results</description>
-    </test-step>
+    <test-group name="When I select TV Episodes in quick search dropdown" result="SUCCESS">
+      <screenshots>
+        <screenshot image="7e27f4964c2ca7c7eae6e773cb81f3d3_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="1561">
+        <screenshots>
+          <screenshot image="1112c9207f7a0d4a77350f736f01723b_NONE.png"/>
+        </screenshots>
+        <description>Select quick search option</description>
+      </test-step>
+    </test-group>
+    <test-group name="And I enter Cosmos in search text box" result="SUCCESS">
+      <screenshots>
+        <screenshot image="09cfd83e8ab3df7d74279cb963c7a04b_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="1523">
+        <screenshots>
+          <screenshot image="8353f0b7c45001e2c545a53749f4a079_NONE.png"/>
+        </screenshots>
+        <description>Enter searchkeyword: &lt;span class=&apos;step-parameter&apos;&gt;Cosmos&lt;/span&gt;</description>
+      </test-step>
+    </test-group>
+    <test-group name="And I click search button" result="SUCCESS">
+      <screenshots>
+        <screenshot image="391a9b811302ec0f0b1654e545a450c9_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="8946">
+        <screenshots>
+          <screenshot image="391a9b811302ec0f0b1654e545a450c9_NONE.png"/>
+        </screenshots>
+        <description>Click search button</description>
+      </test-step>
+    </test-group>
+    <test-group name="Then I should see Cosmoscope (2002) (TV Episode) in the search results" result="SUCCESS">
+      <screenshots>
+        <screenshot image="889ad57d5bb855351b594f2ee81b1a2c_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="252346">
+        <screenshots>
+          <screenshot image="391a9b811302ec0f0b1654e545a450c9_NONE.png"/>
+        </screenshots>
+        <description>Verify result displayed: &lt;span class=&apos;step-parameter&apos;&gt;Cosmoscope (2002) (TV Episode)&lt;/span&gt;</description>
+      </test-step>
+    </test-group>
   </test-group>
 </acceptance-test-run>

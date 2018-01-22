@@ -62,7 +62,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 22-01-2018 09:15</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 22-01-2018 09:30</span>
     <br style="clear:left"/>
 </div>
     <div class="clr"></div>
@@ -102,6 +102,9 @@
                                     <span class="related-issue-title"></span>
                             </span>
                         </span>
+                            <span style="float:right"><img src="images/driver-chrome.png" height="20"
+                                                           alt="chrome"
+                                                           title="chrome"/></span>
                         </td>
                     </tr>
                 </table>
@@ -133,11 +136,11 @@
                 </thead>
                 <tbody>
                     <tr>
-                            <td class="test-ERROR"><a href="#0">1</a>
+                            <td class="test-SUCCESS"><a href="#0">1</a>
                             </td>
                     </tr>
                     <tr>
-                            <td class="test-ERROR"><a href="#1">2</a>
+                            <td class="test-SUCCESS"><a href="#1">2</a>
                             </td>
                     </tr>
                     <tr>
@@ -160,16 +163,17 @@
                         &nbsp;
                     </th>
 
-                    <th width="%" class="step-description-wide-column greentext">
+                    <th width="%" class="step-description-column greentext">
                         Steps
                     </th>
+                    <th width="120" class="greentext">Screenshot</th>
                     <th width="100" class="greentext">Outcome</th>
                     <th width="75" class="greentext">Duration</th>
                 </tr>
                 <tr class="step-table-separator">
                     <td colspan="5"></td>
                 </tr>
-                <tr class="test-ERROR">
+                <tr class="test-SUCCESS">
                     <td width="60" class="step-icon">
                         <a name="0"/>
                             <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0')"
@@ -187,18 +191,20 @@
 
                         </div>
                     </td>
-                    <td width="100"><span class="top-level-step">ERROR</span></td>
-                    <td width="100"><span class="top-level-step">0.09s</span></td>
+                        <td width="100" class="SUCCESS-text">
+                        </td>
+                    <td width="100"><span class="top-level-step">SUCCESS</span></td>
+                    <td width="100"><span class="top-level-step">93.86s</span></td>
                 </tr>
                     <tr>
                     <td colspan="5">
                     <table id="stepSection0" style="display:none; width:100%">
 
-                <tr class="test-ERROR">
+                <tr class="test-SUCCESS">
                     <td width="60" class="step-icon">
                         
                             <img style="margin-left: 40px; margin-right: 5px;"
-                                 src="images/cross.png" class="nested-icon"/>
+                                 src="images/success.png" class="nested-icon"/>
                     </td>
                     <td>
                         <div class="step-description">
@@ -206,14 +212,16 @@
 
                         </div>
                     </td>
-                    <td width="100"><span class="nested-step">ERROR</span></td>
-                    <td width="100"><span class="nested-step">0.05s</span></td>
+                        <td width="100" class="SUCCESS-text">
+                        </td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">18.76s</span></td>
                 </tr>
-                <tr class="test-ERROR">
+                <tr class="test-SUCCESS">
                     <td width="60" class="step-icon">
                         
                             <img style="margin-left: 60px; margin-right: 5px;"
-                                 src="images/cross.png" class="nested-group-icon"/>
+                                 src="images/success.png" class="nested-group-icon"/>
                     </td>
                     <td>
                         <div class="step-description">
@@ -221,190 +229,402 @@
 
                         </div>
                     </td>
-                    <td width="100"><span class="nested-group-step">ERROR</span></td>
-                    <td width="100"><span class="nested-group-step">0.04s</span></td>
-                </tr>
-                    <tr class="test-ERROR">
-                        <td width="40">&nbsp</td>
-                        <td width="%" colspan="4" class="error-message-cell">
-                            <span class="error-message ellipsis"
-                                  title='net.thucydides.core.webdriver.UnsupportedDriverException: Could not instantiate class org.openqa.selenium.phantomjs.PhantomJSDriver'><pre>net.thucydides.core.webdriver.UnsupportedDriverException: Could not instantiate class org.openqa.selenium.phantomjs.PhantomJSDriver</pre></span>
-                <div><!-- Stack trace -->
-                    <button type="button" class="btn btn-danger btn-sm" data-toggle="modal"
-                            data-target="#stacktraceModal">
-                        View stack trace
-                    </button>
-                </div>
-                <!-- Modal -->
-                <div class="modal fade" id="stacktraceModal" tabindex="-1" role="dialog"
-                     aria-labelledby="stacktraceModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-lg">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal"
-                                        aria-label="Close"><span aria-hidden="true">&times;</span>
-                                </button>
-                                <h4 class="modal-title" id="stacktraceModalLabel">
-                                net.thucydides.core.webdriver.UnsupportedDriverException :  Could not instantiate class org.openqa.selenium.phantomjs.PhantomJSDriver 
-                                </h4>
-                            </div>
-                            <div class="modal-body">
-                                steps.SearchContentSteps.isOnTheHomePage(SearchContentSteps.java
-                                    :19)
-                                com.seneity.assignment.SearchSteps.iAmOnIMDBHomePage(SearchSteps.java
-                                    :22)
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-default" data-dismiss="modal">
-                                    Close
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="e6fea1477cc0fa88546d1b1288605de1c00b1cb052d407f33b81a842508d8f86_screenshots.html#screenshots?screenshot=0">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="483f1b46485a69aede3f46322f62a01e_NONE.png"
+                                         href="483f1b46485a69aede3f46322f62a01e_NONE.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
                         </td>
-                    </tr>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">17.91s</span></td>
+                </tr>
 
-                <tr class="test-SKIPPED">
+                <tr class="test-SUCCESS">
                     <td width="60" class="step-icon">
                         
                             <img style="margin-left: 40px; margin-right: 5px;"
-                                 src="images/ignor.png" class="nested-group-icon"/>
+                                 src="images/success.png" class="nested-icon"/>
                     </td>
                     <td>
                         <div class="step-description">
-                            <span class="nested-group-step">When I click Other Sign in options</span>
+                            <span class="nested-step">When I click Other Sign in options</span>
 
                         </div>
                     </td>
-                    <td width="100"><span class="nested-group-step">SKIPPED</span></td>
-                    <td width="100"><span class="nested-group-step">0s</span></td>
+                        <td width="100" class="SUCCESS-text">
+                        </td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">7.72s</span></td>
                 </tr>
-                <tr class="test-SKIPPED">
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 60px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-group-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">Click other sign in option</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="e6fea1477cc0fa88546d1b1288605de1c00b1cb052d407f33b81a842508d8f86_screenshots.html#screenshots?screenshot=1">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="5700bbd0d80fc0c81ba4a4b0b5dc5065_NONE.png"
+                                         href="5700bbd0d80fc0c81ba4a4b0b5dc5065_NONE.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">7.1s</span></td>
+                </tr>
+
+                <tr class="test-SUCCESS">
                     <td width="60" class="step-icon">
                         
                             <img style="margin-left: 40px; margin-right: 5px;"
-                                 src="images/ignor.png" class="nested-group-icon"/>
+                                 src="images/success.png" class="nested-icon"/>
                     </td>
                     <td>
                         <div class="step-description">
-                            <span class="nested-group-step">And I click Create a New Account</span>
+                            <span class="nested-step">And I click Create a New Account</span>
 
                         </div>
                     </td>
-                    <td width="100"><span class="nested-group-step">SKIPPED</span></td>
-                    <td width="100"><span class="nested-group-step">0s</span></td>
+                        <td width="100" class="SUCCESS-text">
+                        </td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">3.58s</span></td>
                 </tr>
-                <tr class="test-SKIPPED">
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 60px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-group-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">Click create new account button</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="e6fea1477cc0fa88546d1b1288605de1c00b1cb052d407f33b81a842508d8f86_screenshots.html#screenshots?screenshot=2">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="06cd9c03c1eb889a3168628e8a9516e9_NONE.png"
+                                         href="06cd9c03c1eb889a3168628e8a9516e9_NONE.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">3.25s</span></td>
+                </tr>
+
+                <tr class="test-SUCCESS">
                     <td width="60" class="step-icon">
                         
                             <img style="margin-left: 40px; margin-right: 5px;"
-                                 src="images/ignor.png" class="nested-group-icon"/>
+                                 src="images/success.png" class="nested-icon"/>
                     </td>
                     <td>
                         <div class="step-description">
-                            <span class="nested-group-step">And I enter name in First Name textbox</span>
+                            <span class="nested-step">And I enter name in First Name textbox</span>
 
                         </div>
                     </td>
-                    <td width="100"><span class="nested-group-step">SKIPPED</span></td>
-                    <td width="100"><span class="nested-group-step">0s</span></td>
+                        <td width="100" class="SUCCESS-text">
+                        </td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">31.07s</span></td>
                 </tr>
-                <tr class="test-SKIPPED">
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 60px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-group-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">Enter user name: <span class='step-parameter'>Aurelia Koepp MD</span></span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="e6fea1477cc0fa88546d1b1288605de1c00b1cb052d407f33b81a842508d8f86_screenshots.html#screenshots?screenshot=3">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="e7259c58f565b15a1265c703d2f85ba3_NONE.png"
+                                         href="e7259c58f565b15a1265c703d2f85ba3_NONE.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0.52s</span></td>
+                </tr>
+
+                <tr class="test-SUCCESS">
                     <td width="60" class="step-icon">
                         
                             <img style="margin-left: 40px; margin-right: 5px;"
-                                 src="images/ignor.png" class="nested-group-icon"/>
+                                 src="images/success.png" class="nested-icon"/>
                     </td>
                     <td>
                         <div class="step-description">
-                            <span class="nested-group-step">And I enter email in Email textbox</span>
+                            <span class="nested-step">And I enter email in Email textbox</span>
 
                         </div>
                     </td>
-                    <td width="100"><span class="nested-group-step">SKIPPED</span></td>
-                    <td width="100"><span class="nested-group-step">0s</span></td>
+                        <td width="100" class="SUCCESS-text">
+                        </td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">0.91s</span></td>
                 </tr>
-                <tr class="test-SKIPPED">
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 60px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-group-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">Enter email address: <span class='step-parameter'>maribel.wintheiser@example.com</span></span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="e6fea1477cc0fa88546d1b1288605de1c00b1cb052d407f33b81a842508d8f86_screenshots.html#screenshots?screenshot=4">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="81be6d28de65237900c3bc3682decdf7_NONE.png"
+                                         href="81be6d28de65237900c3bc3682decdf7_NONE.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0.57s</span></td>
+                </tr>
+
+                <tr class="test-SUCCESS">
                     <td width="60" class="step-icon">
                         
                             <img style="margin-left: 40px; margin-right: 5px;"
-                                 src="images/ignor.png" class="nested-group-icon"/>
+                                 src="images/success.png" class="nested-icon"/>
                     </td>
                     <td>
                         <div class="step-description">
-                            <span class="nested-group-step">And I enter Password in password textbox</span>
+                            <span class="nested-step">And I enter Password in password textbox</span>
 
                         </div>
                     </td>
-                    <td width="100"><span class="nested-group-step">SKIPPED</span></td>
-                    <td width="100"><span class="nested-group-step">0s</span></td>
+                        <td width="100" class="SUCCESS-text">
+                        </td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">0.82s</span></td>
                 </tr>
-                <tr class="test-SKIPPED">
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 60px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-group-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">Enter password: <span class='step-parameter'>dbixwrgos</span></span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="e6fea1477cc0fa88546d1b1288605de1c00b1cb052d407f33b81a842508d8f86_screenshots.html#screenshots?screenshot=5">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="13bdc8294ebe6ffa23bb53de4059a9cd_NONE.png"
+                                         href="13bdc8294ebe6ffa23bb53de4059a9cd_NONE.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0.47s</span></td>
+                </tr>
+
+                <tr class="test-SUCCESS">
                     <td width="60" class="step-icon">
                         
                             <img style="margin-left: 40px; margin-right: 5px;"
-                                 src="images/ignor.png" class="nested-group-icon"/>
+                                 src="images/success.png" class="nested-icon"/>
                     </td>
                     <td>
                         <div class="step-description">
-                            <span class="nested-group-step">And I enter password again in Re-enter password textbox</span>
+                            <span class="nested-step">And I enter password again in Re-enter password textbox</span>
 
                         </div>
                     </td>
-                    <td width="100"><span class="nested-group-step">SKIPPED</span></td>
-                    <td width="100"><span class="nested-group-step">0s</span></td>
+                        <td width="100" class="SUCCESS-text">
+                        </td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">1.06s</span></td>
                 </tr>
-                <tr class="test-SKIPPED">
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 60px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-group-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">Re enter password: <span class='step-parameter'>dbixwrgos</span></span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="e6fea1477cc0fa88546d1b1288605de1c00b1cb052d407f33b81a842508d8f86_screenshots.html#screenshots?screenshot=6">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="17864c85fc0b3df7b2e0cf63773d65ce_NONE.png"
+                                         href="17864c85fc0b3df7b2e0cf63773d65ce_NONE.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0.49s</span></td>
+                </tr>
+
+                <tr class="test-SUCCESS">
                     <td width="60" class="step-icon">
                         
                             <img style="margin-left: 40px; margin-right: 5px;"
-                                 src="images/ignor.png" class="nested-group-icon"/>
+                                 src="images/success.png" class="nested-icon"/>
                     </td>
                     <td>
                         <div class="step-description">
-                            <span class="nested-group-step">And I click Create your IMDb account button</span>
+                            <span class="nested-step">And I click Create your IMDb account button</span>
 
                         </div>
                     </td>
-                    <td width="100"><span class="nested-group-step">SKIPPED</span></td>
-                    <td width="100"><span class="nested-group-step">0s</span></td>
+                        <td width="100" class="SUCCESS-text">
+                        </td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">8.18s</span></td>
                 </tr>
-                <tr class="test-SKIPPED">
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 60px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-group-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">Click create your account button</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="e6fea1477cc0fa88546d1b1288605de1c00b1cb052d407f33b81a842508d8f86_screenshots.html#screenshots?screenshot=7">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="13c5c7eb2adc2c5e1ad92f1426bdc554_NONE.png"
+                                         href="13c5c7eb2adc2c5e1ad92f1426bdc554_NONE.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">6.02s</span></td>
+                </tr>
+
+                <tr class="test-SUCCESS">
                     <td width="60" class="step-icon">
                         
                             <img style="margin-left: 40px; margin-right: 5px;"
-                                 src="images/ignor.png" class="nested-group-icon"/>
+                                 src="images/success.png" class="nested-icon"/>
                     </td>
                     <td>
                         <div class="step-description">
-                            <span class="nested-group-step">Then I should get logged in to my account</span>
+                            <span class="nested-step">Then I should get logged in to my account</span>
 
                         </div>
                     </td>
-                    <td width="100"><span class="nested-group-step">SKIPPED</span></td>
-                    <td width="100"><span class="nested-group-step">0s</span></td>
+                        <td width="100" class="SUCCESS-text">
+                        </td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">1.89s</span></td>
                 </tr>
-                <tr class="test-SKIPPED">
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 60px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-group-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">Verify user logged in: <span class='step-parameter'>Aurelia Koepp MD</span></span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="e6fea1477cc0fa88546d1b1288605de1c00b1cb052d407f33b81a842508d8f86_screenshots.html#screenshots?screenshot=8">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="ee8b32d00706746b59c4ab18b4ff6d5b_NONE.png"
+                                         href="ee8b32d00706746b59c4ab18b4ff6d5b_NONE.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">1.07s</span></td>
+                </tr>
+
+                <tr class="test-SUCCESS">
                     <td width="60" class="step-icon">
                         
                             <img style="margin-left: 40px; margin-right: 5px;"
-                                 src="images/ignor.png" class="nested-group-icon"/>
+                                 src="images/success.png" class="nested-icon"/>
                     </td>
                     <td>
                         <div class="step-description">
-                            <span class="nested-group-step">And I log out of the application</span>
+                            <span class="nested-step">And I log out of the application</span>
 
                         </div>
                     </td>
-                    <td width="100"><span class="nested-group-step">SKIPPED</span></td>
-                    <td width="100"><span class="nested-group-step">0s</span></td>
+                        <td width="100" class="SUCCESS-text">
+                        </td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">19.1s</span></td>
                 </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 60px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-group-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">Log out of application</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="e6fea1477cc0fa88546d1b1288605de1c00b1cb052d407f33b81a842508d8f86_screenshots.html#screenshots?screenshot=9">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="3d0e9e9a219b90cd8d4fb4ed12431ac8_NONE.png"
+                                         href="3d0e9e9a219b90cd8d4fb4ed12431ac8_NONE.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">17.68s</span></td>
+                </tr>
+
 
                     </table>
                     </td>
                     <tr>
-                <tr class="test-ERROR">
+                <tr class="test-SUCCESS">
                     <td width="60" class="step-icon">
                         <a name="1"/>
                             <a href="javaScript:void(0)" onClick="toggleDiv('stepSection1')"
@@ -422,18 +642,20 @@
 
                         </div>
                     </td>
-                    <td width="100"><span class="top-level-step">ERROR</span></td>
-                    <td width="100"><span class="top-level-step">0.1s</span></td>
+                        <td width="100" class="SUCCESS-text">
+                        </td>
+                    <td width="100"><span class="top-level-step">SUCCESS</span></td>
+                    <td width="100"><span class="top-level-step">110.43s</span></td>
                 </tr>
                     <tr>
                     <td colspan="5">
                     <table id="stepSection1" style="display:none; width:100%">
 
-                <tr class="test-ERROR">
+                <tr class="test-SUCCESS">
                     <td width="60" class="step-icon">
                         
                             <img style="margin-left: 40px; margin-right: 5px;"
-                                 src="images/cross.png" class="nested-icon"/>
+                                 src="images/success.png" class="nested-icon"/>
                     </td>
                     <td>
                         <div class="step-description">
@@ -441,14 +663,16 @@
 
                         </div>
                     </td>
-                    <td width="100"><span class="nested-step">ERROR</span></td>
-                    <td width="100"><span class="nested-step">0.06s</span></td>
+                        <td width="100" class="SUCCESS-text">
+                        </td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">17.5s</span></td>
                 </tr>
-                <tr class="test-ERROR">
+                <tr class="test-SUCCESS">
                     <td width="60" class="step-icon">
                         
                             <img style="margin-left: 60px; margin-right: 5px;"
-                                 src="images/cross.png" class="nested-group-icon"/>
+                                 src="images/success.png" class="nested-group-icon"/>
                     </td>
                     <td>
                         <div class="step-description">
@@ -456,185 +680,397 @@
 
                         </div>
                     </td>
-                    <td width="100"><span class="nested-group-step">ERROR</span></td>
-                    <td width="100"><span class="nested-group-step">0.05s</span></td>
-                </tr>
-                    <tr class="test-ERROR">
-                        <td width="40">&nbsp</td>
-                        <td width="%" colspan="4" class="error-message-cell">
-                            <span class="error-message ellipsis"
-                                  title='net.thucydides.core.webdriver.UnsupportedDriverException: Could not instantiate class org.openqa.selenium.phantomjs.PhantomJSDriver'><pre>net.thucydides.core.webdriver.UnsupportedDriverException: Could not instantiate class org.openqa.selenium.phantomjs.PhantomJSDriver</pre></span>
-                <div><!-- Stack trace -->
-                    <button type="button" class="btn btn-danger btn-sm" data-toggle="modal"
-                            data-target="#stacktraceModal">
-                        View stack trace
-                    </button>
-                </div>
-                <!-- Modal -->
-                <div class="modal fade" id="stacktraceModal" tabindex="-1" role="dialog"
-                     aria-labelledby="stacktraceModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-lg">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal"
-                                        aria-label="Close"><span aria-hidden="true">&times;</span>
-                                </button>
-                                <h4 class="modal-title" id="stacktraceModalLabel">
-                                net.thucydides.core.webdriver.UnsupportedDriverException :  Could not instantiate class org.openqa.selenium.phantomjs.PhantomJSDriver 
-                                </h4>
-                            </div>
-                            <div class="modal-body">
-                                steps.SearchContentSteps.isOnTheHomePage(SearchContentSteps.java
-                                    :19)
-                                com.seneity.assignment.SearchSteps.iAmOnIMDBHomePage(SearchSteps.java
-                                    :22)
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-default" data-dismiss="modal">
-                                    Close
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="e6fea1477cc0fa88546d1b1288605de1c00b1cb052d407f33b81a842508d8f86_screenshots.html#screenshots?screenshot=10">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="00acf2dfa64981258d0e2e3d181f5079_NONE.png"
+                                         href="00acf2dfa64981258d0e2e3d181f5079_NONE.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
                         </td>
-                    </tr>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">16.61s</span></td>
+                </tr>
 
-                <tr class="test-SKIPPED">
+                <tr class="test-SUCCESS">
                     <td width="60" class="step-icon">
                         
                             <img style="margin-left: 40px; margin-right: 5px;"
-                                 src="images/ignor.png" class="nested-group-icon"/>
+                                 src="images/success.png" class="nested-icon"/>
                     </td>
                     <td>
                         <div class="step-description">
-                            <span class="nested-group-step">When I click Other Sign in options</span>
+                            <span class="nested-step">When I click Other Sign in options</span>
 
                         </div>
                     </td>
-                    <td width="100"><span class="nested-group-step">SKIPPED</span></td>
-                    <td width="100"><span class="nested-group-step">0.01s</span></td>
+                        <td width="100" class="SUCCESS-text">
+                        </td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">2.69s</span></td>
                 </tr>
-                <tr class="test-SKIPPED">
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 60px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-group-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">Click other sign in option</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="e6fea1477cc0fa88546d1b1288605de1c00b1cb052d407f33b81a842508d8f86_screenshots.html#screenshots?screenshot=11">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="5700bbd0d80fc0c81ba4a4b0b5dc5065_NONE.png"
+                                         href="5700bbd0d80fc0c81ba4a4b0b5dc5065_NONE.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">2.19s</span></td>
+                </tr>
+
+                <tr class="test-SUCCESS">
                     <td width="60" class="step-icon">
                         
                             <img style="margin-left: 40px; margin-right: 5px;"
-                                 src="images/ignor.png" class="nested-group-icon"/>
+                                 src="images/success.png" class="nested-icon"/>
                     </td>
                     <td>
                         <div class="step-description">
-                            <span class="nested-group-step">And I click Create a New Account</span>
+                            <span class="nested-step">And I click Create a New Account</span>
 
                         </div>
                     </td>
-                    <td width="100"><span class="nested-group-step">SKIPPED</span></td>
-                    <td width="100"><span class="nested-group-step">0s</span></td>
+                        <td width="100" class="SUCCESS-text">
+                        </td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">17.67s</span></td>
                 </tr>
-                <tr class="test-SKIPPED">
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 60px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-group-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">Click create new account button</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="e6fea1477cc0fa88546d1b1288605de1c00b1cb052d407f33b81a842508d8f86_screenshots.html#screenshots?screenshot=12">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="bb08cefcd9eaa50029392ace07fc3150_NONE.png"
+                                         href="bb08cefcd9eaa50029392ace07fc3150_NONE.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">17.34s</span></td>
+                </tr>
+
+                <tr class="test-SUCCESS">
                     <td width="60" class="step-icon">
                         
                             <img style="margin-left: 40px; margin-right: 5px;"
-                                 src="images/ignor.png" class="nested-group-icon"/>
+                                 src="images/success.png" class="nested-icon"/>
                     </td>
                     <td>
                         <div class="step-description">
-                            <span class="nested-group-step">And I enter name in First Name textbox</span>
+                            <span class="nested-step">And I enter name in First Name textbox</span>
 
                         </div>
                     </td>
-                    <td width="100"><span class="nested-group-step">SKIPPED</span></td>
-                    <td width="100"><span class="nested-group-step">0s</span></td>
+                        <td width="100" class="SUCCESS-text">
+                        </td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">0.85s</span></td>
                 </tr>
-                <tr class="test-SKIPPED">
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 60px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-group-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">Enter user name: <span class='step-parameter'>Adonis Pfeffer I</span></span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="e6fea1477cc0fa88546d1b1288605de1c00b1cb052d407f33b81a842508d8f86_screenshots.html#screenshots?screenshot=13">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="f268ea5355650d4115d932a7bc4e6c4c_NONE.png"
+                                         href="f268ea5355650d4115d932a7bc4e6c4c_NONE.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0.5s</span></td>
+                </tr>
+
+                <tr class="test-SUCCESS">
                     <td width="60" class="step-icon">
                         
                             <img style="margin-left: 40px; margin-right: 5px;"
-                                 src="images/ignor.png" class="nested-group-icon"/>
+                                 src="images/success.png" class="nested-icon"/>
                     </td>
                     <td>
                         <div class="step-description">
-                            <span class="nested-group-step">And I enter email in Email textbox</span>
+                            <span class="nested-step">And I enter email in Email textbox</span>
 
                         </div>
                     </td>
-                    <td width="100"><span class="nested-group-step">SKIPPED</span></td>
-                    <td width="100"><span class="nested-group-step">0s</span></td>
+                        <td width="100" class="SUCCESS-text">
+                        </td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">6.56s</span></td>
                 </tr>
-                <tr class="test-SKIPPED">
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 60px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-group-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">Enter email address: <span class='step-parameter'>micah.kunze@example.com</span></span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="e6fea1477cc0fa88546d1b1288605de1c00b1cb052d407f33b81a842508d8f86_screenshots.html#screenshots?screenshot=14">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="644b6e8af21141f2a8d4510db2614b87_NONE.png"
+                                         href="644b6e8af21141f2a8d4510db2614b87_NONE.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0.55s</span></td>
+                </tr>
+
+                <tr class="test-SUCCESS">
                     <td width="60" class="step-icon">
                         
                             <img style="margin-left: 40px; margin-right: 5px;"
-                                 src="images/ignor.png" class="nested-group-icon"/>
+                                 src="images/success.png" class="nested-icon"/>
                     </td>
                     <td>
                         <div class="step-description">
-                            <span class="nested-group-step">And I enter Password in password textbox</span>
+                            <span class="nested-step">And I enter Password in password textbox</span>
 
                         </div>
                     </td>
-                    <td width="100"><span class="nested-group-step">SKIPPED</span></td>
-                    <td width="100"><span class="nested-group-step">0s</span></td>
+                        <td width="100" class="SUCCESS-text">
+                        </td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">0.8s</span></td>
                 </tr>
-                <tr class="test-SKIPPED">
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 60px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-group-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">Enter password: <span class='step-parameter'>jj4rutxr</span></span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="e6fea1477cc0fa88546d1b1288605de1c00b1cb052d407f33b81a842508d8f86_screenshots.html#screenshots?screenshot=15">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="84f0f6c0f9197dd05b6d47b8193f4699_NONE.png"
+                                         href="84f0f6c0f9197dd05b6d47b8193f4699_NONE.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0.46s</span></td>
+                </tr>
+
+                <tr class="test-SUCCESS">
                     <td width="60" class="step-icon">
                         
                             <img style="margin-left: 40px; margin-right: 5px;"
-                                 src="images/ignor.png" class="nested-group-icon"/>
+                                 src="images/success.png" class="nested-icon"/>
                     </td>
                     <td>
                         <div class="step-description">
-                            <span class="nested-group-step">And I enter password again in Re-enter password textbox</span>
+                            <span class="nested-step">And I enter password again in Re-enter password textbox</span>
 
                         </div>
                     </td>
-                    <td width="100"><span class="nested-group-step">SKIPPED</span></td>
-                    <td width="100"><span class="nested-group-step">0s</span></td>
+                        <td width="100" class="SUCCESS-text">
+                        </td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">0.77s</span></td>
                 </tr>
-                <tr class="test-SKIPPED">
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 60px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-group-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">Re enter password: <span class='step-parameter'>jj4rutxr</span></span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="e6fea1477cc0fa88546d1b1288605de1c00b1cb052d407f33b81a842508d8f86_screenshots.html#screenshots?screenshot=16">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="17d18983f7460e844f3614d06312c2a3_NONE.png"
+                                         href="17d18983f7460e844f3614d06312c2a3_NONE.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0.45s</span></td>
+                </tr>
+
+                <tr class="test-SUCCESS">
                     <td width="60" class="step-icon">
                         
                             <img style="margin-left: 40px; margin-right: 5px;"
-                                 src="images/ignor.png" class="nested-group-icon"/>
+                                 src="images/success.png" class="nested-icon"/>
                     </td>
                     <td>
                         <div class="step-description">
-                            <span class="nested-group-step">And I click Create your IMDb account button</span>
+                            <span class="nested-step">And I click Create your IMDb account button</span>
 
                         </div>
                     </td>
-                    <td width="100"><span class="nested-group-step">SKIPPED</span></td>
-                    <td width="100"><span class="nested-group-step">0s</span></td>
+                        <td width="100" class="SUCCESS-text">
+                        </td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">7.72s</span></td>
                 </tr>
-                <tr class="test-SKIPPED">
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 60px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-group-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">Click create your account button</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="e6fea1477cc0fa88546d1b1288605de1c00b1cb052d407f33b81a842508d8f86_screenshots.html#screenshots?screenshot=17">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="760edb4b418ceffe1bc692c372686809_NONE.png"
+                                         href="760edb4b418ceffe1bc692c372686809_NONE.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">6.92s</span></td>
+                </tr>
+
+                <tr class="test-SUCCESS">
                     <td width="60" class="step-icon">
                         
                             <img style="margin-left: 40px; margin-right: 5px;"
-                                 src="images/ignor.png" class="nested-group-icon"/>
+                                 src="images/success.png" class="nested-icon"/>
                     </td>
                     <td>
                         <div class="step-description">
-                            <span class="nested-group-step">Then I should get logged in to my account</span>
+                            <span class="nested-step">Then I should get logged in to my account</span>
 
                         </div>
                     </td>
-                    <td width="100"><span class="nested-group-step">SKIPPED</span></td>
-                    <td width="100"><span class="nested-group-step">0s</span></td>
+                        <td width="100" class="SUCCESS-text">
+                        </td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">36.93s</span></td>
                 </tr>
-                <tr class="test-SKIPPED">
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 60px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-group-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">Verify user logged in: <span class='step-parameter'>Adonis Pfeffer I</span></span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="e6fea1477cc0fa88546d1b1288605de1c00b1cb052d407f33b81a842508d8f86_screenshots.html#screenshots?screenshot=18">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="ec106e57b48c09836a05eafd0eaee3dd_NONE.png"
+                                         href="ec106e57b48c09836a05eafd0eaee3dd_NONE.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">36.16s</span></td>
+                </tr>
+
+                <tr class="test-SUCCESS">
                     <td width="60" class="step-icon">
                         
                             <img style="margin-left: 40px; margin-right: 5px;"
-                                 src="images/ignor.png" class="nested-group-icon"/>
+                                 src="images/success.png" class="nested-icon"/>
                     </td>
                     <td>
                         <div class="step-description">
-                            <span class="nested-group-step">And I log out of the application</span>
+                            <span class="nested-step">And I log out of the application</span>
 
                         </div>
                     </td>
-                    <td width="100"><span class="nested-group-step">SKIPPED</span></td>
-                    <td width="100"><span class="nested-group-step">0s</span></td>
+                        <td width="100" class="SUCCESS-text">
+                        </td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">18.13s</span></td>
                 </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 60px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-group-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">Log out of application</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="e6fea1477cc0fa88546d1b1288605de1c00b1cb052d407f33b81a842508d8f86_screenshots.html#screenshots?screenshot=19">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="ace71c7fff66cd9b20407979405ad23f_NONE.png"
+                                         href="ace71c7fff66cd9b20407979405ad23f_NONE.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">16.66s</span></td>
+                </tr>
+
 
                     </table>
                     </td>
@@ -657,12 +1093,392 @@
 
                         </div>
                     </td>
+                        <td width="100" class="ERROR-text">
+                        </td>
                     <td width="100"><span class="top-level-step">ERROR</span></td>
-                    <td width="100"><span class="top-level-step">0.1s</span></td>
+                    <td width="100"><span class="top-level-step">340.32s</span></td>
                 </tr>
                     <tr>
                     <td colspan="5">
                     <table id="stepSection2" style="display:none; width:100%">
+
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 40px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-step">Given I am on IMDB home page</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                        </td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">17.27s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 60px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-group-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">Is on the home page</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="e6fea1477cc0fa88546d1b1288605de1c00b1cb052d407f33b81a842508d8f86_screenshots.html#screenshots?screenshot=20">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="253f498c8f85c3370b7674674ef424b6_NONE.png"
+                                         href="253f498c8f85c3370b7674674ef424b6_NONE.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">16.48s</span></td>
+                </tr>
+
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 40px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-step">When I click Other Sign in options</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                        </td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">3.2s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 60px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-group-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">Click other sign in option</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="e6fea1477cc0fa88546d1b1288605de1c00b1cb052d407f33b81a842508d8f86_screenshots.html#screenshots?screenshot=21">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="5700bbd0d80fc0c81ba4a4b0b5dc5065_NONE.png"
+                                         href="5700bbd0d80fc0c81ba4a4b0b5dc5065_NONE.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">2.54s</span></td>
+                </tr>
+
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 40px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-step">And I click Create a New Account</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                        </td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">2.85s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 60px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-group-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">Click create new account button</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="e6fea1477cc0fa88546d1b1288605de1c00b1cb052d407f33b81a842508d8f86_screenshots.html#screenshots?screenshot=22">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="06cd9c03c1eb889a3168628e8a9516e9_NONE.png"
+                                         href="06cd9c03c1eb889a3168628e8a9516e9_NONE.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">2.31s</span></td>
+                </tr>
+
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 40px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-step">And I enter name in First Name textbox</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                        </td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">48.52s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 60px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-group-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">Enter user name: <span class='step-parameter'>Kristina Daugherty</span></span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="e6fea1477cc0fa88546d1b1288605de1c00b1cb052d407f33b81a842508d8f86_screenshots.html#screenshots?screenshot=23">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="44f71cfe683643c3d1df6fb94abd9f12_NONE.png"
+                                         href="44f71cfe683643c3d1df6fb94abd9f12_NONE.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">48.16s</span></td>
+                </tr>
+
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 40px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-step">And I enter email in Email textbox</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                        </td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">1.14s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 60px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-group-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">Enter email address: <span class='step-parameter'>vidal.heathcote@example.com</span></span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="e6fea1477cc0fa88546d1b1288605de1c00b1cb052d407f33b81a842508d8f86_screenshots.html#screenshots?screenshot=24">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="493ca98b822161874659e93c3bb7f134_NONE.png"
+                                         href="493ca98b822161874659e93c3bb7f134_NONE.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0.81s</span></td>
+                </tr>
+
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 40px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-step">And I enter Password in password textbox</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                        </td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">147.94s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 60px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-group-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">Enter password: <span class='step-parameter'>i4eawhh1</span></span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="e6fea1477cc0fa88546d1b1288605de1c00b1cb052d407f33b81a842508d8f86_screenshots.html#screenshots?screenshot=25">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="4565e498a3ad393bb73a5bee8dde6417_NONE.png"
+                                         href="4565e498a3ad393bb73a5bee8dde6417_NONE.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">147.6s</span></td>
+                </tr>
+
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 40px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-step">And I enter password again in Re-enter password textbox</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                        </td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">2.82s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 60px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-group-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">Re enter password: <span class='step-parameter'>i4eawhh1</span></span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="e6fea1477cc0fa88546d1b1288605de1c00b1cb052d407f33b81a842508d8f86_screenshots.html#screenshots?screenshot=26">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="14695bba4ec5a8deeb8d6ae44014a855_NONE.png"
+                                         href="14695bba4ec5a8deeb8d6ae44014a855_NONE.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0.52s</span></td>
+                </tr>
+
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 40px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-step">And I click Create your IMDb account button</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                        </td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">11.67s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 60px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-group-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">Click create your account button</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="e6fea1477cc0fa88546d1b1288605de1c00b1cb052d407f33b81a842508d8f86_screenshots.html#screenshots?screenshot=27">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="39202c88c8785fd78df91f5cdec293e1_NONE.png"
+                                         href="39202c88c8785fd78df91f5cdec293e1_NONE.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">10.89s</span></td>
+                </tr>
+
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 40px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-step">Then I should get logged in to my account</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                        </td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">98.58s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 60px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-group-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">Verify user logged in: <span class='step-parameter'>Kristina Daugherty</span></span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="e6fea1477cc0fa88546d1b1288605de1c00b1cb052d407f33b81a842508d8f86_screenshots.html#screenshots?screenshot=28">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="39202c88c8785fd78df91f5cdec293e1_NONE.png"
+                                         href="39202c88c8785fd78df91f5cdec293e1_NONE.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">97.89s</span></td>
+                </tr>
 
                 <tr class="test-ERROR">
                     <td width="60" class="step-icon">
@@ -672,12 +1488,14 @@
                     </td>
                     <td>
                         <div class="step-description">
-                            <span class="nested-step">Given I am on IMDB home page</span>
+                            <span class="nested-step">And I log out of the application</span>
 
                         </div>
                     </td>
+                        <td width="100" class="ERROR-text">
+                        </td>
                     <td width="100"><span class="nested-step">ERROR</span></td>
-                    <td width="100"><span class="nested-step">0.06s</span></td>
+                    <td width="100"><span class="nested-step">6.34s</span></td>
                 </tr>
                 <tr class="test-ERROR">
                     <td width="60" class="step-icon">
@@ -687,18 +1505,27 @@
                     </td>
                     <td>
                         <div class="step-description">
-                            <span class="nested-group-step">Is on the home page</span>
+                            <span class="nested-group-step">Log out of application</span>
 
                         </div>
                     </td>
+                        <td width="100" class="ERROR-text">
+                                <a href="e6fea1477cc0fa88546d1b1288605de1c00b1cb052d407f33b81a842508d8f86_screenshots.html#screenshots?screenshot=29">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="ce9bb9dbfed851ec94e762d102488ae2_NONE.png"
+                                         href="ce9bb9dbfed851ec94e762d102488ae2_NONE.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
                     <td width="100"><span class="nested-group-step">ERROR</span></td>
-                    <td width="100"><span class="nested-group-step">0.05s</span></td>
+                    <td width="100"><span class="nested-group-step">6.33s</span></td>
                 </tr>
                     <tr class="test-ERROR">
                         <td width="40">&nbsp</td>
                         <td width="%" colspan="4" class="error-message-cell">
                             <span class="error-message ellipsis"
-                                  title='net.thucydides.core.webdriver.UnsupportedDriverException: Could not instantiate class org.openqa.selenium.phantomjs.PhantomJSDriver'><pre>net.thucydides.core.webdriver.UnsupportedDriverException: Could not instantiate class org.openqa.selenium.phantomjs.PhantomJSDriver</pre></span>
+                                  title='net.thucydides.core.webdriver.exceptions.ElementShouldBeVisibleException: Timed out after 5 seconds waiting for net.serenitybdd.core.pages.WebElementFacadeImpl$1@e52363e Build info: version: '2.46.0', revision: '61506a4624b13675f24581e453592342b7485d71', time: '2015-06-04 10:22:50' System info: host: 'inarpits.local', ip: '192.168.1.2', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.2', java.version: '1.8.0_131' Driver info: driver.version: unknown Build info: version: '2.46.0', revision: '61506a4624b13675f24581e453592342b7485d71', time: '2015-06-04 10:22:50' System info: host: 'inarpits.local', ip: '192.168.1.2', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.2', java.version: '1.8.0_131' Driver info: driver.version: unknown'><pre>net.thucydides.core.webdriver.exceptions.ElementShouldBeVisibleException: Timed out after 5 seconds waiting for net.serenitybdd.core.pages.WebElementFacadeImpl$1@e52363e Build info: version: '2.46.0', revision: '61506a4624b13675f24581e453592342b7485d71', time: '2015-06-04 10:22:50' System info: host: 'inarpits.local', ip: '192.168.1.2', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.2', java.version: '1.8.0_131' Driver info: driver.version: unknown Build info: version: '2.46.0', revision: '61506a4624b13675f24581e453592342b7485d71', time: '2015-06-04 10:22:50' System info: host: 'inarpits.local', ip: '192.168.1.2', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.2', java.version: '1.8.0_131' Driver info: driver.version: unknown</pre></span>
                 <div><!-- Stack trace -->
                     <button type="button" class="btn btn-danger btn-sm" data-toggle="modal"
                             data-target="#stacktraceModal">
@@ -715,14 +1542,22 @@
                                         aria-label="Close"><span aria-hidden="true">&times;</span>
                                 </button>
                                 <h4 class="modal-title" id="stacktraceModalLabel">
-                                net.thucydides.core.webdriver.UnsupportedDriverException :  Could not instantiate class org.openqa.selenium.phantomjs.PhantomJSDriver 
+                                net.thucydides.core.webdriver.exceptions.ElementShouldBeVisibleException :  Timed out after 5 seconds waiting for net.serenitybdd.core.pages.WebElementFacadeImpl$1@e52363e
+Build info: version: '2.46.0', revision: '61506a4624b13675f24581e453592342b7485d71', time: '2015-06-04 10:22:50'
+System info: host: 'inarpits.local', ip: '192.168.1.2', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.2', java.version: '1.8.0_131'
+Driver info: driver.version: unknown
+Build info: version: '2.46.0', revision: '61506a4624b13675f24581e453592342b7485d71', time: '2015-06-04 10:22:50'
+System info: host: 'inarpits.local', ip: '192.168.1.2', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.2', java.version: '1.8.0_131'
+Driver info: driver.version: unknown 
                                 </h4>
                             </div>
                             <div class="modal-body">
-                                steps.SearchContentSteps.isOnTheHomePage(SearchContentSteps.java
-                                    :19)
-                                com.seneity.assignment.SearchSteps.iAmOnIMDBHomePage(SearchSteps.java
-                                    :22)
+                                pages.ImdbHomePage.log_out_of_application(ImdbHomePage.java
+                                    :59)
+                                steps.CreateAccountSteps.logOutOfApplication(CreateAccountSteps.java
+                                    :64)
+                                com.seneity.assignment.UserRegistrationSteps.iLogOutOfTheApplication(UserRegistrationSteps.java
+                                    :70)
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-default" data-dismiss="modal">
@@ -735,141 +1570,6 @@
                         </td>
                     </tr>
 
-                <tr class="test-SKIPPED">
-                    <td width="60" class="step-icon">
-                        
-                            <img style="margin-left: 40px; margin-right: 5px;"
-                                 src="images/ignor.png" class="nested-group-icon"/>
-                    </td>
-                    <td>
-                        <div class="step-description">
-                            <span class="nested-group-step">When I click Other Sign in options</span>
-
-                        </div>
-                    </td>
-                    <td width="100"><span class="nested-group-step">SKIPPED</span></td>
-                    <td width="100"><span class="nested-group-step">0s</span></td>
-                </tr>
-                <tr class="test-SKIPPED">
-                    <td width="60" class="step-icon">
-                        
-                            <img style="margin-left: 40px; margin-right: 5px;"
-                                 src="images/ignor.png" class="nested-group-icon"/>
-                    </td>
-                    <td>
-                        <div class="step-description">
-                            <span class="nested-group-step">And I click Create a New Account</span>
-
-                        </div>
-                    </td>
-                    <td width="100"><span class="nested-group-step">SKIPPED</span></td>
-                    <td width="100"><span class="nested-group-step">0s</span></td>
-                </tr>
-                <tr class="test-SKIPPED">
-                    <td width="60" class="step-icon">
-                        
-                            <img style="margin-left: 40px; margin-right: 5px;"
-                                 src="images/ignor.png" class="nested-group-icon"/>
-                    </td>
-                    <td>
-                        <div class="step-description">
-                            <span class="nested-group-step">And I enter name in First Name textbox</span>
-
-                        </div>
-                    </td>
-                    <td width="100"><span class="nested-group-step">SKIPPED</span></td>
-                    <td width="100"><span class="nested-group-step">0s</span></td>
-                </tr>
-                <tr class="test-SKIPPED">
-                    <td width="60" class="step-icon">
-                        
-                            <img style="margin-left: 40px; margin-right: 5px;"
-                                 src="images/ignor.png" class="nested-group-icon"/>
-                    </td>
-                    <td>
-                        <div class="step-description">
-                            <span class="nested-group-step">And I enter email in Email textbox</span>
-
-                        </div>
-                    </td>
-                    <td width="100"><span class="nested-group-step">SKIPPED</span></td>
-                    <td width="100"><span class="nested-group-step">0s</span></td>
-                </tr>
-                <tr class="test-SKIPPED">
-                    <td width="60" class="step-icon">
-                        
-                            <img style="margin-left: 40px; margin-right: 5px;"
-                                 src="images/ignor.png" class="nested-group-icon"/>
-                    </td>
-                    <td>
-                        <div class="step-description">
-                            <span class="nested-group-step">And I enter Password in password textbox</span>
-
-                        </div>
-                    </td>
-                    <td width="100"><span class="nested-group-step">SKIPPED</span></td>
-                    <td width="100"><span class="nested-group-step">0s</span></td>
-                </tr>
-                <tr class="test-SKIPPED">
-                    <td width="60" class="step-icon">
-                        
-                            <img style="margin-left: 40px; margin-right: 5px;"
-                                 src="images/ignor.png" class="nested-group-icon"/>
-                    </td>
-                    <td>
-                        <div class="step-description">
-                            <span class="nested-group-step">And I enter password again in Re-enter password textbox</span>
-
-                        </div>
-                    </td>
-                    <td width="100"><span class="nested-group-step">SKIPPED</span></td>
-                    <td width="100"><span class="nested-group-step">0s</span></td>
-                </tr>
-                <tr class="test-SKIPPED">
-                    <td width="60" class="step-icon">
-                        
-                            <img style="margin-left: 40px; margin-right: 5px;"
-                                 src="images/ignor.png" class="nested-group-icon"/>
-                    </td>
-                    <td>
-                        <div class="step-description">
-                            <span class="nested-group-step">And I click Create your IMDb account button</span>
-
-                        </div>
-                    </td>
-                    <td width="100"><span class="nested-group-step">SKIPPED</span></td>
-                    <td width="100"><span class="nested-group-step">0s</span></td>
-                </tr>
-                <tr class="test-SKIPPED">
-                    <td width="60" class="step-icon">
-                        
-                            <img style="margin-left: 40px; margin-right: 5px;"
-                                 src="images/ignor.png" class="nested-group-icon"/>
-                    </td>
-                    <td>
-                        <div class="step-description">
-                            <span class="nested-group-step">Then I should get logged in to my account</span>
-
-                        </div>
-                    </td>
-                    <td width="100"><span class="nested-group-step">SKIPPED</span></td>
-                    <td width="100"><span class="nested-group-step">0s</span></td>
-                </tr>
-                <tr class="test-SKIPPED">
-                    <td width="60" class="step-icon">
-                        
-                            <img style="margin-left: 40px; margin-right: 5px;"
-                                 src="images/ignor.png" class="nested-group-icon"/>
-                    </td>
-                    <td>
-                        <div class="step-description">
-                            <span class="nested-group-step">And I log out of the application</span>
-
-                        </div>
-                    </td>
-                    <td width="100"><span class="nested-group-step">SKIPPED</span></td>
-                    <td width="100"><span class="nested-group-step">0s</span></td>
-                </tr>
 
                     </table>
                     </td>
@@ -892,12 +1592,343 @@
 
                         </div>
                     </td>
+                        <td width="100" class="ERROR-text">
+                        </td>
                     <td width="100"><span class="top-level-step">ERROR</span></td>
-                    <td width="100"><span class="top-level-step">0.09s</span></td>
+                    <td width="100"><span class="top-level-step">1048.18s</span></td>
                 </tr>
                     <tr>
                     <td colspan="5">
                     <table id="stepSection3" style="display:none; width:100%">
+
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 40px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-step">Given I am on IMDB home page</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                        </td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">16.84s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 60px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-group-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">Is on the home page</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="e6fea1477cc0fa88546d1b1288605de1c00b1cb052d407f33b81a842508d8f86_screenshots.html#screenshots?screenshot=30">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="d2ad82c377d8d7ca8ab71eeb1f0122ed_NONE.png"
+                                         href="d2ad82c377d8d7ca8ab71eeb1f0122ed_NONE.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">15.71s</span></td>
+                </tr>
+
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 40px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-step">When I click Other Sign in options</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                        </td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">7.68s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 60px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-group-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">Click other sign in option</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="e6fea1477cc0fa88546d1b1288605de1c00b1cb052d407f33b81a842508d8f86_screenshots.html#screenshots?screenshot=31">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="9afc056dbd78f11694ac3eb8b82fcc82_NONE.png"
+                                         href="9afc056dbd78f11694ac3eb8b82fcc82_NONE.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">7.12s</span></td>
+                </tr>
+
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 40px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-step">And I click Create a New Account</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                        </td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">607.26s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 60px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-group-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">Click create new account button</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="e6fea1477cc0fa88546d1b1288605de1c00b1cb052d407f33b81a842508d8f86_screenshots.html#screenshots?screenshot=32">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="69b9d64137bde52181c45e96fa95f9bd_NONE.png"
+                                         href="69b9d64137bde52181c45e96fa95f9bd_NONE.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">606.94s</span></td>
+                </tr>
+
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 40px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-step">And I enter name in First Name textbox</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                        </td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">0.87s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 60px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-group-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">Enter user name: <span class='step-parameter'>Savanah Schuster</span></span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="e6fea1477cc0fa88546d1b1288605de1c00b1cb052d407f33b81a842508d8f86_screenshots.html#screenshots?screenshot=33">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="1e1f9ae7d655d508d91f5a50da260bea_NONE.png"
+                                         href="1e1f9ae7d655d508d91f5a50da260bea_NONE.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0.52s</span></td>
+                </tr>
+
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 40px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-step">And I enter email in Email textbox</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                        </td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">4.5s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 60px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-group-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">Enter email address: <span class='step-parameter'>lottie.rau@example.com</span></span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="e6fea1477cc0fa88546d1b1288605de1c00b1cb052d407f33b81a842508d8f86_screenshots.html#screenshots?screenshot=34">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="a9ebb094adcbd5537c22fa25145f1621_NONE.png"
+                                         href="a9ebb094adcbd5537c22fa25145f1621_NONE.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">4.15s</span></td>
+                </tr>
+
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 40px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-step">And I enter Password in password textbox</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                        </td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">0.79s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 60px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-group-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">Enter password: <span class='step-parameter'>qkityk1av</span></span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="e6fea1477cc0fa88546d1b1288605de1c00b1cb052d407f33b81a842508d8f86_screenshots.html#screenshots?screenshot=35">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="3ed056f4e8be0c608536319cefb7e487_NONE.png"
+                                         href="3ed056f4e8be0c608536319cefb7e487_NONE.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0.47s</span></td>
+                </tr>
+
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 40px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-step">And I enter password again in Re-enter password textbox</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                        </td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">1.05s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 60px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-group-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">Re enter password: <span class='step-parameter'>qkityk1av</span></span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="e6fea1477cc0fa88546d1b1288605de1c00b1cb052d407f33b81a842508d8f86_screenshots.html#screenshots?screenshot=36">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="577d9ea9e05a99329a0c1ad008be70f6_NONE.png"
+                                         href="577d9ea9e05a99329a0c1ad008be70f6_NONE.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0.48s</span></td>
+                </tr>
+
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 40px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-step">And I click Create your IMDb account button</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                        </td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">409.14s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 60px; margin-right: 5px;"
+                                 src="images/success.png" class="nested-group-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">Click create your account button</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">358.53s</span></td>
+                </tr>
 
                 <tr class="test-ERROR">
                     <td width="60" class="step-icon">
@@ -907,12 +1938,14 @@
                     </td>
                     <td>
                         <div class="step-description">
-                            <span class="nested-step">Given I am on IMDB home page</span>
+                            <span class="nested-step">Then I should get logged in to my account</span>
 
                         </div>
                     </td>
+                        <td width="100" class="ERROR-text">
+                        </td>
                     <td width="100"><span class="nested-step">ERROR</span></td>
-                    <td width="100"><span class="nested-step">0.05s</span></td>
+                    <td width="100"><span class="nested-step">0.03s</span></td>
                 </tr>
                 <tr class="test-ERROR">
                     <td width="60" class="step-icon">
@@ -922,18 +1955,20 @@
                     </td>
                     <td>
                         <div class="step-description">
-                            <span class="nested-group-step">Is on the home page</span>
+                            <span class="nested-group-step">Verify user logged in: <span class='step-parameter'>Savanah Schuster</span></span>
 
                         </div>
                     </td>
+                        <td width="100" class="ERROR-text">
+                        </td>
                     <td width="100"><span class="nested-group-step">ERROR</span></td>
-                    <td width="100"><span class="nested-group-step">0.04s</span></td>
+                    <td width="100"><span class="nested-group-step">0.02s</span></td>
                 </tr>
                     <tr class="test-ERROR">
                         <td width="40">&nbsp</td>
                         <td width="%" colspan="4" class="error-message-cell">
                             <span class="error-message ellipsis"
-                                  title='net.thucydides.core.webdriver.UnsupportedDriverException: Could not instantiate class org.openqa.selenium.phantomjs.PhantomJSDriver'><pre>net.thucydides.core.webdriver.UnsupportedDriverException: Could not instantiate class org.openqa.selenium.phantomjs.PhantomJSDriver</pre></span>
+                                  title='org.openqa.selenium.NoSuchElementException: no such window: target window already closed from unknown error: web view not found   (Session info: chrome=63.0.3239.132)   (Driver info: chromedriver=2.33.506106 (8a06c39c4582fbfbab6966dbb1c38a9173bfb1a2),platform=Mac OS X 10.13.2 x86_64) (WARNING: The server did not provide any stacktrace information) Command duration or timeout: 1 milliseconds Build info: version: '2.46.0', revision: '61506a4624b13675f24581e453592342b7485d71', time: '2015-06-04 10:22:50' System info: host: 'inarpits', ip: '192.168.43.36', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.2', java.version: '1.8.0_131' Driver info: org.openqa.selenium.chrome.ChromeDriver Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.33.506106 (8a06c39c4582fbfbab6966dbb1c38a9173bfb1a2), userDataDir=/var/folders/gx/h7w3x5k10f3bd79nq3mxtpsh0000gp/T/.org.chromium.Chromium.t8gUBf}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=63.0.3239.132, platform=MAC, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}] Session ID: 5ec6d6dffcf74e4d47fe374f3b5fcb6d *** Element info: {Using=xpath, value=//*[@id='navUserMenu']/p/a} For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html Build info: version: '2.46.0', revision: '61506a4624b13675f24581e453592342b7485d71', time: '2015-06-04 10:22:50' System info: host: 'inarpits', ip: '192.168.43.36', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.2', java.version: '1.8.0_131' Driver info: driver.version: unknown'><pre>org.openqa.selenium.NoSuchElementException: no such window: target window already closed from unknown error: web view not found   (Session info: chrome=63.0.3239.132)   (Driver info: chromedriver=2.33.506106 (8a06c39c4582fbfbab6966dbb1c38a9173bfb1a2),platform=Mac OS X 10.13.2 x86_64) (WARNING: The server did not provide any stacktrace information) Command duration or timeout: 1 milliseconds Build info: version: '2.46.0', revision: '61506a4624b13675f24581e453592342b7485d71', time: '2015-06-04 10:22:50' System info: host: 'inarpits', ip: '192.168.43.36', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.2', java.version: '1.8.0_131' Driver info: org.openqa.selenium.chrome.ChromeDriver Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.33.506106 (8a06c39c4582fbfbab6966dbb1c38a9173bfb1a2), userDataDir=/var/folders/gx/h7w3x5k10f3bd79nq3mxtpsh0000gp/T/.org.chromium.Chromium.t8gUBf}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=63.0.3239.132, platform=MAC, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}] Session ID: 5ec6d6dffcf74e4d47fe374f3b5fcb6d *** Element info: {Using=xpath, value=//*[@id='navUserMenu']/p/a} For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html Build info: version: '2.46.0', revision: '61506a4624b13675f24581e453592342b7485d71', time: '2015-06-04 10:22:50' System info: host: 'inarpits', ip: '192.168.43.36', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.2', java.version: '1.8.0_131' Driver info: driver.version: unknown</pre></span>
                 <div><!-- Stack trace -->
                     <button type="button" class="btn btn-danger btn-sm" data-toggle="modal"
                             data-target="#stacktraceModal">
@@ -950,14 +1985,30 @@
                                         aria-label="Close"><span aria-hidden="true">&times;</span>
                                 </button>
                                 <h4 class="modal-title" id="stacktraceModalLabel">
-                                net.thucydides.core.webdriver.UnsupportedDriverException :  Could not instantiate class org.openqa.selenium.phantomjs.PhantomJSDriver 
+                                org.openqa.selenium.NoSuchElementException :  no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=63.0.3239.132)
+  (Driver info: chromedriver=2.33.506106 (8a06c39c4582fbfbab6966dbb1c38a9173bfb1a2),platform=Mac OS X 10.13.2 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1 milliseconds
+Build info: version: '2.46.0', revision: '61506a4624b13675f24581e453592342b7485d71', time: '2015-06-04 10:22:50'
+System info: host: 'inarpits', ip: '192.168.43.36', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.2', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.33.506106 (8a06c39c4582fbfbab6966dbb1c38a9173bfb1a2), userDataDir=/var/folders/gx/h7w3x5k10f3bd79nq3mxtpsh0000gp/T/.org.chromium.Chromium.t8gUBf}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=63.0.3239.132, platform=MAC, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 5ec6d6dffcf74e4d47fe374f3b5fcb6d
+*** Element info: {Using=xpath, value=//*[@id='navUserMenu']/p/a}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.46.0', revision: '61506a4624b13675f24581e453592342b7485d71', time: '2015-06-04 10:22:50'
+System info: host: 'inarpits', ip: '192.168.43.36', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.2', java.version: '1.8.0_131'
+Driver info: driver.version: unknown 
                                 </h4>
                             </div>
                             <div class="modal-body">
-                                steps.SearchContentSteps.isOnTheHomePage(SearchContentSteps.java
-                                    :19)
-                                com.seneity.assignment.SearchSteps.iAmOnIMDBHomePage(SearchSteps.java
-                                    :22)
+                                pages.ImdbHomePage.read_logged_in_user_name(ImdbHomePage.java
+                                    :53)
+                                steps.CreateAccountSteps.verifyUserLoggedIn(CreateAccountSteps.java
+                                    :59)
+                                com.seneity.assignment.UserRegistrationSteps.iShouldGetLoggedInToMyAccount(UserRegistrationSteps.java
+                                    :65)
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-default" data-dismiss="modal">
@@ -978,130 +2029,12 @@
                     </td>
                     <td>
                         <div class="step-description">
-                            <span class="nested-group-step">When I click Other Sign in options</span>
-
-                        </div>
-                    </td>
-                    <td width="100"><span class="nested-group-step">SKIPPED</span></td>
-                    <td width="100"><span class="nested-group-step">0s</span></td>
-                </tr>
-                <tr class="test-SKIPPED">
-                    <td width="60" class="step-icon">
-                        
-                            <img style="margin-left: 40px; margin-right: 5px;"
-                                 src="images/ignor.png" class="nested-group-icon"/>
-                    </td>
-                    <td>
-                        <div class="step-description">
-                            <span class="nested-group-step">And I click Create a New Account</span>
-
-                        </div>
-                    </td>
-                    <td width="100"><span class="nested-group-step">SKIPPED</span></td>
-                    <td width="100"><span class="nested-group-step">0s</span></td>
-                </tr>
-                <tr class="test-SKIPPED">
-                    <td width="60" class="step-icon">
-                        
-                            <img style="margin-left: 40px; margin-right: 5px;"
-                                 src="images/ignor.png" class="nested-group-icon"/>
-                    </td>
-                    <td>
-                        <div class="step-description">
-                            <span class="nested-group-step">And I enter name in First Name textbox</span>
-
-                        </div>
-                    </td>
-                    <td width="100"><span class="nested-group-step">SKIPPED</span></td>
-                    <td width="100"><span class="nested-group-step">0s</span></td>
-                </tr>
-                <tr class="test-SKIPPED">
-                    <td width="60" class="step-icon">
-                        
-                            <img style="margin-left: 40px; margin-right: 5px;"
-                                 src="images/ignor.png" class="nested-group-icon"/>
-                    </td>
-                    <td>
-                        <div class="step-description">
-                            <span class="nested-group-step">And I enter email in Email textbox</span>
-
-                        </div>
-                    </td>
-                    <td width="100"><span class="nested-group-step">SKIPPED</span></td>
-                    <td width="100"><span class="nested-group-step">0s</span></td>
-                </tr>
-                <tr class="test-SKIPPED">
-                    <td width="60" class="step-icon">
-                        
-                            <img style="margin-left: 40px; margin-right: 5px;"
-                                 src="images/ignor.png" class="nested-group-icon"/>
-                    </td>
-                    <td>
-                        <div class="step-description">
-                            <span class="nested-group-step">And I enter Password in password textbox</span>
-
-                        </div>
-                    </td>
-                    <td width="100"><span class="nested-group-step">SKIPPED</span></td>
-                    <td width="100"><span class="nested-group-step">0s</span></td>
-                </tr>
-                <tr class="test-SKIPPED">
-                    <td width="60" class="step-icon">
-                        
-                            <img style="margin-left: 40px; margin-right: 5px;"
-                                 src="images/ignor.png" class="nested-group-icon"/>
-                    </td>
-                    <td>
-                        <div class="step-description">
-                            <span class="nested-group-step">And I enter password again in Re-enter password textbox</span>
-
-                        </div>
-                    </td>
-                    <td width="100"><span class="nested-group-step">SKIPPED</span></td>
-                    <td width="100"><span class="nested-group-step">0s</span></td>
-                </tr>
-                <tr class="test-SKIPPED">
-                    <td width="60" class="step-icon">
-                        
-                            <img style="margin-left: 40px; margin-right: 5px;"
-                                 src="images/ignor.png" class="nested-group-icon"/>
-                    </td>
-                    <td>
-                        <div class="step-description">
-                            <span class="nested-group-step">And I click Create your IMDb account button</span>
-
-                        </div>
-                    </td>
-                    <td width="100"><span class="nested-group-step">SKIPPED</span></td>
-                    <td width="100"><span class="nested-group-step">0s</span></td>
-                </tr>
-                <tr class="test-SKIPPED">
-                    <td width="60" class="step-icon">
-                        
-                            <img style="margin-left: 40px; margin-right: 5px;"
-                                 src="images/ignor.png" class="nested-group-icon"/>
-                    </td>
-                    <td>
-                        <div class="step-description">
-                            <span class="nested-group-step">Then I should get logged in to my account</span>
-
-                        </div>
-                    </td>
-                    <td width="100"><span class="nested-group-step">SKIPPED</span></td>
-                    <td width="100"><span class="nested-group-step">0s</span></td>
-                </tr>
-                <tr class="test-SKIPPED">
-                    <td width="60" class="step-icon">
-                        
-                            <img style="margin-left: 40px; margin-right: 5px;"
-                                 src="images/ignor.png" class="nested-group-icon"/>
-                    </td>
-                    <td>
-                        <div class="step-description">
                             <span class="nested-group-step">And I log out of the application</span>
 
                         </div>
                     </td>
+                        <td width="100" class="SKIPPED-text">
+                        </td>
                     <td width="100"><span class="nested-group-step">SKIPPED</span></td>
                     <td width="100"><span class="nested-group-step">0s</span></td>
                 </tr>
@@ -1112,7 +2045,7 @@
                 <tr class="test-ERROR">
                     <td colspan="2"></td>
                     <td width="100"><span class="top-level-step"><em>ERROR</em></span></td>
-                    <td width="100"><span class="top-level-step"><em>0.38s</em></span></td>
+                    <td width="100"><span class="top-level-step"><em>1594.55s</em></span></td>
                 </tr>
 
             </table>

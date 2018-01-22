@@ -36,7 +36,7 @@
     <script class="code" type="text/javascript">$(document).ready(function () {
         var test_results_plot = $.jqplot('test_results_pie_chart', [
             [
-                ['Passing', 0],
+                ['Passing', 0.666667],
                 
                 ['Pending', 0],
                 
@@ -44,7 +44,7 @@
                 
                 ['Failing', 0],
                 
-                ['Errors',  1]
+                ['Errors',  0.333333]
             ]
         ], {
 
@@ -73,17 +73,17 @@
                 marginTop: '15px'
             },
             series: [
-                {label: '0 / 15 tests passed' },
+                {label: '10 / 15 tests passed' },
                 {label: '0 / 15 tests pending'},
                 {label: '0 / 15 tests not executed'},
                 {label: '0 / 15 tests failed'},
-                {label: '15 / 15 errors'}
+                {label: '5 / 15 errors'}
             ]
         });
 
         var weighted_test_results_plot = $.jqplot('weighted_test_results_pie_chart', [
             [
-                ['Passing', 0],
+                ['Passing', 0.735],
                 
                 ['Pending', 0],
                 
@@ -91,7 +91,7 @@
                 
                 ['Failing', 0],
                 
-                ['Errors', 1]
+                ['Errors', 0.255]
             ]
         ], {
 
@@ -121,11 +121,11 @@
                 marginTop: '15px'
             },
             series: [
-                {label: '0 / 15 tests passed (0% of all test steps)' },
+                {label: '10 / 15 tests passed (0.735% of all test steps)' },
                 {label: '0 / 15 tests pending'},
                 {label: '0 / 15 tests not executed'},
                 {label: '0 / 15 tests failed (0% of all test steps)'},
-                {label: '15 / 15 errors (1% of all test steps)'}
+                {label: '5 / 15 errors (0.255% of all test steps)'}
             ]
         });
 
@@ -189,7 +189,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 22-01-2018 09:15</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 22-01-2018 09:30</span>
     <br style="clear:left"/>
 </div>
     <div class="clr"></div>
@@ -226,6 +226,24 @@
                             </tr>
                             <tr>
                                 <td style="width: 30%">unexpectedAlertBehaviour</td><td></td>
+                            </tr>
+                    </table>
+                    <h2>Driver capabilities: phantomjs</h2>
+                    <table class="table table-striped build-info">
+                            <tr>
+                                <td style="width: 30%">browserName</td><td>phantomjs</td>
+                            </tr>
+                            <tr>
+                                <td style="width: 30%">driverName</td><td>ghostdriver</td>
+                            </tr>
+                            <tr>
+                                <td style="width: 30%">version</td><td>2.1.1</td>
+                            </tr>
+                            <tr>
+                                <td style="width: 30%">driverVersion</td><td>1.2.0</td>
+                            </tr>
+                            <tr>
+                                <td style="width: 30%">platform</td><td>MAC</td>
                             </tr>
                     </table>
 
